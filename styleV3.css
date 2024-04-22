@@ -1,14 +1,40 @@
-body {
-    margin: 0;
-    padding: 0;
+h1 {
+    font-size: 2em;
 }
 
-/* ### Header ### */
+h2 {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+/* ###### Bloc de navigation latérale ###### */
+
+aside {
+    background-color: #555;
+}
+
+figure {
+    margin-left: -10px;
+    display: flex;
+}
+
+/* ###### Bloc principale ###### */
 
 h1 {
     color: #fff;
     font-size: 2.5em;
     text-shadow: #000 4px 4px 4px;
+}
+
+main {
+    width: 100%;
 }
 
 /* Arrangement du header
@@ -101,10 +127,9 @@ input {
 }
 
 
-/* ### Navigation ### */
+/* Navigation */
 
-/* Champ navigation */
-header + nav {
+main > nav {
     position: sticky;
     top: 0%;
     background-color: #E09664;
@@ -112,7 +137,7 @@ header + nav {
     position: sticky;
 }
 
-header + nav ul {
+main > nav ul {
     list-style: none;
     margin: 0;
     display: flex;
@@ -120,25 +145,63 @@ header + nav ul {
     justify-content: space-evenly;
 }
 
-header + nav a{
+main > nav a{
     color: #fff;
     text-decoration: none;
 }
   
 
-header + nav a:hover{
+main > nav a:hover{
     color: #555555;
     text-decoration: underline;
 }
 
-/* ### Main ### */
+/* # main # */
 
-main {
-    background-color: #FDDF97;
-    height: 900px;
+.main {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-/* ### footer ### */
+article {
+    margin: 0;
+    background-color: #FDDF97;
+    height: 1600px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section {
+    width: auto;
+    margin: 15px;
+    padding: 10px;
+    background-color: #fff;
+    min-height: 150px;
+    border: #E09664 2px solid;
+}
+/* centre d'intéret */
+
+.galerie-photo {
+	display : flex;
+    flex-flow: row nowrap;
+	height : 20rem;
+	gap : 1rem;
+}
+
+.galerie-photo > div{
+	flex : 1;
+	border-radius : 1rem;
+	background-position : center;
+	background-repeat : no-repeat;
+	background-size : auto 100%;
+	transition : all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.galerie-photo > div:hover{
+	flex : 5;
+}
+
+/* # footer # */
 
 footer {
     background-color: #6C4343;
@@ -152,7 +215,7 @@ footer address > span {
     font-size: 1.5em;
 }
 
-footer a, main a {
+footer a, article a {
     color: #5cbfca;
     text-decoration: none;
 }
