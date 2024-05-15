@@ -1,0 +1,19 @@
+section {
+    position: relative;
+    left: 50%;
+}
+
+h3 + div {
+    width: 5px;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+div div {
+    border-radius: 25%;
+    border: 10px solid red;
+    transform: translate(-35%,0);
+}

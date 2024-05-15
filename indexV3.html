@@ -14,10 +14,7 @@
 </head>
 <body id="header">
     <header>
-        <a href="">
-            <i class="fa fa-bars"></i>
-            <!-- Avec un hover class="fa fa-angle-double-left" -->
-        </a>
+        <i class="fa fa-bars"></i>
         <h1>
             KERVADEC Mattéo
         </h1>
@@ -25,118 +22,130 @@
             <div class="search-input">
                 <a href="" target="_self" hidden></a>
                 <input type="text" placeholder="Recherche : ">
-                <ul>
+                <div>
                     <!-- liste de proposition insérer en javascript -->
-                </ul>
-                <a href=""><i class="fas fa-search"></i></a>
+                </div>
+                <a><i class="fas fa-search"></i></a>
             </div>
         </div>
-        <a href="">
+        <a href="index.html">
             <img src="images/logo/Portfolio2.png" alt="logo Portfolio">
         </a>
     </header>
     <div class="main">
-        <aside>
+        <aside> 
             <nav class="navigation">
-                <h2>
-                    Navigation :
-                </h2>
                 <ul>
                     <li>
-                        <a href="">
-                            <figure>
-                                <i class="fa fa-home"></i>
-                                <figcaption>
+                        <a href="index.html">
+                            <div>
+                                <span>
+                                    <i class="fa fa-home"></i>
+                                </span>
+                                <span>
                                     Menu
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <i class="fa fa-file-code"></i>
-                                <figcaption>
-                                    Projets
-                                </figcaption>
-                            </figure>
+                        <a href="#art_portfolio">
+                            <div>
+                                <span>
+                                    <i class="fa fa-file-code"></i>
+                                </span>
+                                <span>
+                                    Portfolio
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <i class="fa fa-wrench"></i>
-                                <figcaption>
+                        <a href="#art_outils">
+                            <div>
+                                <span>
+                                    <i class="fa fa-wrench"></i>
+                                </span>
+                                <span>
                                     Mes Outils
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <i class="fa fa-globe"></i>
-                                <figcaption>
+                        <a href="actualite.html">
+                            <div>
+                                <span>
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                                <span>
                                     Actualités
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <i class="fa fa-at"></i>
-                                <figcaption>
+                        <a href="contact.html">
+                            <div>
+                                <span>
+                                    <i class="fa fa-at"></i>
+                                </span>
+                                <span>
                                     Contact
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </nav>
             <nav class="select-color">
-                <h2>
-                    Selection de couleur :
-                </h2>
                 <ul>
                     <li>
-                        <a href="">
-                            <figure>
-                                <img src="" alt="couleur par default">
-                                <figcaption>
-                                    Par default
-                                </figcaption>
-                            </figure>
+                        <a onclick="changColor(1)">
+                            <div>
+                                <span>
+                                    <div class="sphere-color color-default selected"></div>
+                                </span>
+                                <span>
+                                    Default
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <img src="" alt="couleur Glaciale">
-                                <figcaption>
+                        <a onclick="changColor(2)">
+                            <div>
+                                <span>
+                                    <div class="sphere-color color-ice"></div>
+                                </span>
+                                <span>
                                     Glaciale
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <img src="" alt="couleur Chaude">
-                                <figcaption>
+                        <a onclick="changColor(3)">
+                            <div>
+                                <span>
+                                    <div class="sphere-color color-hot"></div>
+                                </span>
+                                <span>
                                     Chaude
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <figure>
-                                <img src="" alt="couleur boiser">
-                                <figcaption>
+                        <a onclick="changColor(4)">
+                            <div>
+                                <span>
+                                    <div class="sphere-color color-forest"></div>
+                                </span>
+                                <span>
                                     Boiser
-                                </figcaption>
-                            </figure>
+                                </span>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -153,11 +162,6 @@
                     <li>
                         <a href="#presentation">
                             Présentation
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projets">
-                            Projets
                         </a>
                     </li>
                     <li>
@@ -182,22 +186,69 @@
                     </li>
                 </ul>     
             </nav>
-            <article>
+            <article id="art_presentation">
                 <section id="presentation">
+                    <img src="images/matteo_k.jpg" alt="photo de moi">
+                    <h3>
+                        Parcours :
+                    </h3>
+                    <p>
+                        Mattéo KERVADEC est un étudiant. Il étudie les différents systèmes, différents moyen d'information/communication. Mais surtout, il étudie la donnée.<br>
+						Mattéo KERVADEC c'est moi, un étudiant dans le domaine de l'informatique.<br>
+                        Je commence à m'interesser à l'informatique en <span>4ème vers mes 13/14 ans</span>.<br>
+						Dès cet âge là, je <span>commença à m'intérresser</i> aux différents langages informatique. Je finis par commencer doucement avec du <span>scratch</span>.<br>
+						Puis, je <span>continue plus sérieusement</span> en 2nd vers 15/16 ans avec du <span>python et du html/css</span>. J'avait un <span>niveau très approximatif</span>. Mais cela me plaisait et je progressais assez rapidement.<br> 
+                        Et je comprennais les fondamentaux de la programmation</br>
+						Très vite, l'année d'après, je dû prendre des spécialités pour continuer son parcours scolaire pour mon diplome de baccalauréat.<br>
+						<span>Ne sachant pas</span> exactement ce que je voulait faire plus tard, je pris les spécialités <span>Mathématiques, Physique Chimie et Numérique Science et Informatique</span> (NSI).<br>
+                        Pour la terminale, je dus éliminer une de ses spécialités.<br>
+						Je ne savais pas quoi choisir entre la physique et la NSI. Car au début, j'étais fasciné par la <span>curiositée</span> des sciences et le <span>mystère</span> de l'informatique.<br>
+						Alors, il décida de garder les Mathématiques et la NSI car je vus un <span>meilleur potentiel</span> dans la programmation.<br>
+						L'année de Terminale est achevé, je <span>reçu son diplome du BAC</span> avec la <span>mention assez bien</span> et je poursuivis mes études pour un <span>BUT informatique</span> dans le nord de la Bretagne à <span>Lannion</span>. <br>
+						Arrivé en 1<sup>ère</sup>année du BUT, je dus me diversifier à travers plusieur langages de programmation.<br>
+                        Telle que le c, le java (pour redécouvrir la programmation objet), le php, le javascript et j'en passe.
+                    </p>
+
                     <h3>
                         Qui suis-je ?
                     </h3>
-                </section>
-                <section id="projets">
+                    <div>
 
+                    </div>
                 </section>
                 <section id="cv">
-
-                    <i class="fa fa-upload"></i>
-
+                    <!-- Télécharger  -->
+                    <img src="images/cv/CV_kervadecmatteo.png" alt="">
+                    <form>
+                        <h3>
+                            Format :
+                        </h3>
+                        <div>
+                            <!-- Format par défaud -->
+                            <input type="radio" name="download" id="PDF" value="PDF" checked>
+                            <label for="PDF">PDF</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="download" id="PNG" value="PNG">
+                            <label for="PNG">PNG</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="download" id="JPG" value="JPG">
+                            <label for="JPG">JPG</label>
+                        </div>
+                        <!-- Remplace le format en javascript -->
+                        <button type="submit">
+                            <i class="fa fa-upload"></i>
+                            Télécharger
+                        </button>
+                        <a href="images/cv/CV_kervadecMatteo.pdf" download="CV_kervadecMatteo.pdf" hidden></a>
+                    </form>
+                    <pre id="log"></pre>
                 </section>
                 <section id="competence">
-
+                    <h3>
+                        Compétence :
+                    </h3>
                 </section>
                 <section id="centre-interet">
                     <h3>
@@ -212,6 +263,9 @@
                     </div>
                 </section>
             </article>
+            <article id="art_portfolio">
+
+            </article>
         </main>
     </div>
     <footer id="contact">
@@ -219,8 +273,10 @@
             <span>
                 Contacter le webmaster&nbsp;:
             </span>
-            <br> 
-            <img src="" alt="logo mail">
+            <br>
+            <a href="mailto:kervadecmatteo@gmail.com">
+                <img src="images/logo/mail.png" alt="logo mail">
+            </a>
             mail&nbsp;: <a href="mailto:kervadecmatteo@gmail.com">kervadecmatteo@gmail.com</a> 
             <br>
             <img src="" alt="logo téléphone">
@@ -256,5 +312,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/suggestions.js"></script>
+    <script src="js/scriptSearch.js"></script>
 </body>
 </html>
