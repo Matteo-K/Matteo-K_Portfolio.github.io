@@ -20,6 +20,21 @@
     --clr-link-font--: #5cbfca;
     --clr-link-hover--: #3A7D1B;
     --clr-footer-bg--: #6C4343;
+
+    scroll-behavior: smooth;
+}
+
+.mousemove {
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--clr-nav-bg--);
+    background-color: rgb(60, 60, 60,0.3);
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: .2s ease-out;
+    z-index: 0;
+    pointer-events: none;
 }
 
 h1 {
@@ -81,7 +96,7 @@ aside, aside span+span, h2 {
 
 aside > div {
     position: sticky;
-    top: 40%;
+    top: 300px;
     transform: translate(0,-50%);
 }
 
@@ -107,6 +122,24 @@ aside nav {
     border-top: var(--clr-aside-border--) 3px solid;
 }
 
+aside nav:nth-child(1) {
+    border: none;
+    margin: 20%;
+}
+
+aside nav:nth-child(1) i{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--clr-light-font--);
+    cursor: pointer;
+}
+
+aside nav:nth-child(1) i:hover{
+    color: var(--clr-dark-font--);
+}
+
 aside ul {
     margin: 0;
     padding-left:20%;
@@ -129,6 +162,10 @@ aside span + span, h2 {
     width: 15%;
 }
 
+.aside_open div{
+    top: 360px;
+}
+
 .span_visible {
     visibility: visible;
     display: block;
@@ -139,7 +176,7 @@ aside span + span, h2 {
     .span_visible {
       opacity: 0;
     }
-  }
+}
 
 /* Select color*/
 
@@ -156,23 +193,17 @@ aside span + span, h2 {
     align-self: flex-end;
     border: 20px solid;
     border-radius: 50%;
-    position: relative;
-    left: -15px;
     transform: rotate(45deg);
     filter: brightness(1);
     transition: filter 0.3s;
-}
-
-.sphere-color:hover{
-    filter: brightness(0.9);
+    &:hover {
+        transform: rotate(90deg);
+        filter: brightness(0.9);
+    }
 }
 
 .selected {
     box-shadow:var(--clr-aside-selcted--) 4px 0px 6px;
-}
-
-.sphere-color:hover{
-    transform: rotate(90deg);
 }
 
 /* Sélection des couleurs */
@@ -231,11 +262,6 @@ header {
 
 /* logo menu */
 
-header > i {
-    color: var(--clr-light-font--);
-    cursor: pointer;
-}
-
 /* Logo portfolio */
 header > a > img {
     padding: 5px 0;
@@ -269,10 +295,9 @@ header img {
     top: 0.9em;
     color: var(--clr-search-icon--);
     cursor: pointer;
-}
-
-.search-input input + div + a:hover {
-    color: var(--clr-search-iconhvr--);
+    &:hover {
+        color: var(--clr-search-iconhvr--);
+    }
 }
 
 /* Liste de suggestions */
@@ -353,6 +378,18 @@ article {
     border: var(--clr-nav-bg--) 7px double;
 }
 
+article nav + div {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+}
+
+article nav + div > div + div {
+    display: flex;
+    flex-flow: column wrap;
+    width: 55%;
+}
+
 #art_presentation, #art_outils {
     background-color: var(--clr-art1-bg--);
 }
@@ -371,6 +408,10 @@ article {
 }
 
 /* Article présentation */
+
+#art_presentation nav + div > div {
+    height: min-content;
+}
 
 #cv {
     display: flex;
@@ -461,7 +502,7 @@ button:active {
 }
 
 section {
-    width: fit-content;
+    width: auto;
     margin: 15px;
     padding: 10px;
     background-color: var(--clr-section-bg--);
@@ -474,14 +515,132 @@ section img{
     object-fit: cover;
 }
 
-#qui_suis_je img {
+#parcours {
+    width: 550px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items : center;
+}
+
+#parcours h3 + div{
+    width: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    position: relative;
+    bottom: -50px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 1175px;
+        transform: translate(0,-5.5%);
+        background-color: black;
+    }
+}
+
+.point {
+    position: relative;
+    z-index: 2;
+    border-radius: 25%;
+    border: 10px solid red;
+    transform: translate(-35%,0);
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: red;
+        transform: translate(-100%,-50%); /* Varier entre 0 et -100%*/
+        width: 50px;
+        height: 5px;
+    }
+}
+
+.point:nth-child(3) {
+    border-color: orange;
+    &:before {
+        background-color: orange;
+        transform: translate(0,-50%); /* Varier entre 0 et -100%*/
+    }
+}
+
+.point:nth-child(5) {
+    border-color: yellow;
+    &:before {
+        background-color: yellow;
+    }
+}
+
+.point:nth-child(7) {
+    border-color: green;
+    &:before {
+        background-color: green;
+        transform: translate(0,-50%);
+    }
+}
+
+.point:nth-child(9) {
+    border-color: darkgreen;
+    &:before {
+        background-color: darkgreen;
+    }
+}
+
+.point:nth-child(11) {
+    border-color: teal;
+    &:before {
+        background-color: teal;
+        transform: translate(0,-50%);
+    }
+}
+
+.point:nth-child(13) {
+    border-color: blue;
+    &:before {
+        background-color: blue;
+    }
+}
+
+.point:nth-child(15) {
+    border-color: darkblue;
+    &::before {
+        background-color: darkblue;
+        transform: translate(0,-50%);
+    }
+}
+
+.point:nth-child(17) {
+    border-color: purple;
+    &::before {
+        background-color: purple;
+    }
+}
+
+.hist {
+    position: relative;
+    width: 150px;
+    transform: translate(55px,-55px);
+    background-color: #eee;
+    border-radius: 15%;
+    padding: 5px;
+}
+
+.hist:nth-child(2), .hist:nth-child(6), .hist:nth-child(10), .hist:nth-child(14), .hist:nth-child(18) {
+    transform: translate(-215px,-55px);
+}
+
+h4, h5 {
+    margin: 10px;
+}
+
+h5 {
+    margin-left: 20px;
+}
+/* Presentation */
+
+#presentation img {
     float: right;
     position: relative;
     top: -20px;
-}
-
-#qui_suis_je {
-    max-width: 70%;
 }
 
 /* centre d'intéret */
@@ -500,15 +659,13 @@ section img{
 	background-repeat : no-repeat;
 	background-size : auto 100%;
 	transition : all .8s cubic-bezier(.25, .4, .45, 1.4);
-}
-
-.galerie-photo > div:hover{
-	flex : 5;
-}
-
-.galerie-photo > div:not(:hover) {
-    opacity: 0.7;
-    filter: brightness(.4);
+    &:hover {
+        flex : 5;
+    }
+    &:not(:hover) {
+        opacity: 0.7;
+        filter: brightness(.4);
+    }
 }
 
 /* # footer # */

@@ -1,25 +1,76 @@
+/* Déplacement de la souris */
+
+const mousse_ = document.querySelector('.mousemove');
+
+window.addEventListener('mousemove',(event) => {
+    mousse_.style.left = event.pageX + "px";
+    mousse_.style.top = event.pageY + "px";
+});
+
+window.addEventListener('mousedown',() => {
+    mousse_.style.transform ="scale(1.5) translate( -25%, -25%)";
+    mousse_.style.borderColor ="red";
+});
+
+window.addEventListener('mouseup',() => {
+    mousse_.style.transform ="scale(1) translate(-50%, -50%)";
+    mousse_.style.borderColor = window.getComputedStyle(document.querySelector(':root')).getPropertyValue("--clr-nav-bg--");
+});
+
+/* Gérer les couleurs des infographie */
+
+let color_inf, match;
+
+const point_infographie = document.querySelectorAll(".point");
+const detail_infographie = document.querySelectorAll(".hist, .hist h4, .hist h5");
+let infographie_size = point_infographie.length;
+let detail_proportion = detail_infographie.length/infographie_size;
+
+for (let index = 0; index < infographie_size; index++) {
+    const currentPoint = point_infographie[index];
+    if (currentPoint instanceof Element) {
+        color_inf = window.getComputedStyle(currentPoint).getPropertyValue("border-color");
+        match = /rgb\((.*)\)/.exec(color_inf);
+        detail_infographie[index * detail_proportion].style.border = "3px solid " + color_inf;
+        detail_infographie[(index * detail_proportion) + 1].style.color = color_inf;
+        detail_infographie[(index * detail_proportion) + 2].style.color = "rgb(" + match[1] + ", 0.6)";
+    }
+}
+
+
 /* ### Menu navigation ### */
 /* -- ouvre et ferme le menu à l'intéraction du bouton du menu -- */
 
-const menu_click = document.querySelector('header > i')
+const menu_click = document.querySelector('aside nav:nth-child(1) i')
 
 menu_click.addEventListener('click',() => {
-    document.querySelector('aside').classList.toggle('aside_open');
+    open_close_aside();
+});
+
+/* -- ferme le aside quand la souris sors du aside */
+
+const aside_nav = document.querySelector("aside");
+
+aside_nav.addEventListener("mouseleave", () => {
+    if (aside_nav.classList[0] == 'aside_open') {
+        open_close_aside();
+    }
+    
+});
+
+function open_close_aside() {
+    aside_nav.classList.toggle('aside_open');
     const mnu = document.querySelectorAll('aside span + span');
     mnu.forEach(element => {
         element.classList.toggle('span_visible');
-        console.log(element);
     });
 
     const titl = document.querySelectorAll('aside h2');
     titl.forEach(element => {
         element.classList.toggle('span_visible');
-        console.log(element);
     });
-    
-    menu_click.classList.toggle('fa-bars');
-    menu_click.classList.toggle('fa-angle-double-left');
-});
+    console.log(aside_nav);
+}
 
 /* Sélection du format CV */
 
