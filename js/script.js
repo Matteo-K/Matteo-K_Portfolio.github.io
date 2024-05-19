@@ -1,3 +1,15 @@
+/* Api Github */
+
+fetch("https://api.github.com/users/Matteo-K/repos")
+.then((result) => {
+    if (result.ok) {
+        result.json().then((data) => console.log(data))
+
+    } else {
+        console.log("not success")
+    }
+});
+
 /* Déplacement de la souris */
 
 const mousse_ = document.querySelector('.mousemove');
