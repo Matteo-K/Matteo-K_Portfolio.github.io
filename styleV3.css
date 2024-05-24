@@ -43,7 +43,7 @@ h1 {
     text-shadow: var(--clr-logo-drpShdw--) 4px 4px 4px;
 }
 
-h2 {
+aside h2, #art_presentation h2 {
     font-size: 1.1em;
     padding-left: 5px;
     margin: 10% 0 10% 15%;
@@ -414,10 +414,18 @@ article nav + div > div + div {
 
 #cv {
     display: flex;
-    flex-flow: row wrap;
-    align-items: flex-end;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
     margin: 15px;
+    gap: 15px;
+}
+
+#cv div:nth-child(1) {
+    text-wrap: wrap;
+}
+
+#cv div:nth-child(2) {
+    display: flex;
+    flex-flow: row nowrap;
     gap: 15px;
 }
 
@@ -426,6 +434,7 @@ article nav + div > div + div {
 }
 
 form {
+    width: 150px;
     border: solid 1px var(--clr-dark-font--);
     border-radius: 15px;
     padding: 10px 15px;
@@ -479,7 +488,7 @@ label input:checked ~ .checkmark:after {
 }
   
 label .checkmark:after {
-    top: 7px;
+    top: 6.5px;
     left: 6.2px;
     width: 8px;
     height: 8px;
@@ -621,6 +630,7 @@ section img{
     background-color: #eee;
     border-radius: 15%;
     padding: 5px;
+    transition: .5s all;
 }
 
 .hist:nth-child(2), .hist:nth-child(6), .hist:nth-child(10), .hist:nth-child(14), .hist:nth-child(18) {
@@ -665,6 +675,66 @@ h5 {
         opacity: 0.7;
         filter: brightness(.4);
     }
+}
+
+#list_competence_project {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* bloc de compétence */
+
+#list_competence_project div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#list_competence_project ul {
+    display: none;
+    visibility: collapse;
+    border: #04B3FD 1px solid;
+}
+
+#list_competence_project h2{
+    display: flex;
+    flex-flow: nowrap row;
+    padding: 15px;
+    color: var(--clr-light-font--);
+    text-shadow: 2px 0 var(--clr-dark-font--), -2px 0 var(--clr-dark-font--), 0 2px var(--clr-dark-font--), 0 -2px var(--clr-dark-font--),
+             1px 1px var(--clr-dark-font--), -1px -1px var(--clr-dark-font--), 1px -1px var(--clr-dark-font--), -1px 1px var(--clr-dark-font--);
+}
+
+#list_competence_project .list_open ul {
+    display: block;
+    visibility: visible;
+}
+
+#list_competence_project a {
+    color: var(--clr-dark-font--);
+}
+
+#list_competence_project div:nth-child(1) h2 {
+    background-color: red;
+}
+
+#list_competence_project div:nth-child(2) h2 {
+    background-color: Orange;
+}
+
+#list_competence_project div:nth-child(3) h2 {
+    background-color: #dddd00;
+}
+
+#list_competence_project div:nth-child(4) h2 {
+    background-color: lightgreen;
+}
+
+#list_competence_project div:nth-child(5) h2 {
+    background-color: blue;
+}
+
+#list_competence_project div:nth-child(6) h2 {
+    background-color: black;
 }
 
 /* # footer # */

@@ -4,8 +4,8 @@
         "title" : "Portfolio",
         "image" : {
             "lien" : "",
-            "alt" : "",
-            "title" : ""
+            "alt" : "illustration site web",
+            "title" : "illustration site web"
         },
         "contributeur" : [
             "Mattéo Kervadec"
@@ -14,12 +14,14 @@
     },
     {
         "title" : "Portfolio",
+        "depot" : "",
         "About" : "Réalisation d'un Portfolio web. Afin de mettre en valeur mes réalisations et compétences",
         "content" : [
             {
                 "article" : "art_presentation_project",
                 "content" : {
-                    "section" : "presentation_project"
+                    "section" : "presentation_project",
+                    "texte" : ""
                 }
             },
             {

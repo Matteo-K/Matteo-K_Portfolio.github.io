@@ -1,15 +1,3 @@
-/* Api Github */
-
-fetch("https://api.github.com/users/Matteo-K/repos")
-.then((result) => {
-    if (result.ok) {
-        result.json().then((data) => console.log(data))
-
-    } else {
-        console.log("not success")
-    }
-});
-
 /* Déplacement de la souris */
 
 const mousse_ = document.querySelector('.mousemove');
@@ -35,17 +23,29 @@ let color_inf, match;
 
 const point_infographie = document.querySelectorAll(".point");
 const detail_infographie = document.querySelectorAll(".hist, .hist h4, .hist h5");
+const hist = document.querySelectorAll(".hist");
 let infographie_size = point_infographie.length;
 let detail_proportion = detail_infographie.length/infographie_size;
+
+let color_box = [];
 
 for (let index = 0; index < infographie_size; index++) {
     const currentPoint = point_infographie[index];
     if (currentPoint instanceof Element) {
         color_inf = window.getComputedStyle(currentPoint).getPropertyValue("border-color");
         match = /rgb\((.*)\)/.exec(color_inf);
+        color_box.push(match[1]);
         detail_infographie[index * detail_proportion].style.border = "3px solid " + color_inf;
         detail_infographie[(index * detail_proportion) + 1].style.color = color_inf;
-        detail_infographie[(index * detail_proportion) + 2].style.color = "rgb(" + match[1] + ", 0.6)";
+        detail_infographie[(index * detail_proportion) + 2].style.color = "rgb(" + color_box[index] + ", 0.6)";
+        hist[index].style.boxShadow = "rgb(" + match[1] + ", 0.6) 5px 5px";
+        hist[index].addEventListener("mouseover", () => {
+            
+            hist[index].style.boxShadow = "rgb(" + color_box[index] + ", 0.6) 2px 2px";
+        });
+        hist[index].addEventListener("mouseleave", () => {
+            hist[index].style.boxShadow = "rgb(" + color_box[index] + ", 0.6) 5px 5px";
+        });
     }
 }
 
@@ -118,6 +118,18 @@ downloadCV.addEventListener("submit", (e) => {
     }
     e.preventDefault();
 },false);
+
+
+/* Bloc de compétence de portfolio */
+
+const list_comp = document.querySelectorAll("#list_competence_project div");
+const list_comp_titre = document.querySelectorAll("#list_competence_project h2");
+
+for (let index = 0; index < list_comp.length; index++) {
+    list_comp_titre[index].addEventListener("click", () => {
+        list_comp[index].classList.toggle("list_open");
+    });
+};
 
 /* ### Changement de couleur ### */
 

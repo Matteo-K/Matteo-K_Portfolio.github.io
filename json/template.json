@@ -1,0 +1,16 @@
+[
+    {
+        "$nomFichier" : "X.html",
+        "title" : "",
+        "compétence" : [],
+        "image" : {
+            "lien" : "",
+            "alt" : "",
+            "title" : ""
+        },
+        "contributeur" : [
+            "Mattéo Kervadec"
+        ],
+        "date" : ""
+    }
+]
