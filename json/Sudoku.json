@@ -1,20 +1,20 @@
 [
     {
-        "$nomFichier" : "S2.02.html",
-        "title" : "S2.02",
-        "compétence" : 2,
+        "$nomFichier" : "Sudoku.html",
+        "title" : "Sudoku",
+        "compétence" : 1,
         "image" : {
             "lien" : "",
-            "alt" : "illustration Jeu des 8 dames",
-            "title" : "illustration Jeu des 8 dames"
+            "alt" : "illustration Sudoku",
+            "title" : "illustration Sudoku"
         },
         "contributeur" : [
-            "Mattéo Kervadec", "Raphaël Bardini", "Paolo Toe", "Marius Chartier--Le Goff"
+            "Mattéo Kervadec"
         ],
         "date" : ""
     },
     {
-        "title" : "S2.02",
+        "title" : "Sudoku",
         "depot" : "",
         "About" : "",
         "content" : [

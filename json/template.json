@@ -1,12 +1,12 @@
 [
     {
-        "$nomFichier" : "X.html",
-        "title" : "",
-        "compétence" : [],
+        "$nomFichier" : "x.html",
+        "title" : "x",
+        "compétence" : 0,
         "image" : {
             "lien" : "",
-            "alt" : "",
-            "title" : ""
+            "alt" : "illustration x",
+            "title" : "illustration x"
         },
         "contributeur" : [
             "Mattéo Kervadec"

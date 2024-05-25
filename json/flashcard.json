@@ -1,0 +1,33 @@
+[
+    {
+        "$nomFichier" : "flashcard.html",
+        "title" : "Flashcard",
+        "compétence" : 1,
+        "image" : {
+            "lien" : "",
+            "alt" : "illustration flashcard",
+            "title" : "illustration flashcard"
+        },
+        "contributeur" : [
+            "Mattéo Kervadec"
+        ],
+        "date" : ""
+    },
+    {
+        "title" : "Flashcard",
+        "depot" : "https://github.com/Matteo-K/flashcard",
+        "About" : "",
+        "content" : [
+            {
+                "article" : "art_presentation_project",
+                "content" : {
+                    "section" : "presentation_project",
+                    "texte" : ""
+                }
+            },
+            {
+                "article" : ""
+            }
+        ]
+    } 
+]

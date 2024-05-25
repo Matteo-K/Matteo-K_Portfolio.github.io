@@ -1,0 +1,33 @@
+[
+    {
+        "$nomFichier" : "Monopoly.html",
+        "title" : "Monopoly",
+        "compétence" : 1,
+        "image" : {
+            "lien" : "",
+            "alt" : "illustration Monopoly",
+            "title" : "illustration Monopoly"
+        },
+        "contributeur" : [
+            "Mattéo Kervadec"
+        ],
+        "date" : "15/03/23"
+    },
+    {
+        "title" : "Monopoly",
+        "depot" : "https://github.com/Matteo-K/Monopoly",
+        "About" : "",
+        "content" : [
+            {
+                "article" : "art_presentation_project",
+                "content" : {
+                    "section" : "presentation_project",
+                    "texte" : ""
+                }
+            },
+            {
+                "article" : ""
+            }
+        ]
+    } 
+]

@@ -1,21 +1,21 @@
 [
     {
-        "$nomFichier" : "S2.02.html",
-        "title" : "S2.02",
-        "compétence" : 2,
+        "$nomFichier" : "Innosang.html",
+        "title" : "Innosang",
+        "compétence" : 6,
         "image" : {
             "lien" : "",
-            "alt" : "illustration Jeu des 8 dames",
-            "title" : "illustration Jeu des 8 dames"
+            "alt" : "illustration Innosang",
+            "title" : "illustration Innosang"
         },
         "contributeur" : [
-            "Mattéo Kervadec", "Raphaël Bardini", "Paolo Toe", "Marius Chartier--Le Goff"
+            "Mattéo Kervadec","Elie Beguin", "Cyprien Fiala", "Amandine Lorcy"
         ],
-        "date" : ""
+        "date" : "15/06/23"
     },
     {
-        "title" : "S2.02",
-        "depot" : "",
+        "title" : "Innosang",
+        "depot" : "https://youtu.be/8ASkQJEALjc?si=fA516cFMf10DS78g",
         "About" : "",
         "content" : [
             {
