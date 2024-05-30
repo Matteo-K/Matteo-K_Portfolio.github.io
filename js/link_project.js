@@ -4,7 +4,7 @@ let contributeurs;
 
 suggestions.forEach(element => {
     if (/\.html/.test(element.lien)) {
-        fetch("../json/" + element.projet_ + ".json")
+        fetch("https://Matteo-K/Matteo-K_Portfolio.github.io json/" + element.projet_ + ".json")
         .then(response => {
             if (response.ok) {
                 response.json().then(file => {
@@ -31,13 +31,13 @@ suggestions.forEach(element => {
                                 </figure>
                             </a>
                         </li>
-                    `
+                    `   
                     bloc = document.querySelector("#list_competence_project div:nth-child("+file[0].compétence+") ul");
                     bloc.insertAdjacentHTML('beforeend', projet);
 
                 });
             } else {
-                console.log("fichier"+element.projet_+".json non trouvé");
+                console.log("fichier "+element.projet_+".json non trouvé");
             }
             
         });
