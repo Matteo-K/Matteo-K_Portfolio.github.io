@@ -1,6 +1,5 @@
 [
     {
-        "$nomFichier" : "flashcard.html",
         "title" : "Flashcard",
         "compétence" : 1,
         "image" : {
