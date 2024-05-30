@@ -12,11 +12,17 @@ fetch("../json/" + projet + ".json")
             title.innerText = file[1].title;
 
             card = `
-                <article>
-                    Hello World
+                <article class="erreur404">
+                    <img src="images/logo/erreur404.png" alt="erreur404">
+                    <br>
+                    <h2>
+                        <span>Erreur 404 :<br></span>
+                        Oups&nbsp;... Page ${projet} non trouvé
+                    </h2>
+                    <a href="index.html">Retour à la page d'aceuil</a>
                 </article>
             `;
-
+            console.log("ajout dela carte");
         });
     } else {
         title.innerText = "Erreur 404";
@@ -32,6 +38,7 @@ fetch("../json/" + projet + ".json")
             <a href="index.html">Retour à la page d'aceuil</a>
         </article>
         `;
+        console.log("erreur 404");
     }
     main.insertAdjacentHTML('beforeend', card);
 });
