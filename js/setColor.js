@@ -6,13 +6,13 @@ if (colorStorage == null) {
 }
 
 function changColor(color) {
-    let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') span div');
-    const sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') span div');
+    let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') span > span');
+    let sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') span > span');
     
     sphereColorActual.classList.toggle("selected");
     sphereColorOlder.classList.toggle("selected");   
-    document.querySelector('.select-color li:nth-child('+color+') span + span').classList.toggle("selected_span");
-    document.querySelector('.select-color li:nth-child('+colorStorage+') span + span').classList.toggle("selected_span");
+    document.querySelector('.select-color li:nth-child('+color+') div > span + span').classList.toggle("selected_span");
+    document.querySelector('.select-color li:nth-child('+colorStorage+') div > span + span').classList.toggle("selected_span");
     colorStorage = color;
     
     localStorage.setItem("color",color);

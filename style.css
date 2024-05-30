@@ -58,6 +58,14 @@ h3 {
     text-decoration: none;
 }
 
+h6 {
+    font-size: 3em;
+    margin: 15px;
+    text-align: center;
+    color: var(--clr-dark-font--);
+    border-bottom: var(--clr-section-bg--) 3px solid;
+}
+
 ul,li {
     list-style: none;
 }
@@ -174,12 +182,6 @@ aside span + span, aside h2 {
     visibility: visible;
     display: block;
     opacity: 1;
-}
-
-@starting-style {
-    .span_visible {
-      opacity: 0;
-    }
 }
 
 /* Select color*/
@@ -378,13 +380,13 @@ article {
     background-color: var(--clr-art1-bg--);
 }
 
-article nav + div {
+article nav + h6 + div {
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: center;
 }
 
-article nav + div > div + div {
+article nav + h6 + div > div + div {
     display: flex;
     flex-flow: column wrap;
     width: 55%;
@@ -405,7 +407,7 @@ article:nth-child(2),article:nth-child(4) {
 
 /* Article présentation */
 
-#art_presentation nav + div > div {
+#art_presentation nav + h6 + div > div {
     height: min-content;
 }
 
@@ -683,7 +685,7 @@ h5 {
 
 /* Compétence */
 
-#competence div {
+#competence h3 + div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -808,6 +810,10 @@ h5 {
     background-color: black;
 }
 
+#list_competence_project div:nth-child(7) h2 {
+    background-color: pink;
+}
+
 /* Erreur 404 - Projet non trouvé */
 
 .erreur404 {
@@ -853,31 +859,24 @@ h5 {
  * ---------------------------------------------- */
 @keyframes jello-horizontal {
     0% {
-      -webkit-transform: scale3d(1, 1, 1);
               transform: scale3d(1, 1, 1);
     }
     30% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
               transform: scale3d(1.25, 0.75, 1);
     }
     40% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
               transform: scale3d(0.75, 1.25, 1);
     }
     50% {
-      -webkit-transform: scale3d(1.15, 0.85, 1);
               transform: scale3d(1.15, 0.85, 1);
     }
     65% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
               transform: scale3d(0.95, 1.05, 1);
     }
     75% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
               transform: scale3d(1.05, 0.95, 1);
     }
     100% {
-      -webkit-transform: scale3d(1, 1, 1);
               transform: scale3d(1, 1, 1);
     }
 }
