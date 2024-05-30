@@ -9,6 +9,7 @@ if (colorStorage === null || isNaN(colorStorage)) {
 console.log(colorStorage);
 
 function changColor(color) {
+    console.trace();
     console.log(typeof(color),color," UN "+typeof(colorStorage),colorStorage);
     let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') span > span');
     let sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') span > span');
