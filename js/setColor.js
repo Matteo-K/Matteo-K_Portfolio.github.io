@@ -6,9 +6,12 @@ if (colorStorage == null) {
 }
 
 function changColor(color) {
+    console.log(typeof(color),color," UN "+typeof(colorStorage),colorStorage);
     let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') span > span');
     let sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') span > span');
     
+    console.log(typeof(color),color," DEUX "+typeof(colorStorage),colorStorage);
+
     sphereColorActual.classList.toggle("selected");
     sphereColorOlder.classList.toggle("selected");   
     document.querySelector('.select-color li:nth-child('+color+') div > span + span').classList.toggle("selected_span");
