@@ -1,7 +1,7 @@
 /* ### Changement de couleur ### */
 
 let colorStorage = parseInt(localStorage.getItem("color"));
-if (colorStorage == null) {
+if (colorStorage == null || colorStorage == NaN) {
     colorStorage = 1;
 }
 
