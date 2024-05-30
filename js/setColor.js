@@ -1,9 +1,12 @@
 /* ### Changement de couleur ### */
 
 let colorStorage = parseInt(localStorage.getItem("color"));
-if (colorStorage == null || colorStorage == NaN) {
+console.log(colorStorage);
+if (colorStorage === null || isNaN(colorStorage)) {
     colorStorage = 1;
 }
+
+console.log(colorStorage);
 
 function changColor(color) {
     console.log(typeof(color),color," UN "+typeof(colorStorage),colorStorage);
