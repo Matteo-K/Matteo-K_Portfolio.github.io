@@ -7,7 +7,7 @@ let title = document.querySelector("title");
 
 console.log(window.location.href);
 
-fetch("../json/" + projet + ".json")
+fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
 .then(response => {
     if (response.ok) {
         response.json().then(file => {
@@ -24,7 +24,7 @@ fetch("../json/" + projet + ".json")
                     <a href="index.html">Retour à la page d'aceuil</a>
                 </article>
             `;
-            console.log("ajout dela carte");
+            console.log("ajout dela carte " +projet);
         });
     } else {
         title.innerText = "Erreur 404";
