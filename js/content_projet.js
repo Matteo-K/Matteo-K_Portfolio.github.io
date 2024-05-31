@@ -27,6 +27,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             console.log("ajout dela carte " +projet);
         });
     } else {
+        console.log(response);
         title.innerText = "Erreur 404";
 
         card = `
