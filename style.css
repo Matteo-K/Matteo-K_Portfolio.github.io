@@ -397,11 +397,11 @@ article:nth-child(2),article:nth-child(4) {
     border-color: var(--clr-header-bg--);
 }
 
-#art_portfolio nav, #art_actualite nav {
+article:nth-child(2) nav, article:nth-child(4) nav {
     background-color: var(--clr-header-bg--);
 }
 
-#art_portfolio section, #art_actualite section {
+article:nth-child(2) section, article:nth-child(4) section {
     border-color: var(--clr-header-bg--);
 }
 

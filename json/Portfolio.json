@@ -3,7 +3,7 @@
         "title" : "Portfolio",
         "compétence" : 1,
         "image" : {
-            "lien" : "",
+            "lien" : "images/logo/Portfolio.png",
             "alt" : "illustration site web",
             "title" : "illustration site web"
         },

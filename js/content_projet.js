@@ -5,6 +5,8 @@ let card;
 let main = document.querySelector("main");
 let title = document.querySelector("title");
 
+console.log(window.location.href);
+
 fetch("../json/" + projet + ".json")
 .then(response => {
     if (response.ok) {
