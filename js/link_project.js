@@ -4,7 +4,7 @@ let contributeurs;
 
 suggestions.forEach(element => {
     if (/\.html/.test(element.lien)) {
-        fetch("../json/" + element.projet_ + ".json")
+        fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + element.projet_ + ".json")
         .then(response => {
             if (response.ok) {
                 response.json().then(file => {
