@@ -7,9 +7,10 @@ let title = document.querySelector("title");
 
 console.log(window.location.href);
 
-fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
+fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
 .then(response => {
     if (response.ok) {
+        console.log(response);
         response.json().then(file => {
             title.innerText = file[1].title;
 
@@ -27,7 +28,6 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/Matteo-K_Portfoli
             console.log("ajout dela carte " +projet);
         });
     } else {
-        console.log(response);
         title.innerText = "Erreur 404";
 
         card = `
