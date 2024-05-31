@@ -7,7 +7,7 @@ let title = document.querySelector("title");
 
 console.log(window.location.href);
 
-fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
+fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
 .then(response => {
     if (response.ok) {
         response.json().then(file => {
