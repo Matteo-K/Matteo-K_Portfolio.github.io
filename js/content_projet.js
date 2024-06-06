@@ -1,11 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const projet = urlParams.get("projet");
 
-let card;
 let main = document.querySelector("main");
 let title = document.querySelector("title");
-
-console.log(window.location.href);
 
 fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
 .then(response => {
@@ -13,23 +10,22 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
         response.json().then(file => {
             title.innerText = file[1].title;
 
-            card = `
-                <article class="erreur404">
-                    <img src="images/logo/erreur404.png" alt="erreur404">
-                    <br>
-                    <h2>
-                        <span>Erreur 404 :<br></span>
-                        Oups&nbsp;... Page ${projet} non trouvé
-                    </h2>
-                    <a href="index.html">Retour à la page d'aceuil</a>
-                </article>
-            `;
-            console.log("ajout dela carte " +projet);
+            let card = ``;
+
+            file[1].content.forEach(element => {
+                console.log(element);
+                card += `
+                    <article>
+                `;
+                file[1].content
+            });
+
+            main.insertAdjacentHTML('beforeend', card);
         });
     } else {
         title.innerText = "Erreur 404";
 
-        card = `
+        let card = `
         <article class="erreur404">
             <img src="images/logo/erreur404.png" alt="erreur404">
             <br>
@@ -40,7 +36,6 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             <a href="index.html">Retour à la page d'aceuil</a>
         </article>
         `;
-        console.log("erreur 404");
+        main.insertAdjacentHTML('beforeend', card);
     }
-    main.insertAdjacentHTML('beforeend', card);
 });

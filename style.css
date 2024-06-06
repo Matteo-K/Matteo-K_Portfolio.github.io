@@ -193,18 +193,20 @@ aside span + span, aside h2 {
 
 .navigation + h2 {
     border-left-color: var(--clr-aside-selcted--)
-}
+} 
 
 .sphere-color {
-    align-self: flex-end;
+    position: relative;
+    left: -15px;
+    background: radial-gradient(circle at 150%, blue, red);
     border: 20px solid;
     border-radius: 50%;
-    transform: rotate(45deg);
+    transform: rotate(180deg);
     filter: brightness(1);
-    transition: filter 0.3s;
+    transition: all 0.3s;
     &:hover {
-        transform: rotate(90deg);
-        filter: brightness(0.9);
+        transform: rotate(0deg);
+        filter: brightness(0.8);
     }
 }
 
@@ -216,30 +218,18 @@ aside span + span, aside h2 {
 
 .color-default {
     border-color: #364968 #364968 #FDDF97 #FDDF97;
-    :hover {
-        border-color: #FDDF97 #FDDF97 #364968 #364968;
-    }
 }
 
 .color-ice {
     border-color: #ccc #ccc #55abc5 #55abc5;
-    &:hover {
-        border-color: #55abc5 #55abc5 #ccc #ccc;
-    }
 }
 
 .color-hot {
     border-color: #9e928b #9e928b #d72a2a  #d72a2a;
-    &:hover {
-        border-color: #d72a2a #d72a2a #9e928b #9e928b;
-    }
 }
 
 .color-forest {
     border-color: #884009 #884009 #5b9245 #5b9245;
-    &:hover {
-        border-color: #5b9245 #5b9245 #884009 #884009;
-    }
 }
 
 /* ###### Bloc principale ###### */
@@ -360,7 +350,7 @@ article > nav a{
 }
   
 
-a:hover:not(#list_competence_project a,.erreur404 a){
+a:hover:not(#list_competence_project a,.erreur404 a, .depot, .retourMenu){
     color: var(--clr-link-hover--);
     text-decoration: underline;
 }
@@ -813,6 +803,47 @@ h5 {
 #list_competence_project div:nth-child(7) h2 {
     background-color: pink;
 }
+
+/* ##### Page projet ##### */
+
+.retourMenu {
+    color: var(--clr-light-font--);
+    background-color: var(--clr-footer-bg--);
+    box-shadow: var(--clr-dark-font--) 8px 8px;
+    padding: 10px;
+    transition: all .3s;
+    &:hover {
+        color: var(--clr-light-font--);
+        text-decoration: underline solid;
+        box-shadow: var(--clr-dark-font--) 5px 5px;
+    }
+}
+
+.depot {
+    color: var(--clr-light-font--);
+    background-color: var(--clr-art2-bg--);
+    box-shadow: var(--clr-header-bg--) 8px 8px;
+    padding: 10px;
+    transition: all .3s;
+    &:hover {
+        color: var(--clr-light-font--);
+        text-decoration: underline solid;
+        box-shadow: var(--clr-header-bg--) 5px 5px;
+    }
+}
+
+.section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.section div {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+
 
 /* Erreur 404 - Projet non trouvé */
 

@@ -19,10 +19,16 @@
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : {
+                "content" : [
+                    {
                     "section" : "presentation_project",
                     "texte" : ""
-                }
+                    },
+                    {
+                        "section" : "presentation_project",
+                        "texte" : ""
+                    }
+                ]
             },
             {
                 "article" : ""

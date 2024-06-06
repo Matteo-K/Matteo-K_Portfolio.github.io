@@ -7,8 +7,8 @@ if (colorStorage === null || isNaN(colorStorage)) {
 }
 
 function changColor(color) {
-    let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') span > span');
-    let sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') span > span');
+    let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') div');
+    let sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') div');
     
     sphereColorActual.classList.toggle("selected");
     sphereColorOlder.classList.toggle("selected");   
