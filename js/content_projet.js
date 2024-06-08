@@ -16,7 +16,6 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                     <ul>
             `;
             let size = file[1].content[0].content.length;
-            console.log(file);
             for (let index = 0; index < size; index++)  {
                 if (index != 1 || file[1].content[0].content[1].ul.length != 0) {
                     card += `
@@ -85,7 +84,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                         <ul>
             `
             size = file[1].content[0].content[2].ul_attendu.length;
-            for (let index = 0; index < array.length; index++) {
+            for (let index = 0; index < size; index++) {
                 card += `
                     <li>
                         ${file[1].content[0].content[2].ul_attendu[index]}
@@ -116,6 +115,18 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                     <h3>
                         Compétence développé
                     </h3>
+                    <ul>
+            `
+            size = file[1].content[0].content[3].ul.length;
+            for (let index = 0; index < size; index++) {
+                card += `
+                    <li>
+                        ${file[1].content[0].content[3].ul[index]}
+                    </li>
+                `;
+            }
+            card += `
+                    </ul>
                 </section>
             </article>
             <article>
@@ -168,8 +179,6 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 </section>
             </article>
             `;
-           
-            console.log(card);
                   
             main.insertAdjacentHTML('beforeend', card);
         });

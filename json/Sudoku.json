@@ -45,7 +45,10 @@
                     {
                         "id" : "competence_developpe",
                         "section" : "Compétence",
-                        "texte" : ""
+                        "ul" : [
+                            "autonomie",
+                            "aptitude"
+                        ]
                     }
                 ]
             },
