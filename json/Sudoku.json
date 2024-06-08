@@ -21,11 +21,25 @@
                 "article" : "art_presentation_project",
                 "content" : [
                     {
-                    "section" : "presentation_project",
-                    "texte" : ""
+                        "id" : "presentation",
+                        "section" : "Présentation",
+                        "texte" : "ceci est un texte"
                     },
                     {
-                        "section" : "presentation_project",
+                        "id" : "langague",
+                        "section" : "Langague",
+                        "ul" : [
+                            "C"
+                        ]
+                    },
+                    {
+                        "id" : "objectifs",
+                        "section" : "Objectifs",
+                        "texte" : ""
+                    },
+                    {
+                        "id" : "competence_developpe",
+                        "section" : "Compétence",
                         "texte" : ""
                     }
                 ]

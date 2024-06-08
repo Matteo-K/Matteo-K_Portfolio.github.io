@@ -7,18 +7,13 @@ if (colorStorage === null || isNaN(colorStorage)) {
 }
 
 function changColor(color) {
-    let sphereColorActual = document.querySelector('.select-color li:nth-child('+color+') div');
-    let sphereColorOlder = document.querySelector('.select-color li:nth-child('+colorStorage+') div');
-    
-    sphereColorActual.classList.toggle("selected");
-    sphereColorOlder.classList.toggle("selected");   
-    document.querySelector('.select-color li:nth-child('+color+') div > span + span').classList.toggle("selected_span");
-    document.querySelector('.select-color li:nth-child('+colorStorage+') div > span + span').classList.toggle("selected_span");
-    colorStorage = color;
+    removeSelected();
+    document.querySelector('.select-color li:nth-child('+color+') div div').classList.add("selected");
+    document.querySelector('.select-color li:nth-child('+color+') div > span + span').classList.add("selected_span");
     
     localStorage.setItem("color",color);
     
-    var root = document.querySelector(':root'); 
+    const root = document.querySelector(':root'); 
     switch (color) {
         case 1:
             root.style.setProperty("--clr-header-bg--","#364968");
@@ -120,4 +115,14 @@ function changColor(color) {
     }
 }
 
+function removeSelected() {
+    for (let lst_number = 1; lst_number <= 4; lst_number++) {
+        try {
+            document.querySelector('.select-color li:nth-child('+lst_number+') div div').classList.remove("selected"); 
+            document.querySelector('.select-color li:nth-child('+lst_number+') div > span + span').classList.remove("selected_span");
+        } catch (error) {
+            
+        }
+    }   
+}
 changColor(colorStorage);

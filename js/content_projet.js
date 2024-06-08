@@ -10,16 +10,141 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
         response.json().then(file => {
             title.innerText = file[1].title;
 
-            let card = ``;
-
-            file[1].content.forEach(element => {
-                console.log(element);
-                card += `
-                    <article>
+            let card = `
+                <article id="art_presentation">
+                <nav>
+                    <ul>
+            `;
+            let size = file[1].content[0].content.length;
+            console.log(file);
+            for (let index = 0; index < size; index++)  {
+                 card += `
+                    <li>
+                        <a href="#${file[1].content[0].content[index].section}">
+                            ${file[1].content[0].content[index].section}
+                        </a>
+                    </li>
                 `;
-                file[1].content
-            });
-
+            };
+            card += `
+                    </ul>
+                </nav>
+                <h6>
+                    Présentation ${file[1].title}
+                </h6>
+                <div class="section">
+                    <div>
+                        <a href="index.html#art_portfolio" class="retourMenu">&lt;&lt;&lt; Retour au menu</a>
+                        <a href="index.html" class="depot">Zone de dépot</a>
+                    </div>
+                    <section>
+                        <h3>
+                            Présentation
+                        </h3>
+                        <p>
+                            ${file[1].content[0].content[0].texte}
+                        </p>
+                    </section>
+                </div>
+            `
+            
+            if (file[1].content[0].content[1].ul.length != 0) {
+                card += `
+                    <div class="section">
+                        <section>
+                            <ul>
+                `
+                size = file[1].content[0].content[1].ul.length;
+                for (let index = 0; index < size; index++) {
+                    card += `
+                        <li>
+                            ${file[1].content[0].content[1].ul[index]}
+                        </li>
+                    `;
+                }
+                card += `
+                            </ul>
+                        </section>
+                        <img src="" alt="">
+                    </div>
+                `;
+            }
+            
+            card += `
+                <section>
+                    <h3>
+                        Objectif
+                    </h3>
+                    <div>
+                        <h4>
+                            Objectif attendu
+                        </h4>
+                    </div>
+                    <div>
+                        <h4>
+                            Obectif atteint
+                        </h4>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        Compétence développé
+                    </h3>
+                </section>
+            </article>
+            <article>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#etape1">
+                                Étape 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#etape2">
+                                Étape 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#etape3">
+                                Étape 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#etape4">
+                                Étape 4
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <h6>
+                    Étape de réalisation
+                </h6>
+                <section>
+                    <h3>
+                        Étape 1
+                    </h3>
+                </section>
+                <section>
+                    <h3>
+                        Étape 2
+                    </h3>
+                </section>
+                <section>
+                    <h3>
+                        Étape 3
+                    </h3>
+                </section>
+                <section>
+                    <h3>
+                        Étape 4
+                    </h3>
+                </section>
+            </article>
+            `;
+           
+            console.log(card);
+                  
             main.insertAdjacentHTML('beforeend', card);
         });
     } else {
@@ -36,6 +161,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             <a href="index.html">Retour à la page d'aceuil</a>
         </article>
         `;
+
         main.insertAdjacentHTML('beforeend', card);
     }
 });
