@@ -35,7 +35,12 @@
                     {
                         "id" : "objectifs",
                         "section" : "Objectifs",
-                        "texte" : ""
+                        "ul_attendu" : [
+                            "Réaliser un sudoku"
+                        ],
+                        "ul_realiser" : [
+                            "Réaliser un sudoku"
+                        ]
                     },
                     {
                         "id" : "competence_developpe",

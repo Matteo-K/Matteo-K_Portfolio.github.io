@@ -18,13 +18,16 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             let size = file[1].content[0].content.length;
             console.log(file);
             for (let index = 0; index < size; index++)  {
-                 card += `
-                    <li>
-                        <a href="#${file[1].content[0].content[index].section}">
-                            ${file[1].content[0].content[index].section}
-                        </a>
-                    </li>
-                `;
+                if (index != 1 || file[1].content[0].content[1].ul.length != 0) {
+                    card += `
+                        <li>
+                            <a href="#${file[1].content[0].content[index].id}">
+                                ${file[1].content[0].content[index].section}
+                            </a>
+                        </li>
+                    `;
+                }
+                
             };
             card += `
                     </ul>
@@ -32,7 +35,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 <h6>
                     Présentation ${file[1].title}
                 </h6>
-                <div class="section">
+                <div class="section" id="${file[1].content[0].content[0].id}">
                     <div>
                         <a href="index.html#art_portfolio" class="retourMenu">&lt;&lt;&lt; Retour au menu</a>
                         <a href="index.html" class="depot">Zone de dépot</a>
@@ -50,7 +53,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             
             if (file[1].content[0].content[1].ul.length != 0) {
                 card += `
-                    <div class="section">
+                    <div class="section" id="${file[1].content[0].content[1].id}">
                         <section>
                             <ul>
                 `
@@ -71,7 +74,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             }
             
             card += `
-                <section>
+                <section id="${file[1].content[0].content[2].id}">
                     <h3>
                         Objectif
                     </h3>
@@ -79,14 +82,37 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                         <h4>
                             Objectif attendu
                         </h4>
+                        <ul>
+            `
+            size = file[1].content[0].content[2].ul_attendu.length;
+            for (let index = 0; index < array.length; index++) {
+                card += `
+                    <li>
+                        ${file[1].content[0].content[2].ul_attendu[index]}
+                    </li>
+                `;
+            }
+            card += `
+                        </ul>
                     </div>
                     <div>
                         <h4>
-                            Obectif atteint
+                            Obectif réaliser
                         </h4>
+                        <ul>
+            `
+            size = file[1].content[0].content[2].ul_realiser.length;
+            for (let index = 0; index < size; index++) {
+                card += `
+                    <li>
+                        ${file[1].content[0].content[2].ul_realiser[index]}
+                    </li>
+                `;
+            }
+            card += `
                     </div>
                 </section>
-                <section>
+                <section id="${file[1].content[0].content[3].id}">
                     <h3>
                         Compétence développé
                     </h3>
