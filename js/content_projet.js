@@ -11,7 +11,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             title.innerText = file[1].title;
 
             let card = `
-                <article id="art_presentation">
+                <article id="${file[1].content[0].article}">
                 <nav>
                     <ul>
             `;
@@ -129,34 +129,29 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                     </ul>
                 </section>
             </article>
-            <article>
+            <article id="${file[1].content[1].article}">
                 <nav>
                     <ul>
-                        <li>
-                            <a href="#etape1">
-                                Étape 1
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#etape2">
-                                Étape 2
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#etape3">
-                                Étape 3
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#etape4">
-                                Étape 4
-                            </a>
-                        </li>
+            `;
+            size = file[1].content[1].content.length;
+            for (let index = 0; index < size; index++)  {
+                card += `
+                    <li>
+                        <a href="#$etape${index}">
+                            Étape ${index}
+                        </a>
+                    </li>
+                `;
+            };
+            card += `
                     </ul>
                 </nav>
                 <h6>
                     Étape de réalisation
                 </h6>
+            `;
+
+            card += `
                 <section>
                     <h3>
                         Étape 1

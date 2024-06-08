@@ -53,7 +53,62 @@
                 ]
             },
             {
-                "article" : ""
+                "article" : "",
+                "content" : [
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    }
+                ]
+
             }
         ]
     } 
