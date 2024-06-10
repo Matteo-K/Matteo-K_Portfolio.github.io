@@ -68,7 +68,35 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 card += `
                             </ul>
                         </section>
-                        <img src="" alt="">
+                `;
+
+                if (typeof file[1].content[0].content[1].image === "object") {
+                    card += `
+                        <img src="${file[1].content[0].content[1].image.lien}" alt="${file[1].content[0].content[1].image.alt}" title="${file[1].content[0].content[1].image.title}">
+                    `;
+                } else {
+                    card += `
+                        <video
+                        width="480"
+                        controls
+                        poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif">
+                        <source
+                            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
+                            type="video/webm" />
+                        <source
+                            src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
+                            type="video/mp4" />
+                        <source
+                            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
+                            type="video/ogg" />
+                        Votre navigateur ne permet pas de lire les vidéos HTML5.
+                        </video>
+
+                    `;
+                }
+                    
+
+                card += `
                     </div>
                 `;
             }
@@ -161,7 +189,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                         <p>
                 `;
 
-                text_size = size = file[1].content[1].content[index].text.length
+                text_size = file[1].content[1].content[index].text.length
                 for (let index_text = 0; index_text < text_size; index_text++) {
                     card += `
                         ${file[1].content[1].content[index].text[index_text]}<br>
@@ -176,7 +204,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                                 Source:
                             </span>
                         `;
-                    link_size = size = file[1].content[1].content[index].lien.length
+                    link_size = file[1].content[1].content[index].lien.length
                     for (let index_lien = 0; index_lien < link_size; index_lien++) {
                         card += `
                             <a href="${file[1].content[1].content[index].lien[index_lien].lien}">
@@ -190,7 +218,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 `;
             };
             card += `
-            </article>
+                </article>
             `;
                   
             main.insertAdjacentHTML('beforeend', card);

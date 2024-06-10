@@ -30,7 +30,12 @@
                         "section" : "Langague",
                         "ul" : [
                             "C"
-                        ]
+                        ],
+                        "image" : {
+                            "lien" : "",
+                            "alt" : "",
+                            "title" : ""
+                        }
                     },
                     {
                         "id" : "objectifs",
