@@ -3,6 +3,7 @@ const projet = urlParams.get("projet");
 
 let main = document.querySelector("main");
 let title = document.querySelector("title");
+let text_size, size, link_size;
 
 fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
 .then(response => {
@@ -15,7 +16,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 <nav>
                     <ul>
             `;
-            let size = file[1].content[0].content.length;
+            size = file[1].content[0].content.length;
             for (let index = 0; index < size; index++)  {
                 if (index != 1 || file[1].content[0].content[1].ul.length != 0) {
                     card += `
@@ -137,8 +138,8 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
             for (let index = 0; index < size; index++)  {
                 card += `
                     <li>
-                        <a href="#$etape${index}">
-                            Étape ${index}
+                        <a href="#etape${index+1}">
+                            Étape ${index+1}
                         </a>
                     </li>
                 `;
@@ -150,28 +151,45 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                     Étape de réalisation
                 </h6>
             `;
+            size = file[1].content[1].content.length;
+            for (let index = 0; index < size; index++)  {
+                card += `
+                    <section id="etape${index+1}">
+                        <h3>
+                            Étape ${index+1}
+                        </h3>
+                        <p>
+                `;
 
+                text_size = size = file[1].content[1].content[index].text.length
+                for (let index_text = 0; index_text < text_size; index_text++) {
+                    card += `
+                        ${file[1].content[1].content[index].text[index_text]}<br>
+                    `;
+                }
+                card += `
+                    </p>
+                `;
+                if (file[1].content[1].content[index].lien.length != 0) {
+                    card += `
+                            <span>
+                                Source:
+                            </span>
+                        `;
+                    link_size = size = file[1].content[1].content[index].lien.length
+                    for (let index_lien = 0; index_lien < link_size; index_lien++) {
+                        card += `
+                            <a href="${file[1].content[1].content[index].lien[index_lien].lien}">
+                                ${file[1].content[1].content[index].lien[index_lien].nom}
+                            </a>
+                        `;
+                    } 
+                }
+                card += `
+                    </section>
+                `;
+            };
             card += `
-                <section>
-                    <h3>
-                        Étape 1
-                    </h3>
-                </section>
-                <section>
-                    <h3>
-                        Étape 2
-                    </h3>
-                </section>
-                <section>
-                    <h3>
-                        Étape 3
-                    </h3>
-                </section>
-                <section>
-                    <h3>
-                        Étape 4
-                    </h3>
-                </section>
             </article>
             `;
                   
