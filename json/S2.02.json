@@ -13,19 +13,107 @@
         "date" : ""
     },
     {
-        "title" : "S2.02",
-        "depot" : "",
-        "About" : "",
+        "title" : "Jeu des N dames",
+        "depot" : "https://github.com/Matteo-K/S2.02",
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : {
-                    "section" : "presentation_project",
-                    "texte" : ""
-                }
+                "content" : [
+                    {
+                        "id" : "presentation",
+                        "section" : "Présentation",
+                        "texte" : "Durant le projet de Situation d'Apprentissage et d'Évaluation (SAÉ). Moi et mon groupe ont du réfléchir et concevoir différente manière de résoudre le problème des N-reines. "
+                    },
+                    {
+                        "id" : "langague",
+                        "section" : "Langague",
+                        "ul" : [
+                            "Python",
+                            "Programmation orienté objet"
+                        ],
+                        "image" : {
+                            "lien" : "",
+                            "alt" : "",
+                            "title" : ""
+                        }
+                    },
+                    {
+                        "id" : "objectifs",
+                        "section" : "Objectifs",
+                        "ul_attendu" : [
+                            "Réaliser un sudoku"
+                        ],
+                        "ul_realiser" : [
+                            "Réaliser un sudoku"
+                        ]
+                    },
+                    {
+                        "id" : "competence_developpe",
+                        "section" : "Compétence",
+                        "ul" : [
+                            "autonomie",
+                            "aptitude"
+                        ]
+                    }
+                ]
             },
             {
-                "article" : ""
+                "article" : "",
+                "content" : [
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    }
+                ]
+
             }
         ]
     } 

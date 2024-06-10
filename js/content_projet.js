@@ -38,7 +38,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 <div class="section" id="${file[1].content[0].content[0].id}">
                     <div>
                         <a href="index.html#art_portfolio" class="retourMenu">&lt;&lt;&lt; Retour au menu</a>
-                        <a href="index.html" class="depot">Zone de dépot</a>
+                        <a href="${file[1].depot}" class="depot">Zone de dépot</a>
                     </div>
                     <section>
                         <h3>
@@ -178,7 +178,19 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                 card += `
                     <section id="etape${index+1}">
                         <h3>
-                            Étape ${index+1}
+                `;
+                if (typeof file[1].content[1].content[index].titre === "undefined") {
+                    card += `
+                        Étape ${index+1}
+                    `;
+                } else {
+                    card += `
+                        Étape ${index+1} : ${file[1].content[1].content[index].titre}
+                    `;
+                }
+                
+                 
+                card += `
                         </h3>
                         <p>
                 `;
