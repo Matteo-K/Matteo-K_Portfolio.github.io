@@ -79,17 +79,11 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                         <video
                         width="480"
                         controls
-                        poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif">
+                        poster="${file[1].content[0].content[1].video.poster}">
                         <source
-                            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm"
-                            type="video/webm" />
-                        <source
-                            src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4"
+                            src="${file[1].content[0].content[1].video.lien}"
                             type="video/mp4" />
-                        <source
-                            src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv"
-                            type="video/ogg" />
-                        Votre navigateur ne permet pas de lire les vidéos HTML5.
+                        Votre navigateur ne permet pas de lire les vidéos.
                         </video>
 
                     `;
