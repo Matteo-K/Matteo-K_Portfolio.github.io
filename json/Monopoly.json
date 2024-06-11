@@ -1,7 +1,9 @@
 [
     {
         "title" : "Monopoly",
-        "compétence" : 1,
+        "compétence" : [
+            1
+        ],
         "image" : {
             "lien" : "images/Illustration_project/Monopoly-Logo.png",
             "alt" : "illustration Monopoly",
@@ -15,17 +17,104 @@
     {
         "title" : "Monopoly",
         "depot" : "https://github.com/Matteo-K/Monopoly",
-        "About" : "",
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : {
-                    "section" : "presentation_project",
-                    "texte" : ""
-                }
+                "content" : [
+                    {
+                        "id" : "presentation",
+                        "section" : "Présentation",
+                        "texte" : "ceci est un texte"
+                    },
+                    {
+                        "id" : "langague",
+                        "section" : "Langague",
+                        "ul" : [
+                            "C"
+                        ],
+                        "image" : {
+                            "lien" : "",
+                            "alt" : "",
+                            "title" : ""
+                        }
+                    },
+                    {
+                        "id" : "objectifs",
+                        "section" : "Objectifs",
+                        "ul_attendu" : [
+                            "Réaliser un sudoku"
+                        ],
+                        "ul_realiser" : [
+                            "Réaliser un sudoku"
+                        ]
+                    },
+                    {
+                        "id" : "competence_developpe",
+                        "section" : "Compétence",
+                        "ul" : [
+                            "autonomie",
+                            "aptitude"
+                        ]
+                    }
+                ]
             },
             {
-                "article" : ""
+                "article" : "",
+                "content" : [
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    }
+                ]
+
             }
         ]
     } 

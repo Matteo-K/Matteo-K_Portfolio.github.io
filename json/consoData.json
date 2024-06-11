@@ -1,22 +1,22 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "consoData",
         "compétence" : [
-            2
+            4
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "Logo database",
+            "title" : "Logo database"
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "02/2023"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "consoData",
+        "depot" : "https://github.com/Matteo-K/consoData",
         "content" : [
             {
                 "article" : "art_presentation_project",

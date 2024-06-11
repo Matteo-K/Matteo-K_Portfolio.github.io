@@ -1,22 +1,25 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "decouverte-environnement-eco-num",
         "compétence" : [
-            2
+            6
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "illustration S1.06",
+            "title" : "illustration S1.06"
         },
         "contributeur" : [
-            "Mattéo Kervadec"
+            "Raphaël Bardini",
+            "Marius Chartier--Le Goff",
+            "Mattéo Kervadec",
+            "Stanislas Rolland"
         ],
-        "date" : "début 2024"
+        "date" : "10/2023"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Découverte de l'environnement économique et numérique",
+        "depot" : "https://github.com/Matteo-K/decouverte-environnement-eco-num",
         "content" : [
             {
                 "article" : "art_presentation_project",

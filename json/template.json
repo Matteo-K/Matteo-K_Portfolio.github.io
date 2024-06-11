@@ -1,7 +1,9 @@
 [
     {
         "title" : "Sudoku",
-        "compétence" : 0,
+        "compétence" : [
+            
+        ],
         "image" : {
             "lien" : "",
             "alt" : "illustration X",

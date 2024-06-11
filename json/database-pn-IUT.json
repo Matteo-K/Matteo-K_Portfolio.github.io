@@ -1,22 +1,23 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "database-pn-IUT",
         "compétence" : [
-            2
+            4
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "logo Database",
+            "title" : "logo Database"
         },
         "contributeur" : [
-            "Mattéo Kervadec"
+            "Mattéo Kervadec",
+            "Stanislas Rolland"
         ],
-        "date" : "début 2024"
+        "date" : "01/2024"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Database Programme Nationnal But info",
+        "depot" : "https://github.com/Matteo-K/database-pn-IUT",
         "content" : [
             {
                 "article" : "art_presentation_project",

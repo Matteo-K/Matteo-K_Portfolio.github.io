@@ -31,9 +31,15 @@ suggestions.forEach(element => {
                                 </figure>
                             </a>
                         </li>
-                    `   
-                    bloc = document.querySelector("#list_competence_project div:nth-child("+file[0].compétence+") ul");
-                    bloc.insertAdjacentHTML('beforeend', projet);
+                    `
+
+                    for (let index = 0; index < file[0].compétence.length; index++) {
+                        bloc = document.querySelector("#list_competence_project div:nth-child("+file[0].compétence[index]+") ul");
+                        bloc.insertAdjacentHTML('beforeend', projet);
+                        
+                    }
+                    
+                    
 
                 });
             } else {

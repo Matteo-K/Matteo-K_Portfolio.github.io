@@ -1,22 +1,22 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "Roulette-genshin",
         "compétence" : [
-            2
+            1
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "Logo Roulette-genshin",
+            "title" : "Logo Roulette-genshin"
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "07/2023"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Roulette-genshin",
+        "depot" : "https://github.com/Matteo-K/Roulette-genshin",
         "content" : [
             {
                 "article" : "art_presentation_project",

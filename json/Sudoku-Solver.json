@@ -1,31 +1,121 @@
 [
     {
         "title" : "Sudoku-Solver",
-        "compétence" : 2,
+        "compétence" : [
+            2
+        ],
         "image" : {
             "lien" : "",
             "alt" : "illustration Sudoku",
             "title" : "illustration Sudoku"
         },
         "contributeur" : [
-            "Mattéo Kervadec", "Raphaël Bardini"
+            "Raphaël Bardini",
+            "Mattéo Kervadec"
         ],
-        "date" : ""
+        "date" : "12/2023"
     },
     {
         "title" : "Sudoku-Solver",
         "depot" : "",
-        "About" : "",
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : {
-                    "section" : "presentation_project",
-                    "texte" : ""
-                }
+                "content" : [
+                    {
+                        "id" : "presentation",
+                        "section" : "Présentation",
+                        "texte" : "ceci est un texte"
+                    },
+                    {
+                        "id" : "langague",
+                        "section" : "Langague",
+                        "ul" : [
+                            "C"
+                        ],
+                        "image" : {
+                            "lien" : "",
+                            "alt" : "",
+                            "title" : ""
+                        }
+                    },
+                    {
+                        "id" : "objectifs",
+                        "section" : "Objectifs",
+                        "ul_attendu" : [
+                            "Réaliser un sudoku"
+                        ],
+                        "ul_realiser" : [
+                            "Réaliser un sudoku"
+                        ]
+                    },
+                    {
+                        "id" : "competence_developpe",
+                        "section" : "Compétence",
+                        "ul" : [
+                            "autonomie",
+                            "aptitude"
+                        ]
+                    }
+                ]
             },
             {
-                "article" : ""
+                "article" : "",
+                "content" : [
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    }
+                ]
+
             }
         ]
     } 

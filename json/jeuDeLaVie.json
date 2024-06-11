@@ -1,22 +1,22 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "jeuDeLaVie",
         "compétence" : [
-            2
+            1
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "illustration Jeu de la vie",
+            "title" : "illustration Jeu de la vie"
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "11/2022"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "jeuDeLaVie",
+        "depot" : "https://github.com/Matteo-K/jeuDeLaVie",
         "content" : [
             {
                 "article" : "art_presentation_project",

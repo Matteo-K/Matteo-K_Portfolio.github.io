@@ -1,7 +1,9 @@
 [
     {
         "title" : "S2.02",
-        "compétence" : 2,
+        "compétence" : [
+            2
+        ],
         "image" : {
             "lien" : "",
             "alt" : "illustration Jeu des 8 dames",
@@ -10,7 +12,7 @@
         "contributeur" : [
             "Mattéo Kervadec", "Raphaël Bardini", "Paolo Toe", "Marius Chartier--Le Goff"
         ],
-        "date" : ""
+        "date" : "02/2024"
     },
     {
         "title" : "Jeu des N dames",

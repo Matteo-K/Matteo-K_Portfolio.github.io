@@ -1,22 +1,22 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "Solver-Labyrinthe",
         "compétence" : [
             2
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "illustration Labyrinthe",
+            "title" : "illustration Labyrinthe"
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "05/2023"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Solver Labyrinthe",
+        "depot" : "https://github.com/Matteo-K/Solver-Labyrinthe",
         "content" : [
             {
                 "article" : "art_presentation_project",

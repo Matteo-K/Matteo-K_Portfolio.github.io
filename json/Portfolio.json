@@ -1,7 +1,9 @@
 [
     {
         "title" : "Portfolio",
-        "compétence" : 1,
+        "compétence" : [
+            2
+        ],
         "image" : {
             "lien" : "images/logo/Portfolio.png",
             "alt" : "Logo Portfolio",

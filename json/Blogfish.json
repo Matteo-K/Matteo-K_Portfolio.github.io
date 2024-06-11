@@ -1,22 +1,24 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "Blogfish",
         "compétence" : [
-            2
+            1
         ],
         "image" : {
-            "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "lien" : "https://s1.qwant.com/thumbr/0x380/b/d/204ae0876f62f046ffb7340c3c8b6fc251754c62c8bc9d0fe75713daa1dc6d/f517f32c3de29226b39dfad71ad689bd.gif?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff5%2F17%2Ff3%2Ff517f32c3de29226b39dfad71ad689bd.gif&q=0&b=1&p=0&a=1",
+            "alt" : "illustration Blogfish",
+            "title" : "illustration Blogfish"
         },
         "contributeur" : [
+            "Élie Béguin",
+            "Cyprien Fiala",
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "début 2021"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Blogfish",
+        "depot" : "https://github.com/Matteo-K/Blogfish",
         "content" : [
             {
                 "article" : "art_presentation_project",

@@ -1,22 +1,22 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "Quelque-perle",
         "compétence" : [
-            2
+            1
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "Logo perl",
+            "title" : "Logo perl"
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "02/2024"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Quelque perle",
+        "depot" : "https://github.com/Matteo-K/Quelque-perle",
         "content" : [
             {
                 "article" : "art_presentation_project",

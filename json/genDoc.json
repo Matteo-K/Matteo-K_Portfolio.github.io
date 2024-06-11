@@ -1,22 +1,25 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "genDoc",
         "compétence" : [
-            2
+            3
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "illustration genDoc",
+            "title" : "illustration genDoc"
         },
         "contributeur" : [
-            "Mattéo Kervadec"
+            "Raphaël Bardini",
+            "Marius Chartier--Le Goff",
+            "Mattéo Kervadec",
+            "Stanislas Rolland"
         ],
-        "date" : "début 2024"
+        "date" : "01/2024"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Génération de documentation",
+        "depot" : "https://github.com/Matteo-K/genDoc",
         "content" : [
             {
                 "article" : "art_presentation_project",

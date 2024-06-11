@@ -1,32 +1,124 @@
 [
     {
         "title" : "Innosang",
-        "compétence" : 7,
+        "compétence" : [
+            7
+        ],
         "image" : {
             "lien" : "",
             "alt" : "illustration Innosang",
             "title" : "illustration Innosang"
         },
         "contributeur" : [
-            "Mattéo Kervadec","Elie Beguin", "Cyprien Fiala", "Amandine Lorcy"
+            "Elie Beguin",
+            "Cyprien Fiala",
+            "Mattéo Kervadec",  
+            "Amandine Lorcy"
         ],
         "date" : "15/06/23"
     },
     {
         "title" : "Innosang",
-        "depot" : "https://youtu.be/8ASkQJEALjc?si=fA516cFMf10DS78g",
-        "About" : "",
+        "depot" : "",
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : {
-                    "section" : "presentation_project",
-                    "texte" : ""
-                }
+                "content" : [
+                    {
+                        "id" : "presentation",
+                        "section" : "Présentation",
+                        "texte" : "ceci est un texte"
+                    },
+                    {
+                        "id" : "langague",
+                        "section" : "Langague",
+                        "ul" : [
+                            "C"
+                        ],
+                        "image" : {
+                            "lien" : "",
+                            "alt" : "",
+                            "title" : ""
+                        }
+                    },
+                    {
+                        "id" : "objectifs",
+                        "section" : "Objectifs",
+                        "ul_attendu" : [
+                            "Réaliser un sudoku"
+                        ],
+                        "ul_realiser" : [
+                            "Réaliser un sudoku"
+                        ]
+                    },
+                    {
+                        "id" : "competence_developpe",
+                        "section" : "Compétence",
+                        "ul" : [
+                            "autonomie",
+                            "aptitude"
+                        ]
+                    }
+                ]
             },
             {
-                "article" : ""
+                "article" : "",
+                "content" : [
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    },
+                    {
+                        "text" : [
+                            "A l'aide de ça j'ai fais ça",
+                            "Puis j'ai fais ça",
+                            "Mais ça aussi"
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Youtube",
+                                "lien" : "https://youtube.com"
+                            }
+                        ] 
+                    }
+                ]
+
             }
         ]
     } 
-]
+] 

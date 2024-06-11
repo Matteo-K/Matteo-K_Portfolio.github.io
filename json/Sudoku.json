@@ -1,7 +1,9 @@
 [
     {
         "title" : "Sudoku",
-        "compétence" : 1,
+        "compétence" : [
+            1
+        ],
         "image" : {
             "lien" : "",
             "alt" : "illustration Sudoku",
@@ -10,11 +12,11 @@
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : ""
+        "date" : "11/2023"
     },
     {
         "title" : "Sudoku",
-        "depot" : "",
+        "depot" : "https://github.com/Matteo-K/Sudoku",
         "content" : [
             {
                 "article" : "art_presentation_project",

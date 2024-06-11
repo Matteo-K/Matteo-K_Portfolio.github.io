@@ -1,22 +1,22 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "Repertoire_web",
         "compétence" : [
-            2
+            1
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "illustration Répertoire web",
+            "title" : "illustration Répertoire web"
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "début 2024"
+        "date" : "mi 2022"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Repertoire_web",
+        "depot" : "https://github.com/Matteo-K/Repertoire_web",
         "content" : [
             {
                 "article" : "art_presentation_project",

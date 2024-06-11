@@ -1,22 +1,25 @@
 [
     {
-        "title" : "flashcard",
+        "title" : "Le-patio",
         "compétence" : [
-            2
+            1,5
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration flashcard",
-            "title" : "illustration flashcard"
+            "alt" : "illustration Le patio",
+            "title" : "illustration Le patio"
         },
         "contributeur" : [
-            "Mattéo Kervadec"
+            "Raphaël Bardini",
+            "Marius Chartier--Le Goff",
+            "Mattéo Kervadec",
+            "Paolo Toe"
         ],
-        "date" : "début 2024"
+        "date" : "17/06/2024"
     },
     {
-        "title" : "flashcard",
-        "depot" : "https://github.com/Matteo-K/flashCard",
+        "title" : "Le-patio",
+        "depot" : "https://github.com/Matteo-K/Le-patio",
         "content" : [
             {
                 "article" : "art_presentation_project",
