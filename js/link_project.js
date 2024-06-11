@@ -33,14 +33,10 @@ suggestions.forEach(element => {
                         </li>
                     `
 
-                    for (let index = 0; index < file[0].compétence.length; index++) {
-                        bloc = document.querySelector("#list_competence_project div:nth-child("+file[0].compétence[index]+") ul");
+                    file[0].compétence.forEach(element => {
+                        bloc = document.querySelector("#list_competence_project div:nth-child("+element+") ul");
                         bloc.insertAdjacentHTML('beforeend', projet);
-                        
-                    }
-                    
-                    
-
+                    });
                 });
             } else {
                 console.log("fichier "+element.projet_+".json non trouvé");
