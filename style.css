@@ -760,10 +760,17 @@ h5 {
     justify-content: space-evenly;
 }
 
+#list_competence_project .list_open ul {
+    display: flex;
+    flex-flow: row wrap;
+    visibility: visible;
+}
+
 #list_competence_project li {
     border: var(--clr-search-iconhvr--) 5px solid;
     border-radius: 20px;
     width: 25%;
+    height: 150px;
     margin-bottom: 25px;
     box-shadow: var(--clr-search-icon--) 10px 10px;
     transition: .5s all;
@@ -793,12 +800,6 @@ h5 {
 
 #list_competence_project .list_open h2 span {
     transform: rotate(90deg);
-}
-
-#list_competence_project .list_open ul {
-    display: flex;
-    flex-flow: row wrap;
-    visibility: visible;
 }
 
 #list_competence_project a {
@@ -831,6 +832,36 @@ h5 {
 
 #list_competence_project div:nth-child(7) h2 {
     background-color: pink;
+}
+
+#list_competence_project figure {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#list_competence_project figcaption {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#list_competence_project figcaption span+span {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+#list_competence_project figcaption span:nth-child(1):not(span+span span) {
+    text-decoration: underline;
+}
+
+#list_competence_project img {
+    width: 45%;
+    height: 80px;
+    object-fit: scale-down;
+    position: absolute;
+    top: -20px;
+    right: -20px;
 }
 
 /* ##### Page projet ##### */

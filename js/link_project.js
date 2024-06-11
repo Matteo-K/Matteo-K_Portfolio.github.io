@@ -18,12 +18,18 @@ suggestions.forEach(element => {
                                 <figure>
                                     <img src="${file[0].image.lien}" alt="${file[0].image.alt}" title="${file[0].image.title}">
                                     <figcaption>
-                                        <span>
-                                            Contributeur&nbsp;:
-                                        </span><br>
-                                        <span>
-                                            ${file[0].contributeur}
-                                        </span>
+                                        <div>
+                                            <span>
+                                                Contributeur&nbsp;:
+                                            </span>
+                                            <span>
+                    `;
+                    file[0].contributeur.forEach(element => {
+                        projet += `<span>${element}</span>`;
+                    });
+                    projet += `
+                                            </span>
+                                        </div>
                                         <time>
                                             ${file[0].date}
                                         </time>
@@ -31,7 +37,7 @@ suggestions.forEach(element => {
                                 </figure>
                             </a>
                         </li>
-                    `
+                    `;
 
                     file[0].compétence.forEach(element => {
                         bloc = document.querySelector("#list_competence_project div:nth-child("+element+") ul");
