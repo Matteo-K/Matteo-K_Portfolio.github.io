@@ -19,7 +19,7 @@ function sendMail () {
 }
 
 function checkDiseable() {
-    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || input_object.value.trim() === '') {
+    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || input_object.value.trim() === '' || text_area.value.trim()) {
         input_submit.disabled = true;
     } else {
         input_submit.disabled = false;
@@ -31,10 +31,12 @@ const input_nom = document.getElementById("nom");
 const input_email = document.getElementById("email");
 const input_object = document.getElementById("object");
 const form = document.getElementById("form_contact");
+const text_area = document.getElementById("contenue");
 
 input_nom.addEventListener('input', checkDiseable);
 input_email.addEventListener('input', checkDiseable);
 input_object.addEventListener('input', checkDiseable);
+text_area.addEventListener('input', checkDiseable);
 
 
 form.addEventListener('submit', (e) => {
