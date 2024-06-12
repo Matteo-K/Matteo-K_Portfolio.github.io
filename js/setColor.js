@@ -27,8 +27,8 @@ function changColor(color) {
             root.style.setProperty("--clr-art2-bg--","#44BEDE");
             root.style.setProperty("--clr-section-bg--","#fff");
             root.style.setProperty("--clr-search-bg1--","#fff");
-            root.style.setProperty("--clr-search-bg2--","#eee");
-            root.style.setProperty("--clr-search-selcted--","#DDD");
+            root.style.setProperty("--clr-search-bg2--","#ddd");
+            root.style.setProperty("--clr-search-selcted--","#ccc");
             root.style.setProperty("--clr-search-border--","#04B3FD");
             root.style.setProperty("--clr-search-icon--","#4CA522");
             root.style.setProperty("--clr-search-iconhvr--","#0F410E");
