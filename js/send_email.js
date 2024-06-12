@@ -1,3 +1,9 @@
+(function(){
+    emailjs.init({
+        publicKey: "LilQSPPcQyVPKT49-",
+    });
+})();
+
 function sendMail () {
     let params = {
         name : document.getElementById("nom").value + " " + document.getElementById("prenom").value,
