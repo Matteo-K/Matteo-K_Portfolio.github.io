@@ -494,28 +494,43 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#header">
-                                Menu
+                            <a href="#portfolio">
+                                Portfolio
                             </a>
                         </li>
                         <li>
-                            <a href="#presentation">
-                                Présentation
+                            <a href="#comp1">
+                                compétence 1
                             </a>
                         </li>
                         <li>
-                            <a href="#cv">
-                                CV
+                            <a href="#comp2">
+                                compétence 2
                             </a>
                         </li>
                         <li>
-                            <a href="#list_competence_project">
-                                Projets
+                            <a href="#comp3">
+                                compétence 3
                             </a>
                         </li>
                         <li>
-                            <a href="#contact">
-                                Contact
+                            <a href="#comp4">
+                                compétence 4
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#comp5">
+                                compétence 5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#comp6">
+                                compétence 6
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#compAutre">
+                                Autre
                             </a>
                         </li>
                     </ul>     
@@ -523,14 +538,14 @@
                 <h6>
                     Portfolio
                 </h6>
-                <section>
+                <section id="portfolio">
                     <h3>
                         Contexte
                     </h3>
                 </section>
                 <section id="list_competence_project">
                     <div class="list_open">
-                        <h2>
+                        <h2 id="comp1">
                             Compétence N°1 : Réaliser un développement d'application  
                             <span>&gt;</span>
                         </h2>
@@ -539,7 +554,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="comp2">
                             Compétence N°2 : Optimiser des applications informatiques
                             <span>&gt;</span>
                         </h2>
@@ -548,7 +563,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="comp3">
                             Compétence N°3 : Administrer des systèmes informatiques communicants complexes
                             <span>&gt;</span>
                         </h2>
@@ -557,7 +572,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="comp4">
                             Compétence N°4 : Gérer des données de l'information
                             <span>&gt;</span>
                         </h2>
@@ -566,7 +581,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="comp5">
                             Compétence N°5 : Conduire un projet
                             <span>&gt;</span>
                         </h2>
@@ -575,7 +590,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="comp6">
                             Compétence N°6 : Travailler dans une équipe informatique
                             <span>&gt;</span>
                         </h2>
@@ -584,7 +599,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2>
+                        <h2 id="compAutre">
                             Autre : Projet non-informatique
                             <span>&gt;</span>
                         </h2>
@@ -785,14 +800,14 @@
                 <div>
                     <textarea name="" id="contenue" placeholder="Contenue du mail :"></textarea>
                 </div>
-                <div class="chbx_privateData">
-                    <input type="checkbox" name="" id="privateData">
-                    <label for="privateData">En soumettant le formulaire, <br>j'accepte que mes données personnelles soient utiliser pour me recontacter</label>
-                </div>
                 <div>
-                    <input type="submit" value="Envoyer">
+                    <input type="submit" value="Envoyer" id="ft_envoyer" onclick="sendMail()">
                 </div>
             </form>
+            <address>
+                &copy; Copyright by Mattéo Kervadec - No rights reserved<br>
+                Toute ressemblance avec un site web existants ou ayant existé serait purement fortuite et ne pourrait être que le fruit d'une pure coïncidence
+            </address>
         </footer>
         <div class="mousemove"></div>
     </div>
@@ -801,5 +816,16 @@
     <script src="js/link_project.js"></script>
     <script src="js/script.js"></script>
     <script src="js/scriptSearch.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "LilQSPPcQyVPKT49-",
+        });
+    })();
+    </script>
+    <script src="js/send_email.js"></script>
 </body>
 </html>

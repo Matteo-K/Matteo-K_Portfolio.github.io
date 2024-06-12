@@ -1012,6 +1012,7 @@ footer {
     display: flex;
     flex-flow: wrap column;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 footer > div {
@@ -1087,7 +1088,7 @@ footer form div:not(div>div) {
 }
 
 footer label {
-    margin-bottom: -1.5px;
+    margin-bottom: 0px;
     margin-left: -30px;
 }
 
@@ -1109,6 +1110,7 @@ footer h6 {
     resize: none;
 }
 
-.chbx_privateData {
-    gap: 5px;
+#ft_envoyer {
+    background-color: var(--clr-header-bg--);
+    color: var(--clr-light-font--);
 }

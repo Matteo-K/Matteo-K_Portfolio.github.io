@@ -19,7 +19,7 @@
     },
     {
         "title" : "Innosang",
-        "depot" : "",
+        "depot" : "https://youtu.be/8ASkQJEALjc?si=tlzaavU-jWVtx2_d",
         "content" : [
             {
                 "article" : "art_presentation_project",
@@ -35,10 +35,9 @@
                         "ul" : [
                             "C"
                         ],
-                        "image" : {
-                            "lien" : "",
-                            "alt" : "",
-                            "title" : ""
+                        "video" : {
+                            "poster" : "",
+                            "lien" : ""
                         }
                     },
                     {

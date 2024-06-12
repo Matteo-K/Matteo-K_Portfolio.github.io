@@ -5,7 +5,7 @@ let main = document.querySelector("main");
 let title = document.querySelector("title");
 let text_size, size, link_size;
 
-fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet + ".json")
+fetch("json/" + projet + ".json")
 .then(response => {
     if (response.ok) {
         response.json().then(file => {
@@ -49,7 +49,7 @@ fetch("https://matteo-k.github.io/Matteo-K_Portfolio.github.io/json/" + projet +
                         </p>
                     </section>
                 </div>
-            `
+            `;
             
             if (file[1].content[0].content[1].ul.length != 0) {
                 card += `
