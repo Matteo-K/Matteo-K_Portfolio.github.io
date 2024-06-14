@@ -1,21 +1,17 @@
 /* ### Changement de couleur ### */
 
+const theme = document.querySelector(".btnTheme");
 let colorStorage = parseInt(localStorage.getItem("color"));
 
 if (colorStorage === null || isNaN(colorStorage)) {
-    colorStorage = 1;
+    colorStorage = 0;
 }
 
-function changColor(color) {
-    removeSelected();
-    document.querySelector('.select-color li:nth-child('+color+') div div').classList.add("selected");
-    document.querySelector('.select-color li:nth-child('+color+') div > span + span').classList.add("selected_span");
-    
-    localStorage.setItem("color",color);
-    
+function changColor() {
+    localStorage.setItem("color",colorStorage);
     const root = document.querySelector(':root'); 
-    switch (color) {
-        case 1:
+    switch (colorStorage) {
+        case 0:
             root.style.setProperty("--clr-header-bg--","#364968");
             root.style.setProperty("--clr-logo-drpShdw--","#000");
             root.style.setProperty("--clr-aside-bg--","#555");
@@ -33,13 +29,14 @@ function changColor(color) {
             root.style.setProperty("--clr-search-icon--","#4CA522");
             root.style.setProperty("--clr-search-iconhvr--","#0F410E");
             root.style.setProperty("--clr-light-font--","#fff");
+            root.style.setProperty("--clr-light-dark-font--","#666");
             root.style.setProperty("--clr-dark-font--","#000");
             root.style.setProperty("--clr-link-font--","#5cbfca");
             root.style.setProperty("--clr-link-hover--","teal");
             root.style.setProperty("--clr-footer-bg--","#6C4343");
             break;
 
-        case 2:
+        case 1:
             root.style.setProperty("--clr-header-bg--","#3E563D");
             root.style.setProperty("--clr-logo-drpShdw--","#000");
             root.style.setProperty("--clr-aside-bg--","#314E30");
@@ -61,68 +58,11 @@ function changColor(color) {
             root.style.setProperty("--clr-link-font--","#39C8DC");
             root.style.setProperty("--clr-footer-bg--","#3E565D");
             break;
-
-        case 3:
-            root.style.setProperty("--clr-header-bg--","purple");
-            root.style.setProperty("--clr-logo-drpShdw--","purple");
-            root.style.setProperty("--clr-aside-bg--","purple");
-            root.style.setProperty("--clr-aside-border--","purple");
-            root.style.setProperty("--clr-aside-selcted--","purple");
-            root.style.setProperty("--clr-nav-bg--","purple");
-            root.style.setProperty("--clr-nav-hvr--","purple");
-            root.style.setProperty("--clr-art1-bg--","purple");
-            root.style.setProperty("--clr-art2-bg--","purple");
-            root.style.setProperty("--clr-section-bg--","purple");
-            root.style.setProperty("--clr-search-bg1--","purple");
-            root.style.setProperty("--clr-search-bg2--","purple");
-            root.style.setProperty("--clr-search-selcted--","purple");
-            root.style.setProperty("--clr-search-border--","purple");
-            root.style.setProperty("--clr-search-icon--","purple");
-            root.style.setProperty("--clr-search-iconhvr--","purple");
-            root.style.setProperty("--clr-light-font--","purple");
-            root.style.setProperty("--clr-dark-font--","purple");
-            root.style.setProperty("--clr-link-font--","purple");
-            root.style.setProperty("--clr-footer-bg--","purple");
-            break;
-
-        case 4:
-            root.style.setProperty("--clr-header-bg--","purple");
-            root.style.setProperty("--clr-logo-drpShdw--","purple");
-            root.style.setProperty("--clr-aside-bg--","purple");
-            root.style.setProperty("--clr-aside-border-top--","purple");
-            root.style.setProperty("--clr-aside-border-bottom--","purple");
-            root.style.setProperty("--clr-aside-selcted--","purple");
-            root.style.setProperty("--clr-nav-bg--","purple");
-            root.style.setProperty("--clr-nav-hvr--","purple");
-            root.style.setProperty("--clr-art1-bg--","purple");
-            root.style.setProperty("--clr-art2-bg--","purple");
-            root.style.setProperty("--clr-section-bg--","purple");
-            root.style.setProperty("--clr-search-bg1--","purple");
-            root.style.setProperty("--clr-search-bg2--","purple");
-            root.style.setProperty("--clr-search-selcted--","purple");
-            root.style.setProperty("--clr-search-border--","purple");
-            root.style.setProperty("--clr-search-icon--","purple");
-            root.style.setProperty("--clr-search-iconhvr--","purple");
-            root.style.setProperty("--clr-light-font--","purple");
-            root.style.setProperty("--clr-dark-font--","purple");
-            root.style.setProperty("--clr-link-font--","purple");
-            root.style.setProperty("--clr-footer-bg--","purple");
-            break;
-        
         default :
             alert("couleur inconnue");
             break;
     }
+    colorStorage = (colorStorage + 1)%2;
 }
 
-function removeSelected() {
-    for (let lst_number = 1; lst_number <= 4; lst_number++) {
-        try {
-            document.querySelector('.select-color li:nth-child('+lst_number+') div div').classList.remove("selected"); 
-            document.querySelector('.select-color li:nth-child('+lst_number+') div > span + span').classList.remove("selected_span");
-        } catch (error) {
-            
-        }
-    }   
-}
-changColor(colorStorage);
+changColor();

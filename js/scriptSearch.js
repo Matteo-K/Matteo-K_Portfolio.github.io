@@ -29,7 +29,7 @@ inputBox.onkeyup = (e) => {
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
             // Ajoute un attribut sur un clic dans tous les <li>
-            allList[i].setAttribute("onclick", "select(this)");
+            allList[i].setAttribute("onclick", "selectLink(this)");
         }
     } else {
         searchWrapper.classList.remove("active"); // Masque la boîte d'auto-complétion si la barre de recherche est vide
@@ -62,7 +62,7 @@ function linkSelect(){
 
 let lienPage;
 
-function select(element) {
+function selectLink(element) {
     let indice;
     // parcours les suggetions et attribue le lien de la page
     for (let id = 0; id < suggestions.length; id++) {

@@ -20,24 +20,26 @@ window.addEventListener('mouseup',() => {
 /* ### Menu navigation ### */
 /* -- ouvre et ferme le menu à l'intéraction du bouton du menu -- */
 
-const menu_click = document.querySelector('aside nav:nth-child(1) i')
-
-menu_click.addEventListener('click',() => {
-    open_close_aside();
+let open_menu = 0;
+document.querySelector('header div + img').addEventListener('click',() => {
+    if (open_menu == 0) {
+        aside_nav.style.transform = "translate(0)"; 
+    } else {
+        aside_nav.style.transform = "translate(100%)"; 
+    }
+    open_menu = (open_menu + 1)%2;
 });
 
 /* -- ferme le aside quand la souris sors du aside */
-
 const aside_nav = document.querySelector("aside");
 
 aside_nav.addEventListener("mouseleave", () => {
-    if (aside_nav.classList[0] == 'aside_open') {
-        open_close_aside();
-    }
-    
+    aside_nav.style.transform = "translate(100%)";
+    open_menu = (open_menu + 1)%2;
 });
 
 /* afficher le bloc parcours */
+
 try {
     const lien_parcours = document.querySelector("#presentation div + a");
     const parcours = document.querySelector("#parcours");
@@ -59,7 +61,7 @@ try {
 }
 
 
-/* Gérer les couleurs des infographie */
+/* Gérer les couleurs des infographie*/
 
 try {
     let color_inf, match;
@@ -94,18 +96,6 @@ try {
     console.log("pas de graph parcours (Couleur des blocs)")
 }
 
-function open_close_aside() {
-    aside_nav.classList.toggle('aside_open');
-    const mnu = document.querySelectorAll('aside span + span');
-    mnu.forEach(element => {
-        element.classList.toggle('span_visible');
-    });
-
-    const titl = document.querySelectorAll('aside h2');
-    titl.forEach(element => {
-        element.classList.toggle('span_visible');
-    });
-}
 
 /* Sélection du format CV */
 try {
@@ -142,14 +132,49 @@ try {
     console.log("pas de cv");
 }
 
-/* Bloc de compétence de portfolio */
+/* Apparition scroll */
 
-const list_comp = document.querySelectorAll("#list_competence_project div");
-const list_comp_titre = document.querySelectorAll("#list_competence_project h2");
+const images_about_me = document.querySelector("#aboutMe img");
+const images_cv = document.querySelector("#cv img");
+const techno = document.querySelectorAll("#technologies li:not(p + ul li)");
 
-for (let index = 0; index < list_comp.length; index++) {
-    list_comp_titre[index].addEventListener("click", () => {
-        list_comp[index].classList.toggle("list_open");
+window.addEventListener('scroll',() => {
+    if (window.scrollY > 450) {
+        images_about_me.style.transform = "translate(0) rotate(5deg)";
+        images_about_me.style.opacity = "1";
+    } else {
+        images_about_me.style.transform = "translate(100px) rotate(5deg)";
+        images_about_me.style.opacity = "0";
+    }
+
+    let compteur_techno = 0;
+    techno.forEach(element => {
+        if (compteur_techno  > 1) {
+            if (window.scrollY > 1100) {
+                element.style.transform = "translate(0)";
+                element.style.opacity = "1";
+            } else {
+                element.style.transform = "translate(100px)";
+                element.style.opacity = "0";
+            }
+        } else {
+            if (window.scrollY > 1100) {
+                element.style.transform = "translate(0)";
+                element.style.opacity = "1";
+            } else {
+                element.style.transform = "translate(-100px)";
+                element.style.opacity = "0";
+            }
+        }
+        compteur_techno =(compteur_techno + 1)%4;
     });
-};
-
+   
+    
+    if (window.scrollY > 1650) {
+        images_cv.style.transform = "translate(0) rotate(-5deg)";
+        images_cv.style.opacity = "1";
+    } else {
+        images_cv.style.transform = "translate(-100px) rotate(-5deg)";
+        images_cv.style.opacity = "0";
+    }
+});

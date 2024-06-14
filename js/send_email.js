@@ -5,21 +5,38 @@
 })();
 
 function sendMail () {
+
     let params = {
-        name : document.getElementById("nom").value + " " + document.getElementById("prenom").value,
         subject : document.getElementById("object").value,
-        message : document.getElementById("contenue").value + "\nTéléphone : " + document.getElementById("telephone").value
+        email : document.getElementById("email").value
     }
 
     let retour =  {
         email : document.getElementById("email").value
     }
 
-    emailjs.send("service_rm1nq1b","template_9bbynqn",params).then(alert("Email send !!!"));
+    const prnm = document.getElementById("prenom").value;
+    const tel = document.getElementById("telephone").value;
+
+    if (prnm.trim() === "") {
+        params.name = document.getElementById("nom").value;
+        retour.name = document.getElementById("nom").value;
+    } else {
+        params.name = document.getElementById("nom").value + " " + prnm;
+        retour.name = document.getElementById("nom").value + " " + prnm;
+    }
+
+    if (tel.trim() === "") {
+        params.message = document.getElementById("contenue").value
+    } else {
+        params.message = document.getElementById("contenue").value + "\nTéléphone : " + tel;
+    }
+    emailjs.send("service_rm1nq1b","template_9bbynqn",params);
+    e.preventDefault();
 }
 
 function checkDiseable() {
-    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || input_object.value.trim() === '' || text_area.value.trim()) {
+    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || input_object.value.trim() === '' || text_area.value.trim() === "") {
         input_submit.disabled = true;
     } else {
         input_submit.disabled = false;
@@ -38,9 +55,27 @@ input_email.addEventListener('input', checkDiseable);
 input_object.addEventListener('input', checkDiseable);
 text_area.addEventListener('input', checkDiseable);
 
+input_submit.addEventListener("click", () => {
+    document.querySelector(".pop_up").classList.add("pop_up_ouvert");
+})
 
-form.addEventListener('submit', (e) => {
-    if (input_submit.disabled) {
-        e.preventDefault();
-    }
+input_submit.disabled = true;
+
+function fermerPopUp() {
+    document.querySelector(".pop_up").classList.remove("pop_up_ouvert");
+}
+input_submit.style.backgroundColor
+
+const input_contact = document.querySelectorAll("#contact input, #contenue");
+const root = document.documentElement; // Utilisation de document.documentElement pour sélectionner :root directement
+const style = window.getComputedStyle(root);
+
+input_contact.forEach(element => {
+    element.addEventListener("focus", () => {
+        element.classList.add("input_select");
+    });
+
+    element.addEventListener("blur", () => {
+        element.classList.remove("input_select");
+    });
 });

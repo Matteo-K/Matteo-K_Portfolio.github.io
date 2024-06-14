@@ -253,7 +253,7 @@
                     </div>
                 </div>
                 <div>
-                    <textarea name="" id="contenue" placeholder="Contenue du mail :"></textarea>
+                    <textarea name="" id="contenue" placeholder="Contenue du mail* :"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Envoyer" id="ft_envoyer" onclick="sendMail()">
@@ -264,6 +264,15 @@
                 Toute ressemblance avec un site web existants ou ayant existé serait purement fortuite et ne pourrait être que le fruit d'une pure coïncidence
             </address>
         </footer>
+        <div class="pop_up">
+            <div>
+                <h6>
+                    L'email a bien été envoyé
+                </h6>
+                <a onclick="fermerPopUp()">Ok</a>
+            </div>
+        </div>
+        
         <div class="mousemove"></div>
     </div>
     <script src="js/setColor.js"></script>

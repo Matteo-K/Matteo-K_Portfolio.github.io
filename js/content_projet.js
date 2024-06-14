@@ -33,7 +33,7 @@ fetch("json/" + projet + ".json")
                     </ul>
                 </nav>
                 <h6>
-                    Présentation ${file[1].title}
+                    ${file[1].title}
                 </h6>
                 <div class="section" id="${file[1].content[0].content[0].id}">
                     <div>
