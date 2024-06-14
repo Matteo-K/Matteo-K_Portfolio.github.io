@@ -36,7 +36,31 @@ function sendMail () {
 }
 
 function checkDiseable() {
-    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || !/@/.test(input_email.value) || input_object.value.trim() === '' || text_area.value.trim() === "") {
+    if (input_nom.value.trim() === '') {
+        document.querySelector(".nom").classList.remove("valid");
+        document.querySelector(".nom").classList.add("invalid");
+    } else {
+        document.querySelector(".nom").classList.remove("invalid");
+        document.querySelector(".nom").classList.add("valid");
+    }
+
+    if (!/@[^.]+/.test(input_email.value) || !/\.[a-zA-Z]{1,3}$/.test(input_email.value)) {
+        document.querySelector(".email").classList.remove("valid");
+        document.querySelector(".email").classList.add("invalid");
+    } else {
+        document.querySelector(".email").classList.remove("invalid");
+        document.querySelector(".email").classList.add("valid");
+    }
+
+    if (input_object.value.trim() === '') {
+        document.querySelector(".object").classList.remove("valid");
+        document.querySelector(".object").classList.add("invalid");
+    } else {
+        document.querySelector(".object").classList.remove("invalid");
+        document.querySelector(".object").classList.add("valid");
+    }
+
+    if (input_nom.value.trim() === '' || (!/@[^.]+/.test(input_email.value) || !/\.[a-zA-Z]{1,3}$/.test(input_email.value)) || input_object.value.trim() === '' || text_area.value.trim() === "") {
         input_submit.disabled = true;
     } else {
         input_submit.disabled = false;
@@ -79,3 +103,5 @@ input_contact.forEach(element => {
         element.classList.remove("input_select");
     });
 });
+
+checkDiseable()

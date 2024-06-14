@@ -59,7 +59,7 @@ fetch("json/" + projet + ".json")
                     card += `
                     <section id="langage">
                         <h4>
-                            Description
+                            Langage(s)
                         </h4>
                         <ul>
                     `;
