@@ -12,209 +12,156 @@ fetch("json/" + projet + ".json")
             title.innerText = file[1].title;
 
             let card = `
-                <article id="${file[1].content[0].article}">
-                <nav>
-                    <ul>
-            `;
-            size = file[1].content[0].content.length;
-            for (let index = 0; index < size; index++)  {
-                if (index != 1 || file[1].content[0].content[1].ul.length != 0) {
-                    card += `
-                        <li>
-                            <a href="#${file[1].content[0].content[index].id}">
-                                ${file[1].content[0].content[index].section}
-                            </a>
-                        </li>
-                    `;
-                }
-                
-            };
-            card += `
-                    </ul>
-                </nav>
-                <h6>
-                    ${file[1].title}
-                </h6>
-                <div class="section" id="${file[1].content[0].content[0].id}">
-                    <div>
-                        <a href="index.html#art_portfolio" class="retourMenu">&lt;&lt;&lt; Retour au menu</a>
-                        <a href="${file[1].depot}" class="depot">Zone de dépot</a>
-                    </div>
-                    <section>
-                        <h3>
-                            Présentation
-                        </h3>
-                        <p>
-                            ${file[1].content[0].content[0].texte}
-                        </p>
+                    <h3>
+                        ${file[1].title}
+                    </h3>
+                    <section #lienPratique>
+                        <h4>
+                            Lien pratique
+                        </h4>
+                        <a href="index.html#portfolio">
+                            Retour au Menu
+                        </a>
+                        <a href="${file[1].depot}">
+                            Zone de dépot
+                        </a>
                     </section>
-                </div>
-            `;
-            
-            if (file[1].content[0].content[1].ul.length != 0) {
-                card += `
-                    <div class="section" id="${file[1].content[0].content[1].id}">
-                        <section>
-                            <ul>
-                `
-                size = file[1].content[0].content[1].ul.length;
-                for (let index = 0; index < size; index++) {
-                    card += `
-                        <li>
-                            ${file[1].content[0].content[1].ul[index]}
-                        </li>
-                    `;
-                }
-                card += `
-                            </ul>
-                        </section>
                 `;
-
-                if (typeof file[1].content[0].content[1].image === "object") {
+                if (file[1].content[0].section.image !== undefined) {
                     card += `
-                        <img src="${file[1].content[0].content[1].image.lien}" alt="${file[1].content[0].content[1].image.alt}" title="${file[1].content[0].content[1].image.title}">
+                        <img src="${file[1].content[0].section.image.lien}" alt="${file[1].content[0].section.image.alt}" title="${file[1].content[0].section.image.title}">
                     `;
                 } else {
                     card += `
                         <video
                         width="480"
                         controls
-                        poster="${file[1].content[0].content[1].video.poster}">
+                        poster="${file[1].section[0].video.poster}">
                         <source
-                            src="${file[1].content[0].content[1].video.lien}"
+                            src="${file[1].section[0].video.lien}"
                             type="video/mp4" />
                         Votre navigateur ne permet pas de lire les vidéos.
                         </video>
 
                     `;
                 }
-                    
-
                 card += `
-                    </div>
-                `;
-            }
-            
-            card += `
-                <section id="${file[1].content[0].content[2].id}">
-                    <h3>
-                        Objectif
-                    </h3>
-                    <div>
+                    <section id="description">
                         <h4>
-                            Objectif attendu
+                            Description
+                        </h4>
+                        <p>
+                            ${file[1].content[0].section.description}
+                        </p>
+                    </section>
+                `;
+                if (file[1].content[0].section.langage !== undefined) {
+                    card += `
+                    <section id="langage">
+                        <h4>
+                            Description
                         </h4>
                         <ul>
-            `
-            size = file[1].content[0].content[2].ul_attendu.length;
-            for (let index = 0; index < size; index++) {
-                card += `
-                    <li>
-                        ${file[1].content[0].content[2].ul_attendu[index]}
-                    </li>
-                `;
-            }
-            card += `
+                    `;
+                    file[1].content[0].section.langage.forEach(element => {
+                        card += `
+                            <li>
+                                ${element}
+                            </li>
+                        `;
+                    });
+                    card += `
                         </ul>
-                    </div>
-                    <div>
-                        <h4>
-                            Obectif réaliser
-                        </h4>
-                        <ul>
-            `
-            size = file[1].content[0].content[2].ul_realiser.length;
-            for (let index = 0; index < size; index++) {
+                    </section>
+                    `;
+                };
                 card += `
-                    <li>
-                        ${file[1].content[0].content[2].ul_realiser[index]}
-                    </li>
-                `;
-            }
-            card += `
-                    </div>
-                </section>
-                <section id="${file[1].content[0].content[3].id}">
-                    <h3>
-                        Compétence développé
-                    </h3>
+                <section id="objectifs">
+                    <h4>
+                        Objectif(s)
+                    </h4>
                     <ul>
-            `
-            size = file[1].content[0].content[3].ul.length;
-            for (let index = 0; index < size; index++) {
-                card += `
-                    <li>
-                        ${file[1].content[0].content[3].ul[index]}
-                    </li>
                 `;
-            }
-            card += `
+                file[1].content[0].section.objectifs.forEach(element => {
+                    card += `
+                        <li>
+                            ${element}
+                        </li>
+                    `;
+                });
+                card += `
                     </ul>
                 </section>
-            </article>
-            <article id="${file[1].content[1].article}">
-                <nav>
+                <section id="competence_developpe">
+                    <h4>
+                        Compétences développées
+                    </h4>
                     <ul>
-            `;
-            size = file[1].content[1].content.length;
-            for (let index = 0; index < size; index++)  {
-                card += `
-                    <li>
-                        <a href="#etape${index+1}">
-                            Étape ${index+1}
-                        </a>
-                    </li>
                 `;
-            };
-            card += `
+                file[1].content[0].section.competence_developpe.forEach(element => {
+                    card += `
+                        <li>
+                            ${element}
+                        </li>
+                    `;
+                });
+                card += `
                     </ul>
-                </nav>
-                <h6>
+                </section>
+                `;
+
+                let article1 = document.createElement("article")
+                article1.setAttribute("id",file[1].content[0].article);
+                article1.innerHTML = card;
+                main.appendChild(article1);
+
+            card = `
+                <h3>
                     Étape de réalisation
-                </h6>
+                </h3>
             `;
-            size = file[1].content[1].content.length;
+            size = file[1].content[1].section.length;
             for (let index = 0; index < size; index++)  {
                 card += `
                     <section id="etape${index+1}">
-                        <h3>
+                        <h4>
                 `;
-                if (typeof file[1].content[1].content[index].titre === "undefined") {
+                if (typeof file[1].content[1].section[index].titre === "undefined") {
                     card += `
                         Étape ${index+1}
                     `;
                 } else {
                     card += `
-                        Étape ${index+1} : ${file[1].content[1].content[index].titre}
+                        Étape ${index+1} : ${file[1].content[1].section[index].titre}
                     `;
                 }
                 
                  
                 card += `
-                        </h3>
+                        </h4>
                         <p>
                 `;
 
-                text_size = file[1].content[1].content[index].text.length
+                text_size = file[1].content[1].section[index].text.length
                 for (let index_text = 0; index_text < text_size; index_text++) {
                     card += `
-                        ${file[1].content[1].content[index].text[index_text]}<br>
+                        ${file[1].content[1].section[index].text[index_text]}<br>
                     `;
                 }
                 card += `
                     </p>
                 `;
-                if (file[1].content[1].content[index].lien.length != 0) {
+                if (file[1].content[1].section[index].lien.length != 0) {
                     card += `
                             <span>
                                 Source:
                             </span>
                         `;
-                    link_size = file[1].content[1].content[index].lien.length
+                    link_size = file[1].content[1].section[index].lien.length
                     for (let index_lien = 0; index_lien < link_size; index_lien++) {
                         card += `
-                            <a href="${file[1].content[1].content[index].lien[index_lien].lien}">
-                                ${file[1].content[1].content[index].lien[index_lien].nom}
+                            <a href="${file[1].content[1].section[index].lien[index_lien].lien}">
+                                ${file[1].content[1].section[index].lien[index_lien].nom}
                             </a>
                         `;
                     } 
@@ -226,8 +173,11 @@ fetch("json/" + projet + ".json")
             card += `
                 </article>
             `;
-                  
-            main.insertAdjacentHTML('beforeend', card);
+
+            let article2 = document.createElement("article")
+            article2.setAttribute("id",file[1].content[1].article);
+            article2.innerHTML = card;
+            main.appendChild(article2);
         });
     } else {
         title.innerText = "Erreur 404";

@@ -36,7 +36,7 @@ function sendMail () {
 }
 
 function checkDiseable() {
-    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || input_object.value.trim() === '' || text_area.value.trim() === "") {
+    if (input_nom.value.trim() === '' || input_email.value.trim() === '' || !/@/.test(input_email.value) || input_object.value.trim() === '' || text_area.value.trim() === "") {
         input_submit.disabled = true;
     } else {
         input_submit.disabled = false;

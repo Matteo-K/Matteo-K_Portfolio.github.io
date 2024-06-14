@@ -21,6 +21,7 @@ window.addEventListener('mouseup',() => {
 /* -- ouvre et ferme le menu à l'intéraction du bouton du menu -- */
 
 let open_menu = 0;
+
 document.querySelector('header div + img').addEventListener('click',() => {
     if (open_menu == 0) {
         aside_nav.style.transform = "translate(0)"; 
@@ -28,7 +29,7 @@ document.querySelector('header div + img').addEventListener('click',() => {
         aside_nav.style.transform = "translate(100%)"; 
     }
     open_menu = (open_menu + 1)%2;
-});
+});   
 
 /* -- ferme le aside quand la souris sors du aside */
 const aside_nav = document.querySelector("aside");
@@ -132,49 +133,70 @@ try {
     console.log("pas de cv");
 }
 
+
 /* Apparition scroll */
 
 const images_about_me = document.querySelector("#aboutMe img");
 const images_cv = document.querySelector("#cv img");
+const form_cv = document.querySelector("#cv form");
 const techno = document.querySelectorAll("#technologies li:not(p + ul li)");
 
+
 window.addEventListener('scroll',() => {
-    if (window.scrollY > 450) {
-        images_about_me.style.transform = "translate(0) rotate(5deg)";
-        images_about_me.style.opacity = "1";
-    } else {
-        images_about_me.style.transform = "translate(100px) rotate(5deg)";
-        images_about_me.style.opacity = "0";
+    try {
+        if (window.scrollY > 450) {
+            images_about_me.style.transform = "translate(0) rotate(5deg)";
+            images_about_me.style.opacity = "1";
+        } else {
+            images_about_me.style.transform = "translate(100px) rotate(5deg)";
+            images_about_me.style.opacity = "0";
+        }
+    } catch (error) {
+        
     }
+    
 
     let compteur_techno = 0;
     techno.forEach(element => {
-        if (compteur_techno  > 1) {
-            if (window.scrollY > 1100) {
-                element.style.transform = "translate(0)";
-                element.style.opacity = "1";
+        try {
+            if (compteur_techno  > 1) {
+                if (window.scrollY > 1100) {
+                    element.style.transform = "translate(0)";
+                    element.style.opacity = "1";
+                } else {
+                    element.style.transform = "translate(100px)";
+                    element.style.opacity = "0";
+                }
             } else {
-                element.style.transform = "translate(100px)";
-                element.style.opacity = "0";
+                if (window.scrollY > 1100) {
+                    element.style.transform = "translate(0)";
+                    element.style.opacity = "1";
+                } else {
+                    element.style.transform = "translate(-100px)";
+                    element.style.opacity = "0";
+                }
             }
-        } else {
-            if (window.scrollY > 1100) {
-                element.style.transform = "translate(0)";
-                element.style.opacity = "1";
-            } else {
-                element.style.transform = "translate(-100px)";
-                element.style.opacity = "0";
-            }
+        } catch (error) {
+            
         }
+        
         compteur_techno =(compteur_techno + 1)%4;
     });
    
-    
-    if (window.scrollY > 1650) {
-        images_cv.style.transform = "translate(0) rotate(-5deg)";
-        images_cv.style.opacity = "1";
-    } else {
-        images_cv.style.transform = "translate(-100px) rotate(-5deg)";
-        images_cv.style.opacity = "0";
+    try {
+        if (window.scrollY > 1650) {
+            images_cv.style.transform = "translate(0) rotate(-5deg)";
+            images_cv.style.opacity = "1";
+            form_cv.style.transform = "translate(0)";
+            form_cv.style.opacity = "1";
+        } else {
+            images_cv.style.transform = "translate(-100px) rotate(-5deg)";
+            images_cv.style.opacity = "0";
+            form_cv.style.transform = "translate(100px)";
+            form_cv.style.opacity = "0";
+        }
+    } catch (error) {
+        
     }
+    
 });

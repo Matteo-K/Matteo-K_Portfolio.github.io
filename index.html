@@ -18,760 +18,301 @@
     <link rel="manifest" href="images/logo/favicon_io/site.webmanifest">
 
     <!-- Style css -->
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
     <link rel="stylesheet" type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Kervadec Mattéo</title>
 </head>
-<body id="header" class="main_page">
-    <aside> 
+<body id="header">
+    <header>
+        <a href="index.html">
+            <img src="images/logo/Portfolio.png" alt="logo Portfolio">
+        </a>        
+        <h1>
+            Kervadec Mattéo
+        </h1>
         <div>
-            <nav>
-                <i class="fa fa-bars"></i>
-            </nav>
-            <h2>
-                Navigation
-            </h2>
-            <nav class="navigation">
-                <ul>
-                    <li>
-                        <a href="#header">
-                            <div>
-                                <span>
-                                    <i class="fa fa-home"></i>
-                                </span>
-                                <span>
-                                    Menu
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#art_portfolio">
-                            <div>
-                                <span>
-                                    <i class="fa fa-file-code"></i>
-                                </span>
-                                <span>
-                                    Portfolio
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#art_outils">
-                            <div>
-                                <span>
-                                    <i class="fa fa-wrench"></i>
-                                </span>
-                                <span>
-                                    Mes Outils
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#art_actualite">
-                            <div>
-                                <span>
-                                    <i class="fa fa-globe"></i>
-                                </span>
-                                <span>
-                                    Actualités
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            <div>
-                                <span>
-                                    <i class="fa fa-at"></i>
-                                </span>
-                                <span>
-                                    Contact
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h2>
-                Thème
-            </h2>
-            <nav class="select-color">
-                <ul>
-                    <li>
-                        <a onclick="changColor(1)">
-                            <div>
-                                <span>
-                                    <div class="sphere-color color-default selected"></div>
-                                </span>
-                                <span class="selected_span">
-                                    Default
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="changColor(2)">
-                            <div>
-                                <span>
-                                    <div class="sphere-color color-ice"></div>
-                                </span>
-                                <span>
-                                    Glaciale
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="changColor(3)">
-                            <div>
-                                <span>
-                                    <div class="sphere-color color-hot"></div>
-                                </span>
-                                <span>
-                                    Chaude
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="changColor(4)">
-                            <div>
-                                <span>
-                                    <div class="sphere-color color-forest"></div>
-                                </span>
-                                <span>
-                                    Boiser
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-       
-    </aside>
-    <div>
-        <header>
-            <h1>
-                KERVADEC Mattéo
-            </h1>
-            <div>
-                <div class="search-input">
-                    <a href="" target="_self" hidden></a>
-                    <input type="text" placeholder="Recherche :">
-                    <div>
-                        <!-- liste de proposition insérer en javascript -->
-                    </div>
-                    <a><i class="fas fa-search"></i></a>
-                </div>
-            </div>
-            <a href="index.html">
-                <img src="images/logo/Portfolio.png" alt="logo Portfolio">
-            </a>
-        </header>
-        <main>
-            <article id="art_presentation">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#presentation">
-                                Présentation
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#cv">
-                                CV
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#competence">
-                                Compétence
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#centre-interet">
-                                Intéret
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#parcours">
-                                Parcours
-                            </a>
-                        </li>
-                    </ul>     
-                </nav>
-                <h6>
-                    Présentation
-                </h6>
+            <div class="search-input">
+                <a href="" target="_self" hidden></a>
+                <input type="text" placeholder="Recherche&nbsp;:">
                 <div>
-                    <div>
-                        <section id="parcours" class="parcours_close">
-                            <h3>
-                                Parcours
-                            </h3>
-                            <div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2018
-                                    </h4>
-                                    <h5>
-                                        Découverte Scratch
-                                    </h5>
-                                    <p>
-                                        Initiation à la programmation
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2019
-                                    </h4>
-                                    <h5>
-                                        Manipulation Tortue
-                                    </h5>
-                                    <p>
-                                        Première image des boucles et des conditions. 
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2020
-                                    </h4>
-                                    <h5>
-                                        Initiation Python
-                                    </h5>
-                                    <p>
-                                        Découverte de la manipulation des données
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2021
-                                    </h4>
-                                    <h5>
-                                        Premier site web
-                                    </h5>
-                                    <p>
-                                        Création d'un site web en collaboration autour du <a href="projet.html?projet=Blobfish">blobfish</a>
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2021-2022
-                                    </h4>
-                                    <h5>
-                                        Spécialités <a href="https://www.education.gouv.fr/reussir-au-lycee/la-specialite-numerique-et-sciences-informatiques-au-bac-325448" target="_blank" rel="noopener noreferrer">NSI</a>
-                                    </h5>
-                                    <p>
-                                        Création d'un répertoire téléphonique
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2023
-                                    </h4>
-                                    <h5>
-                                        baccalauréat
-                                    </h5>
-                                    <p>
-                                        Obtention de la mension "assez-bien"
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2023-2024
-                                    </h4>
-                                    <h5>
-                                        <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/but-informatique-parcours-realisation-d-applications-conception-developpement-validation" target="_blank" rel="noopener noreferrer">BUT informatique</a>
-                                    </h5>
-                                    <p>
-                                        apprentissage de nombreux langage de programmation 
-                                    </p>
-                                </div>
-                                <div class="point"></div>
-                                <div class="hist">
-                                    <h4>
-                                        2024-2025
-                                    </h4>
-                                    <h5>
-                                        Poursuite d'étude
-                                    </h5>
-                                    <p>
-                                        L'avenir pourra mieux le renseigner
-                                    </p>
-                                </div>
-                                <div class="point" style="display: none;"></div>
-                                <div class="hist" style="display: none;">
-                                    <h4>
-                                        ...
-                                    </h4>
-                                    <h5>
-                                        2014
-                                    </h5>
-                                    <p>
-                                        Si si je te le jure
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div>
-                        <section id="presentation">
-                            <h3>
-                                Qui suis-je ?
-                            </h3>
-                            <img src="images/matteo_k.jpg" alt="photo de moi" title="moi">
-                            <div>
-                                Je suis Mattéo Kervadec. Je suis né en 2005 à <a href="https://www.google.fr/maps/place/Vannes/@47.6576635,-2.8308516,12z/data=!3m1!4b1!4m6!3m5!1s0x48101e84c37de291:0xb9f358307b233d13!8m2!3d47.6586166!4d-2.7599022!16zL20vMDM1YzN4?entry=ttu" target="_blank" rel="noopener noreferrer">Vannes(56000)</a> et j'habite sur 
-                                <a target="_blank" href="https://www.google.fr/maps/place/56400+Auray/@47.6684056,-3.0107669,14z/data=!3m1!4b1!4m6!3m5!1s0x481014410181de55:0x40ca5cd36e2c9a0!8m2!3d47.6702982!4d-2.9904557!16zL20vMDM5c3Iz?entry=ttu">Auray (56400)</a>.
-                                J'ai un baccalauréat général avec les spécialités Mathématiques et Numérique et Science de l'Informatique.
-                                Je suis actuellement étudiant et je réalise un BUT informatique à l'<a href="https://www.google.fr/maps/place/IUT+de+Lannion+-+Université+de+Rennes/@48.7583165,-3.4543923,17z/data=!3m1!4b1!4m6!3m5!1s0x48122c034b5275af:0x355e62516b08c22f!8m2!3d48.758313!4d-3.451812!16s%2Fg%2F122pk8dh?entry=ttu" target="_blank" rel="noopener noreferrer">IUT de lannion</a>.
-                            </div>
-                            <a>Parcours &gt;&gt;&gt;</a>
-                        </section>
-                        <section id="cv">
-                            <div>
-                                <h3>
-                                    Recherche de Stage :
-                                </h3>
-                                <p>
-                                    Bonjour, je suis actuellement à la <b>recherche d'un stage</b> dans le domaine de l'<b>informatique</b>, plus particulièrement dans le <b>développement de logiciels</b>. 
-                                    Passionné par la technologie et l'informatique, je suis <b>motivé</b> à <b>acquérir une expérience professionnelle</b> enrichissante dans un environnement propice à l'apprentissage et à la collaboration.
-                                </p>
-                            </div>
-                            <div>
-                                <!-- Télécharger CV -->
-                                <a href="images/cv/CV_kervadecMatteo.pdf" target="_blank" rel="noopener noreferrer">
-                                    <img src="images/cv/CV_kervadecmatteo.png" alt="CV Kervadec Mattéo">
-                                </a>
-                                
-                                <form>
-                                    <h3>
-                                        Format :
-                                    </h3>
-                                    <div>
-                                        <!-- Format par défaud -->
-                                        <label for="PDF">
-                                            <input type="radio" name="download" id="PDF" value="PDF" checked>
-                                            <span class="checkmark"></span>
-                                            PDF
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label for="PNG">
-                                            <input type="radio" name="download" id="PNG" value="PNG">
-                                            <span class="checkmark"></span>
-                                            PNG
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label for="JPG">
-                                            <input type="radio" name="download" id="JPG" value="JPG">
-                                            <span class="checkmark"></span>
-                                            JPG
-                                        </label>
-                                    </div>
-                                    <!-- Remplace le format en javascript -->
-                                    <button type="submit">
-                                        <i class="fa fa-upload"></i>
-                                        Télécharger
-                                    </button>
-                                    <a href="images/cv/CV_kervadecMatteo.pdf" download="CV_kervadecMatteo.pdf" hidden></a>
-                                </form>
-                            </div>
-                            
-                        </section>
-                        <section id="competence">
-                            <h3>
-                                Compétence :
-                            </h3>
-                            <div>
-                                <div>
-                                    <h4>
-                                        Informatique
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <span>
-                                                Web 
-                                            </span>
-                                            <ul>
-                                                <li>HTML</li>
-                                                <li>CSS</li>
-                                                <li>Javascript</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                Conception logiciel
-                                            </span>
-                                            <ul>
-                                                <li>Java</li>
-                                                <li>Python</li>
-                                                <li>C</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                Base de donnée
-                                            </span>
-                                            <ul>
-                                                <li>SQL</li>
-                                                <li>Tutorial D</li>
-                                                <li style="display: none; visibility: collapse;">Perl</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <h4>
-                                        Professionnel
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <span>
-                                               Communication  
-                                            </span>
-                                            <ul>
-                                                <li>Sens de l'écoute</li>
-                                                <li>Pédagogique</li>
-                                                <li>Spontanée</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                Organisation  
-                                            </span>
-                                            
-                                            <ul>
-                                                <li>Rigoureux</li>
-                                                <li>Méthodique</li>
-                                                <li>Logique</li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <span>
-                                                Attitude
-                                            </span>
-                                            <ul>
-                                                <li>Calme</li>
-                                                <li>Curieux</li>
-                                                <li>Persévérant</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="centre-interet">
-                            <h3>
-                                Mes centres d'intérets :
-                            </h3>
-                            <div class="galerie-photo">
-                                <div style="background-image : url('https://images.hdqwalls.com/wallpapers/kratos-throne-god-of-war-fh.jpg');"></div>
-                                <div style="background-image : url('https://cdn.wallpapersafari.com/41/31/UkHhOu.jpg');"></div>
-                                <div style="background-image : url('https://images.alphacoders.com/453/453312.jpg');"></div>
-                                <div style="background-image : url('https://w0.peakpx.com/wallpaper/204/956/HD-wallpaper-god-of-war-atreus-kratos-ps4-sarv-zeus.jpg');"></div>
-                                <div style="background-image : url('https://images.unian.net/photos/2022_10/thumb_files/1000_545_1664891952-6961.jpg?1');"></div>
-                            </div>
-                        </section>
-                    </div>
-                    
+                    <!-- liste de proposition insérer en javascript -->
                 </div>
-                
-            </article>
-            <article id="art_portfolio">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#portfolio">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comp1">
-                                compétence 1
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comp2">
-                                compétence 2
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comp3">
-                                compétence 3
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comp4">
-                                compétence 4
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comp5">
-                                compétence 5
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#comp6">
-                                compétence 6
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#compAutre">
-                                Autre
-                            </a>
-                        </li>
-                    </ul>     
-                </nav>
-                <h6>
-                    Portfolio
-                </h6>
-                <section id="portfolio">
-                    <h3>
-                        Contexte
-                    </h3>   
-                    <a href="">Lien programme BUT Informatique</a>
-                </section>
-                <section id="list_competence_project">
-                    <div class="list_open">
-                        <h2 id="comp1">
-                            Compétence N°1 : Réaliser un développement d'application  
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insérer en js -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="comp2">
-                            Compétence N°2 : Optimiser des applications informatiques
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insère la liste en Js -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="comp3">
-                            Compétence N°3 : Administrer des systèmes informatiques communicants complexes
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insère la liste en Js -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="comp4">
-                            Compétence N°4 : Gérer des données de l'information
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insère la liste en Js -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="comp5">
-                            Compétence N°5 : Conduire un projet
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insère la liste en Js -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="comp6">
-                            Compétence N°6 : Travailler dans une équipe informatique
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insère la liste en Js -->
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="compAutre">
-                            Autre : Projet non-informatique
-                            <span>&gt;</span>
-                        </h2>
-                        <ul>
-                            <!-- Insère la liste en Js -->
-                        </ul>
-                    </div>
-                </section>
-            </article>
-            <article id="art_outils" style="display: none;">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#header">
-                                Menu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#presentation">
-                                Présentation
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#cv">
-                                CV
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#competence">
-                                Compétence
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#centre-interet">
-                                Intéret
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>     
-                </nav>
-                <h6>
-                    Outils
-                </h6>
-                <section>
-                    <div>
-                        <h4>
-                            Éditeur de texte
-                        </h4>
-                    </div>
-                    <div>
-                        <h4>
-                            API
-                        </h4>
-                        <div>
-                            <h5>
-                                Postman
-                            </h5>
-                        </div>
-                    </div>
-                </section>
-            </article>
-            <article id="art_actualite" style="display: none;">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#header">
-                                Menu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#presentation">
-                                Présentation
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#cv">
-                                CV
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#competence">
-                                Compétence
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#centre-interet">
-                                Intéret
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>     
-                </nav>
-                <h6>
-                    Actualités
-                </h6>
-                <section>
-                    <h4>
-                        Article 1
-                    </h4>
-                </section>
-                <section>
-                    <h4>
-                        Article 2
-                    </h4>
-                </section>
-                <section>
-                    <h4>
-                        Article 3
-                    </h4>
-                </section>
-            </article>
-        </main>
-        <footer id="contact">
-            <div>
-                <address>
-                    <span>
-                        Contacter le webmaster&nbsp;:
-                    </span>
-                    <div>
-                        <div class="ft_mail">
-                            <br>
-                                <a href="mailto:kervadecmatteo@gmail.com">
-                                    <img src="images/logo/mail.png" alt="logo mail">
-                                </a>
-                                mail&nbsp;: <a href="mailto:kervadecmatteo@gmail.com">kervadecmatteo@gmail.com</a> 
-                        </div>
-                        <div class="ft_tel">
-                            <a href="tel:+767542290">
-                                <img src="images/logo/telephone_portable.jpg" alt="logo téléphone">
-                            </a>
-                            téléphone&nbsp;: <a href="tel:+767542290">07.67.54.22.90</a>
-                        </div>
-                        <br>
-                        
-                    </div>
-                </address>
-                <address>
-                    <span>
-                        En savoir plus&nbsp;:
-                    </span>
-                    <br>
-                    Pour être au courant de mes actualités et projet 
-                    <br>
-                    Tout sur Mattéo Kervadec&nbsp;:
-                    <!-- Lien vers réseau sociaux -->
-                    <div>
-                        <a href="https://www.linkedin.com/in/matt%C3%A9o-kervadec-6b31362b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                            <img src="images/reseau/linkedin.png" alt="linkedin">
-                        </a>
-                        <a href="https://github.com/Matteo-K" target="_blank">
-                            <img src="images/reseau/github.png" alt="github">
-                        </a>
-                        <a href="https://youtube.com/@mattaque1140?si=pGU5Zd42FDLttkVd" target="_blank">
-                            <img src="images/reseau/youtube.png" alt="youtube">
-                        </a>
-                        <a href="https://www.instagram.com/mattaque8?igsh=MWVhMDAzdTJvZzR4Mw==" target="_blank">
-                            <img src="images/reseau/Instagram.png" alt="instagram">
-                        </a>
-                    </div>
-                </address>
+                <a><i class="fas fa-search"></i></a>
             </div>
+        </div>
+        <img src="images/logo/menu_blanc.png" alt="logo menu">
+    </header>
+    <main>
+        <article id="home">
+            <section>
+                <h2>
+                    Je suis <span>Mattéo Kervadec</span>,<br>Étudiant en <span>1<sup>ère</sup>année</span> de <span>BUT informatique</span>. 
+                </h2>
+                <a href="#contact" class="btnContact">Me contacter</a>
+            </section>
+            <section>
+                <img src="images/matteo_k.jpg" alt="Moi" title="Moi" class="img_home">
+                <a onclick="changColor()" class="btnTheme">
+                    Thème
+                </a>
+            </section>
+        </article>
+        <article id="portfolio">
+            <h3>
+                Portfolio
+            </h3>
+            <section class="lien_portfolio">
+                <a href="eporfolio - Info.ods" download="eporfolio-MatteoKervadec.ods">EPortfolio</a>
+                <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf" target="_blank">Programme BUT informatique</a>
+            </section>
+            <section>
+                <select name="compétences">
+                    <option value="comp1" class="compDefaut">-- Sélectionner une compétence --</option>
+                    <option value="comp1" class="comp1">Compétence 1 : Réaliser un développement d'application</option>
+                    <option value="comp2" class="comp2">Compétence 2 : Optimiser des applications informatiques</option>
+                    <option value="comp3" class="comp3">Compétence 3 : Administrer des systèmes informatiques communicants complexes</option>
+                    <option value="comp4" class="comp4">Compétence 4 : Gérer des données de l'information</option>
+                    <option value="comp5" class="comp5">Compétence 5 : Conduire un projet</option>
+                    <option value="comp6" class="comp6">Compétence 6 : Travailler dans une équipe informatique</option>
+                    <option value="autre" class="autre">Autre</option>
+                </select>
+                <ul>
+                    <!-- Insère la liste en Js -->
+                </ul>
+            </section>
+        </article>
+        <article id="aboutMe">
+            <h3>
+                À propos de Moi
+            </h3>
+            <section>
+                <p>
+                    Salut,Je suis <span>Mattéo KERVADEC</span>, étudiant en <span>1ère année de Bachelor Universitaire de Technologie</span> (BUT) en filières Informatique à <a href="https://www.google.fr/maps/place/IUT+de+Lannion+-+Université+de+Rennes/@48.7583165,-3.4543923,17z/data=!3m1!4b1!4m6!3m5!1s0x48122c034b5275af:0x355e62516b08c22f!8m2!3d48.758313!4d-3.451812!16s%2Fg%2F122pk8dh?entry=ttu" target="_blank" rel="noopener noreferrer">l'IUT de Lannion</a>. Je suis passionné par le <span>tennis</span> et le <span>cinéma</span> autant dans les films que le jeu vidéo. Ainsi que pour le <span>développement de logiciel informatique</span>.
+                </p>
+                <img src="images/matteo_k.jpg" alt="Moi" title="Moi">
+            </section>
+            <ul>
+                <li>
+                    <span>
+                       Communication  
+                    </span>
+                    <ul>
+                        <li>Sens de l'écoute</li>
+                        <li>Pédagogique</li>
+                        <li>Spontanée</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>
+                        Organisation  
+                    </span>
+                    
+                    <ul>
+                        <li>Rigoureux</li>
+                        <li>Méthodique</li>
+                        <li>Logique</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>
+                        Attitude
+                    </span>
+                    <ul>
+                        <li>Calme</li>
+                        <li>Curieux</li>
+                        <li>Persévérant</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <article id="technologies">
+            <h3>
+                Technologies
+            </h3>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/java.png" alt="logo java" title="logo java">
+                    </div>
+                    <h5>
+                        Java
+                    </h5>
+                    <p>
+                        Intermédaire depuis début 2024
+                    </p>
+                    <ul>
+                        <li class="ecole">
+                            BUT
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/c.png" alt="logo c" title="logo c">
+                    </div>
+                    <h5>
+                        C
+                    </h5>
+                    <p>
+                        Débutant depuis fin 2023
+                    </p>
+                    <ul>
+                        <li class="ecole">
+                            BUT
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/python.png" alt="logo python" title="logo python">  
+                    </div>
+                    <h5>
+                        Python
+                    </h5>
+                    <p>
+                        Intermédaire depuis 2020
+                    </p>
+                    <ul>
+                        <li class="personnel">
+                            Personnel
+                        </li>
+                        <li class="ecole">
+                            Lycée
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/html.png" alt="logo html" title="logo html">
+                        <img src="images/logo/technologies/css.png" alt="logo css" title="logo css">
+                    </div>
+                    <h5>
+                        Html/CSS
+                    </h5>
+                    <p>
+                        Intermédaire depuis 2021
+                    </p>
+                    <ul>
+                        <li class="personnel">
+                            Personnel
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/javascript.png" alt="logo javascript" title="logo javascript">
+                    </div>
+                    <h5>
+                        Javascript
+                    </h5>
+                    <p>
+                        Débutant depuis début 2024
+                    </p>
+                    <ul>
+                        <li class="personnel">
+                            Personnel
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/sql.png" alt="logo sql" title="logo sql">
+                        <img src="images/logo/technologies/postgreSql.png" alt="logo postgreSql" title="logo postgreSql">
+                    </div>
+                    <h5>
+                        SQL & PostgreSQL
+                    </h5>
+                    <p>
+                        Intermédaire depuis 2022
+                    </p>
+                    <ul>
+                        <li class="ecole">
+                            Lycée
+                        </li>
+                        <li class="ecole">
+                            BUT
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/logo/technologies/perl.png" alt="logo perl" title="logo perl">
+                    </div>
+                    <h5>
+                        Perl
+                    </h5>
+                    <p>
+                        Débutant depuis début 2024
+                    </p>
+                    <ul>
+                        <li class="personnel">
+                            Personnel
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <article id="cv">
+            <section>
+                <h3>
+                    CV
+                </h3>
+            </section>
+            <section>
+                <a href="images/cv/CV_kervadecMatteo.pdf" target="_blank" rel="noopener noreferrer">
+                    <img src="images/cv/CV_kervadecmatteo.png" alt="CV Kervadec Mattéo">
+                </a>
+                <div>
+                    <h4>
+                        Recherche de Stage :
+                    </h4>
+                    <p>
+                        je suis actuellement à la <b>recherche d'un stage</b> dans le domaine de l'<b>informatique</b>, plus particulièrement dans le <b>développement de logiciels</b>. 
+                        Passionné par la technologie et l'informatique, je suis <b>motivé</b> à <b>acquérir une expérience professionnelle</b> enrichissante dans un environnement propice à l'apprentissage et à la collaboration.
+                    </p>
+                </div>
+                <form>
+                    <h4>
+                        Format du CV :
+                    </h4>
+                    <div>
+                        <!-- Format par défaud -->
+                        <label for="PDF">
+                            <input type="radio" name="download" id="PDF" value="PDF" checked>
+                            <span class="checkmark"></span>
+                            PDF
+                        </label>
+                    </div>
+                    <div>
+                        <label for="PNG">
+                            <input type="radio" name="download" id="PNG" value="PNG">
+                            <span class="checkmark"></span>
+                            PNG
+                        </label>
+                    </div>
+                    <div>
+                        <label for="JPG">
+                            <input type="radio" name="download" id="JPG" value="JPG">
+                            <span class="checkmark"></span>
+                            JPG
+                        </label>
+                    </div>
+                    <!-- Remplace le format en javascript -->
+                    <button type="submit">
+                        <i class="fa fa-upload"></i>
+                        Télécharger
+                    </button>
+                    <a href="images/cv/CV_kervadecMatteo.pdf" download="CV_kervadecMatteo.pdf" hidden></a>
+                </form>
+            </section>
+            
+        </article>
+        <article id="contact">
+            <h3>
+                Contact&nbsp;:
+            </h3>
             <form action="" id="form_contact">
-                <h6>Contact&nbsp;:</h6>
                 <div>
                     <div>
                         <label for="nom">Nom*&nbsp;</label>
@@ -802,17 +343,112 @@
                     <textarea name="" id="contenue" placeholder="Contenue du mail* :"></textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Envoyer" id="ft_envoyer" onclick="sendMail()">
+                    <button type="submit" value="Envoyer" id="ft_envoyer" onclick="sendMail()">Envoyer</button>
                 </div>
             </form>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <address>
+                <span>
+                    Contacter le webmaster&nbsp;:
+                </span>
+                <div>
+                    <div class="ft_mail">
+                        <br>
+                            <a href="mailto:kervadecmatteo@gmail.com">
+                                <img src="images/logo/mail.png" alt="logo mail">
+                            </a>
+                            mail&nbsp;: <a href="mailto:kervadecmatteo@gmail.com">kervadecmatteo@gmail.com</a> 
+                    </div>
+                    <div class="ft_tel">
+                        <a href="tel:+767542290">
+                            <img src="images/logo/telephone_portable.jpg" alt="logo téléphone">
+                        </a>
+                        téléphone&nbsp;: <a href="tel:+767542290">07.67.54.22.90</a>
+                    </div>
+                    <br>
+                </div>
+            </address>
+            <address>
+                <span>
+                    En savoir plus&nbsp;:
+                </span>
+                <br>
+                Pour être au courant de mes actualités et projet 
+                <br>
+                Tout sur Mattéo Kervadec&nbsp;:
+                <!-- Lien vers réseau sociaux -->
+                <div>
+                    <a href="https://www.linkedin.com/in/matt%C3%A9o-kervadec-6b31362b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="images/reseau/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://github.com/Matteo-K" target="_blank">
+                        <img src="images/reseau/github.png" alt="github">
+                    </a>
+                    <a href="https://youtube.com/@mattaque1140?si=pGU5Zd42FDLttkVd" target="_blank">
+                        <img src="images/reseau/youtube.png" alt="youtube">
+                    </a>
+                    <a href="https://www.instagram.com/mattaque8?igsh=MWVhMDAzdTJvZzR4Mw==" target="_blank">
+                        <img src="images/reseau/Instagram.png" alt="instagram">
+                    </a>
+                </div>
+            </address>
+        </div>
+        <div>
             <address>
                 &copy; Copyright by Mattéo Kervadec - No rights reserved<br>
-                Toute ressemblance avec un site web existants ou ayant existé serait purement fortuite et ne pourrait être que le fruit d'une pure coïncidence<br>
-                <a href="page.html" target="_blank" rel="noopener noreferrer">Page en building</a>
+                Toute ressemblance avec un site web existants ou ayant existé serait purement fortuite et ne pourrait être que le fruit d'une pure coïncidence
             </address>
-        </footer>
-        <div class="mousemove"></div>
+        </div>
+    </footer>
+    <aside>
+        <h3>
+            Navigation&nbsp;:
+        </h3>
+        <ul>
+            <li>
+                <a href="#header">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="#aboutMe">
+                    À propos de Moi
+                </a>
+            </li>
+            <li>
+                <a href="#technologies">
+                    Technologies
+                </a>
+            </li>
+            <li>
+                <a href="#cv">
+                CV
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <div class="pop_up">
+        <div>
+            <h3>
+                L'email a bien été envoyé
+            </h3>
+            <a onclick="fermerPopUp()">Ok</a>
+        </div>
     </div>
+    <div class="mousemove"></div>
     <script src="js/setColor.js"></script>
     <script src="js/list_projets.js"></script>
     <script src="js/link_project.js"></script>
@@ -823,4 +459,3 @@
     </script>
     <script src="js/send_email.js"></script>
 </body>
-</html>

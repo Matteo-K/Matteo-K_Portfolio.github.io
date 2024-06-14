@@ -48,14 +48,16 @@ function changColor() {
             root.style.setProperty("--clr-art2-bg--","#75B6D9");
             root.style.setProperty("--clr-section-bg--","#fff");
             root.style.setProperty("--clr-search-bg1--","#fff");
-            root.style.setProperty("--clr-search-bg2--","#eee   ");
+            root.style.setProperty("--clr-search-bg2--","#eee");
             root.style.setProperty("--clr-search-selcted--","#75b092");
-            root.style.setProperty("--clr-search-border--","purple");
+            root.style.setProperty("--clr-search-border--","#aadd22");
             root.style.setProperty("--clr-search-icon--","purple");
             root.style.setProperty("--clr-search-iconhvr--","purple");
             root.style.setProperty("--clr-light-font--","#fff");
+            root.style.setProperty("--clr-light-dark-font--","#666");
             root.style.setProperty("--clr-dark-font--","#000");
             root.style.setProperty("--clr-link-font--","#39C8DC");
+            root.style.setProperty("--clr-link-hover--","teal");
             root.style.setProperty("--clr-footer-bg--","#3E565D");
             break;
         default :

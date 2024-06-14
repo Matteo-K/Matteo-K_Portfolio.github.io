@@ -1,6 +1,7 @@
 [
     {
         "title" : "Mattaque-Original-Web",
+        "lien" : "Mattaque-Original-Web",
         "compétence" : [
             1
         ],
@@ -20,96 +21,73 @@
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : [
-                    {
-                        "id" : "presentation",
-                        "section" : "Présentation",
-                        "texte" : "ceci est un texte"
+                "section" : {
+                    "image" : {
+                        "lien" : "",
+                        "alt" : "",
+                        "title" : ""
                     },
-                    {
-                        "id" : "langague",
-                        "section" : "Langague",
-                        "ul" : [
-                            "C"
-                        ],
-                        "image" : {
-                            "lien" : "",
-                            "alt" : "",
-                            "title" : ""
-                        }
-                    },
-                    {
-                        "id" : "objectifs",
-                        "section" : "Objectifs",
-                        "ul_attendu" : [
-                            "Réaliser un sudoku"
-                        ],
-                        "ul_realiser" : [
-                            "Réaliser un sudoku"
-                        ]
-                    },
-                    {
-                        "id" : "competence_developpe",
-                        "section" : "Compétence",
-                        "ul" : [
-                            "autonomie",
-                            "aptitude"
-                        ]
-                    }
-                ]
+                    "description" : "",
+                    "langage" : [
+                        "Html",
+                        "CSS"
+                    ],
+                    "objectifs" : [
+                        ""
+                    ],
+                    "competence_developpe" : [
+                        ""
+                    ]
+                }
             },
             {
                 "article" : "",
-                "content" : [
+                "section" : [
                     {
+                        "titre" : "Réalisation d'une maquette",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Avec le site web Figma, j'ai réaliser une maquette du site web",
+                            "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio",
+                            "Étant seul sur le projet et peucde temps pour réaliser ce site web, je dûs ne pas m'arrêter sur les détails."
                         ],
                         "lien" : [
                             {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
+                                "nom" : "Maquette Figma",
+                                "lien" : "https://www.figma.com/design/PEORQaCJZNJELGpY5JEGaK/Portfolio?node-id=0-1&t=a8PqPSP1n0KvJVrH-0"
                             }
                         ] 
                     },
                     {
+                        "titre" : "Conception du site en html/css",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construis la structure du site",
+                            "Malheureusement, vu que je me suis précipiter sur la réalisation, j'ai eu différente idée qui sont arriver en cours de route. Donc cela m'a entrainer à modifier régulièrement la structure html",
+                            "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviables"
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
+                        "titre" : "L'ajout du javascript",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Pour dynamiser le site web, je voulu rajouter du javascript. Mais n'ayant jamais utiliser ni appris à faire du javascript, j'ai suivi des cours en ligne durant mes temps libres",
+                            "Le javascript m'a permis de créer une barre de recherche dynamique afin d'orienté l'utilisateur dans sa recherche",
+                            "Mais cela m'a permis aussi de découvrir que l'on pouvais insérer du javascript dans le html"
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
+                        "titre" : "La génération automatique des projets",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "A l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réaliser un programme qui génère une page html à partir du contenue des fichiers",
+                            "A la base, je voulais que chaque projet avait un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utilisés pour les listés dans la page d'acceuil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requête par heure qui ne suffirais pas à son utilisation.",
+                            "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette api."
                         ],
                         "lien" : [
                             {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
+                                "nom" : "API Github",
+                                "lien" : "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28"
                             }
                         ] 
                     }

@@ -1,13 +1,14 @@
 [
     {
-        "title" : "Sudoku",
+        "title" : "",
+        "lien" : "",
         "compétence" : [
             
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration X",
-            "title" : "illustration X"
+            "alt" : "illustration ",
+            "title" : "illustration "
         },
         "contributeur" : [
             "Mattéo Kervadec"
@@ -15,53 +16,34 @@
         "date" : ""
     },
     {
-        "title" : "X",
+        "title" : "",
         "depot" : "",
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : [
-                    {
-                        "id" : "presentation",
-                        "section" : "Présentation",
-                        "texte" : "ceci est un texte"
+                "section" : {
+                    "image" : {
+                        "lien" : "",
+                        "alt" : "",
+                        "title" : ""
                     },
-                    {
-                        "id" : "langague",
-                        "section" : "Langague",
-                        "ul" : [
-                            "C"
-                        ],
-                        "image" : {
-                            "lien" : "",
-                            "alt" : "",
-                            "title" : ""
-                        }
-                    },
-                    {
-                        "id" : "objectifs",
-                        "section" : "Objectifs",
-                        "ul_attendu" : [
-                            "Réaliser un sudoku"
-                        ],
-                        "ul_realiser" : [
-                            "Réaliser un sudoku"
-                        ]
-                    },
-                    {
-                        "id" : "competence_developpe",
-                        "section" : "Compétence",
-                        "ul" : [
-                            "autonomie",
-                            "aptitude"
-                        ]
-                    }
-                ]
+                    "description" : "",
+                    "langage" : [
+                        ""
+                    ],
+                    "objectifs" : [
+                        ""
+                    ],
+                    "competence_developpe" : [
+                        ""
+                    ]
+                }
             },
             {
-                "article" : "",
-                "content" : [
+                "article" : "art_etape",
+                "section" : [
                     {
+                        "titre" : "",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -75,6 +57,7 @@
                         ] 
                     },
                     {
+                        "titre" : "",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -88,6 +71,7 @@
                         ] 
                     },
                     {
+                        "titre" : "",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -101,6 +85,7 @@
                         ] 
                     },
                     {
+                        "titre" : "",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",

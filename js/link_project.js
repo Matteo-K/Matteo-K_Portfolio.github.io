@@ -1,11 +1,12 @@
-let bloc;
 let projet;
 let contributeurs;
+let nom_element_projet;
 
 const select = document.querySelector("select");
 select.addEventListener("change",function() {
     const bloc = document.querySelector("#portfolio ul");
 
+    /* retire tout les projets de la liste */
     while (bloc.firstChild) {
         bloc.removeChild(bloc.firstChild);
     }
@@ -41,7 +42,7 @@ select.addEventListener("change",function() {
     }
     
     suggestions.forEach(element => {
-        if (/\.html/.test(element.lien)) {
+        if (element.select) {
             fetch("json/" + element.projet_ + ".json")
             .then(response => {
                 if (response.ok) {
@@ -50,30 +51,45 @@ select.addEventListener("change",function() {
                         file[0].compétence.forEach(element => {
                             if (element == index_select) {
                                 projet = `
-                                    <li style="background-image : url(${file[0].image.lien});">
-                                        <a href="projet.html?projet=${file[0].title}"> 
-                                            <h3>
-                                                ${file[0].title}
-                                            </h3>
-                                            <div>
-                                                <span>
-                                                    Contributeur&nbsp;:
-                                                </span>
-                                                <span>
-                                                 `;
-                                                file[0].contributeur.forEach(element => {
-                                                    projet += `<span>${element}</span>`;
-                                                });
-                                                projet += `
-                                                </span>
-                                            </div>
-                                            <time>
-                                                ${file[0].date}
-                                            </time>
-                                        </a>
-                                    </li>
+                                    <h3>
+                                        ${file[0].title}
+                                    </h3>
+                                    <div>
+                                        <span>
+                                            Contributeur&nbsp;:
+                                        </span>
+                                        <span>
+                                            `;
+                                        file[0].contributeur.forEach(element => {
+                                            projet += `<span>${element}</span>`;
+                                        });
+                                        projet += `
+                                        </span>
+                                    </div>
+                                    <time>
+                                        ${file[0].date}
+                                    </time>
                                 `;
-                                bloc.insertAdjacentHTML('beforeend', projet);
+                                let projetElement = document.createElement("li");
+                                projetElement.style.backgroundImage = "url("+file[0].image.lien+")";
+                                projetElement.setAttribute("onclick","window.location.href='projet.html?projet="+file[0].lien+"'");
+                                projetElement.innerHTML = projet;
+                                bloc.appendChild(projetElement);
+
+                                const h3_projet = projetElement.querySelector("h3");
+                                const div_projet = projetElement.querySelector("div");
+                                const time_projet = projetElement.querySelector("time");
+                                projetElement.addEventListener("mouseenter",() => {
+                                    h3_projet.style.textAlign = "right";
+                                    div_projet.style.opacity = "1";
+                                    time_projet.style.opacity = "1";
+                                });
+
+                                projetElement.addEventListener("mouseleave",() => {
+                                    h3_projet.style.textAlign = "center";
+                                    div_projet.style.opacity = "0";
+                                    time_projet.style.opacity = "0";
+                                });
                             }
                         });
                     });

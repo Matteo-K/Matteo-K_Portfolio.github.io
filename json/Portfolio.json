@@ -1,6 +1,7 @@
 [
     {
         "title" : "Portfolio",
+        "lien" : "Portfolio",
         "compétence" : [
             1
         ],
@@ -20,51 +21,30 @@
         "content" : [
             {
                 "article" : "art_presentation_project",
-                "content" : [
-                    {
-                        "id" : "presentation",
-                        "section" : "Présentation",
-                        "texte" : "Réalistion d'un Portfolio web. Ce site web sur lequelle vous vous retrouvez permet de répertorier tout mes projets réalisés."
+                "section" : {
+                    "image" : {
+                        "lien" : "",
+                        "alt" : "",
+                        "title" : ""
                     },
-                    {
-                        "id" : "langague",
-                        "section" : "Langague",
-                        "ul" : [
-                            "HTML",
-                            "CSS",
-                            "Javascript",
-                            "Json"
-                        ],
-                        "image" : {
-                            "lien" : "",
-                            "alt" : "",
-                            "title" : ""
-                        }
-                    },
-                    {
-                        "id" : "objectifs",
-                        "section" : "Objectifs",
-                        "ul_attendu" : [
-                            "Réaliser un Portfolio"
-                        ],
-                        "ul_realiser" : [
-                            "Réaliser un Portfolio"
-                        ]
-                    },
-                    {
-                        "id" : "competence_developpe",
-                        "section" : "Compétence",
-                        "ul" : [
-                            "Autonomie",
-                            "Persévérance",
-                            "Gestion des priorités"
-                        ]
-                    }
-                ]
+                    "description" : "",
+                    "langage" : [
+                        "Html",
+                        "CSS",
+                        "Javascript",
+                        "Json"
+                    ],
+                    "objectifs" : [
+                        ""
+                    ],
+                    "competence_developpe" : [
+                        ""
+                    ]
+                }
             },
             {
                 "article" : "",
-                "content" : [
+                "section" : [
                     {
                         "titre" : "Réalisation d'une maquette",
                         "text" : [
