@@ -98,6 +98,8 @@ h3 {
     text-align: center;
     color: var(--clr-light-font--);
     border-bottom: var(--clr-section-bg--) 3px solid;
+    text-shadow: 2px 0 var(--clr-dark-font--), -2px 0 var(--clr-dark-font--), 0 2px var(--clr-dark-font--), 0 -2px var(--clr-dark-font--),
+             1px 1px var(--clr-dark-font--), -1px -1px var(--clr-dark-font--), 1px -1px var(--clr-dark-font--), -1px 1px var(--clr-dark-font--);
 }
 
 h5 {
@@ -293,17 +295,20 @@ article {
         margin-inline: 10%;
     }
     section:nth-child(1) {
-        flex: 1.4;
+        flex: 2;
+        margin-right: 0;
         h2 {
             position: relative;
             font-size: 4em;
             font-weight: normal;
             padding-right: 2%;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             &::before {
                 content: " \1F590";
                 position: absolute;
                 background-color: var(--clr-light-font--);
+                border: var(--clr-light-dark-font--) 2px solid;
+                text-shadow: var(--clr-dark-font--) 2px 2px;
                 border-radius: 50%;
                 top: -8px;
                 left: -120px;
@@ -319,7 +324,7 @@ article {
         display: flex;
         flex-direction: column;
         width: fit-content;
-
+        flex: .5;
     }
 }
 
@@ -347,6 +352,7 @@ article {
              1px 1px var(--clr-dark-font--), -1px -1px var(--clr-dark-font--), 1px -1px var(--clr-dark-font--), -1px 1px var(--clr-dark-font--);
         width: 80%;
         padding: 10px;
+        margin: 20px 0 10px 0;
         font-size: 1.5em;
     }
     .compDefaut {
@@ -384,19 +390,38 @@ article {
         flex-flow: row nowrap;
         justify-content: space-between;
         margin-inline: 80px;
-    }
-    img {
-        position: relative;
-        width: 300px;
-        margin: 10px;
-        object-fit: cover;
-        border: var(--clr-light-font--) 3px solid;
-        box-shadow: var(--clr-light-dark-font--) 8px 8px;
-        transition: all .2s;
-        transform: rotate(5deg);
-        &:hover {
-            transform: rotate(8deg);
-            box-shadow: var(--clr-light-dark-font--) 5px 5px;
+        p {
+            text-align: justify;
+            font-size: 1.8em;
+            flex: 1.5;
+            margin-top: 60px;
+            margin-right: 10%;
+            span {
+                font-weight: bold;
+            }
+            a {
+                color: var(--clr-link-font--);
+                text-decoration: none;
+                &:hover {
+                    color: var(--clr-link-hover--);
+                    text-decoration: underline;
+                }
+            }
+        }
+        img {
+            position: relative;
+            width: 300px;
+            margin: 10px;
+            margin-inline: 80px;
+            object-fit: cover;
+            border: var(--clr-light-font--) 3px solid;
+            box-shadow: var(--clr-light-dark-font--) 8px 8px;
+            transition: all .2s;
+            transform: rotate(5deg);
+            &:hover {
+                transform: rotate(8deg);
+                box-shadow: var(--clr-light-dark-font--) 5px 5px;
+            }
         }
     }
     li {
@@ -479,17 +504,31 @@ article {
 /* ##### Article CV ##### */
 
 #cv {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
+    section {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        h3 {
+            margin: 0;
+            margin-left: 50%;
+        }
+        &:nth-child(2) > * {
+            margin-inline: 50px;
+        }
+    }
+    h4,p {
+        text-align: justify;
+        font-size: 1.6em;
+    }
     a {
         width: fit-content;
     }
     img {
         position: relative;
         height: 300px;
+        margin-left: 60px;
         border: var(--clr-light-dark-font--) 3px solid;
         box-shadow: var(--clr-dark-font--) 5px 5px;
         transition: all .5s;
@@ -499,14 +538,17 @@ article {
             transform: rotate(-7deg);
         }
     }
-    div {
-        width: 30%;
-    }
     form {
-        width: 150px;
+        width: auto;
         border: solid 1px var(--clr-dark-font--);
         border-radius: 15px;
         padding: 10px 15px;
+        div {
+            width: auto;
+        }
+        h4 {
+            width: 200px;
+        }
     }
     label {
         display: block;
