@@ -25,19 +25,21 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "lien" : "https://s1.qwant.com/thumbr/0x380/b/d/204ae0876f62f046ffb7340c3c8b6fc251754c62c8bc9d0fe75713daa1dc6d/f517f32c3de29226b39dfad71ad689bd.gif?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff5%2F17%2Ff3%2Ff517f32c3de29226b39dfad71ad689bd.gif&q=0&b=1&p=0&a=1",
+                        "alt" : "apperçu du Blogfish",
+                        "title" : "apperçu du Blogfish"
                     },
-                    "description" : "",
+                    "description" : "Site web créer en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieu à forte pression. Ce qui explique son apparence physique quand il est sortie de l'eau.",
                     "langage" : [
                         "Html",
                         "CSS"
                     ],
                     "objectifs" : [
-                        ""
+                        "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne",
+                        "Évaluer notre niveau en Html"
                     ],
                     "competence_developpe" : [
+                        "Autonomie : Apprendre à manipuler le Html",
                         ""
                     ]
                 }
@@ -46,63 +48,39 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Mise en forme de l'idée",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Dès le début, l'image du blobfish nous est venue à l'idée",
+                            "Appartir de cela, il fallait construire 3 pages plus ou moins cohérente qui habirais ce blobfish.",
+                            "Pour cela, on créa une page autour des produits alimentaire fictifs à base de blobfish, des produits dérivées et comment adopter un blobfish."
                         ],
                         "lien" : [
                             {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
+                                "nom" : "Wikipédia Blobfish",
+                                "lien" : "https://fr.wikipedia.org/wiki/Blobfish"
                             }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Création des pages personnels",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Chaque personne du groupe devait construire sa page, je me suis chargé de la partie produits divers",
+                            "N'ayant aucune base en html et css. On décide de créer une structure globale pour qu'ensuite chacun change la partie principale de sa page. Pourainsi garder uniformisation du site web",
+                            "Pour faire ma page principale, je créer un tableau qui me permettrait d'organiser chaque élément dans sa case. Vu que je ne connaissait aucun moyen de changer la position des blocs je trouva cette solution correcte."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Habiller le Blogfish",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "La charte graphique du site c'est tourné vers la couleur du blobfish. Ayant une couleur rose, nous utillisons une couleur plus claire comme le blanc pour faire contraste",
+                            "Pour aligner les blocs avec d'autre, on utilisa beaucoup les padding, margin et les display inline. Ce qui rendait la page peu responsive"
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]
-
             }
         ]
     } 

@@ -15,37 +15,40 @@ fetch("json/" + projet + ".json")
                     <h3>
                         ${file[1].title}
                     </h3>
-                    <section #lienPratique>
+            `;
+            if (file[1].content[0].section.image !== undefined) {
+                card += `
+                    <img src="${file[1].content[0].section.image.lien}" alt="${file[1].content[0].section.image.alt}" title="${file[1].content[0].section.image.title}">
+                `;
+            } else {
+                card += `
+                    <video
+                    width="480"
+                    controls
+                    poster="${file[1].section[0].video.poster}">
+                    <source
+                        src="${file[1].section[0].video.lien}"
+                        type="video/mp4" />
+                    Votre navigateur ne permet pas de lire les vidéos.
+                    </video>
+
+                `;
+            }
+            card += `
+                    <section id="lienPratique">
                         <h4>
                             Lien pratique
                         </h4>
-                        <a href="index.html#portfolio">
-                            Retour au Menu
-                        </a>
-                        <a href="${file[1].depot}">
-                            Zone de dépot
-                        </a>
+                        <div>
+                            <a href="index.html#portfolio">
+                                &lt;&nbsp;Retour au Menu
+                            </a>
+                            <a href="${file[1].depot}">
+                                <img src="images/reseau/github.png" alt="depot" title="depot">
+                                <span>Zone de dépot</span>
+                            </a>
+                        </div>
                     </section>
-                `;
-                if (file[1].content[0].section.image !== undefined) {
-                    card += `
-                        <img src="${file[1].content[0].section.image.lien}" alt="${file[1].content[0].section.image.alt}" title="${file[1].content[0].section.image.title}">
-                    `;
-                } else {
-                    card += `
-                        <video
-                        width="480"
-                        controls
-                        poster="${file[1].section[0].video.poster}">
-                        <source
-                            src="${file[1].section[0].video.lien}"
-                            type="video/mp4" />
-                        Votre navigateur ne permet pas de lire les vidéos.
-                        </video>
-
-                    `;
-                }
-                card += `
                     <section id="description">
                         <h4>
                             Description
@@ -54,6 +57,25 @@ fetch("json/" + projet + ".json")
                             ${file[1].content[0].section.description}
                         </p>
                     </section>
+                `;
+                    card += `
+                    <section id="objectifs">
+                        <h4>
+                            Objectif(s)
+                        </h4>
+                        <ul>
+                    `;
+                    file[1].content[0].section.objectifs.forEach(element => {
+                        card += `
+                            <li>
+                                ${element}
+                            </li>
+                        `;
+                    });
+                    card += `
+                        </ul>
+                    </section>
+                    <div>
                 `;
                 if (file[1].content[0].section.langage !== undefined) {
                     card += `
@@ -66,7 +88,7 @@ fetch("json/" + projet + ".json")
                     file[1].content[0].section.langage.forEach(element => {
                         card += `
                             <li>
-                                ${element}
+                                <img src="images/logo/technologies/${element}.png" alt="${element}" title="${element}">    
                             </li>
                         `;
                     });
@@ -76,22 +98,6 @@ fetch("json/" + projet + ".json")
                     `;
                 };
                 card += `
-                <section id="objectifs">
-                    <h4>
-                        Objectif(s)
-                    </h4>
-                    <ul>
-                `;
-                file[1].content[0].section.objectifs.forEach(element => {
-                    card += `
-                        <li>
-                            ${element}
-                        </li>
-                    `;
-                });
-                card += `
-                    </ul>
-                </section>
                 <section id="competence_developpe">
                     <h4>
                         Compétences développées
@@ -108,6 +114,7 @@ fetch("json/" + projet + ".json")
                 card += `
                     </ul>
                 </section>
+            </div>
                 `;
 
                 let article1 = document.createElement("article")
@@ -153,6 +160,7 @@ fetch("json/" + projet + ".json")
                 `;
                 if (file[1].content[1].section[index].lien.length != 0) {
                     card += `
+                        <div>
                             <span>
                                 Source:
                             </span>
@@ -164,7 +172,10 @@ fetch("json/" + projet + ".json")
                                 ${file[1].content[1].section[index].lien[index_lien].nom}
                             </a>
                         `;
-                    } 
+                    }
+                    card += `
+                        </div>
+                    `; 
                 }
                 card += `
                     </section>
