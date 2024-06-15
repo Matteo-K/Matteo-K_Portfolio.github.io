@@ -91,8 +91,6 @@ function fermerPopUp() {
 input_submit.style.backgroundColor
 
 const input_contact = document.querySelectorAll("#contact input, #contenue");
-const root = document.documentElement; // Utilisation de document.documentElement pour sélectionner :root directement
-const style = window.getComputedStyle(root);
 
 input_contact.forEach(element => {
     element.addEventListener("focus", () => {

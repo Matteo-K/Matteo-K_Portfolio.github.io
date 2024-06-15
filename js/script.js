@@ -1,22 +1,3 @@
-/* Déplacement de la souris */
-
-const mousse_ = document.querySelector('.mousemove');
-
-window.addEventListener('mousemove',(event) => {
-    mousse_.style.left = event.pageX + "px";
-    mousse_.style.top = event.pageY + "px";
-});
-
-window.addEventListener('mousedown',() => {
-    mousse_.style.transform ="scale(1.5) translate( -25%, -25%)";
-    mousse_.style.borderColor ="red";
-});
-
-window.addEventListener('mouseup',() => {
-    mousse_.style.transform ="scale(1) translate(-50%, -50%)";
-    mousse_.style.borderColor = window.getComputedStyle(document.querySelector(':root')).getPropertyValue("--clr-nav-bg--");
-});
-
 /* ### Menu navigation ### */
 /* -- ouvre et ferme le menu à l'intéraction du bouton du menu -- */
 

@@ -326,8 +326,9 @@ article {
                 border-radius: 50%;
                 top: -8px;
                 left: -120px;
+                pointer-events: all;
                 transform: rotate(90deg);
-                animation: salut .5s alternate 0s infinite;
+                animation: salut .5s alternate 0s infinite;                
             }
             span {
                 font-weight: bold;
