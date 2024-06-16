@@ -27,15 +27,16 @@
                         "alt" : "",
                         "title" : ""
                     },
-                    "description" : "",
+                    "description" : "Programme qui permet d'encoder et décoder les fichiers",
                     "langage" : [
-                        "Perl"
+                        "perl"
                     ],
                     "objectifs" : [
-                        ""
+                        "Trouver une manière de sécuriser mais fichiers pour qu'il soit décoder uniquement avec mais mots de passe."
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Sécurisation des données",
+                        "Méthode d'encodage"
                     ]
                 }
             },
@@ -43,53 +44,22 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Gestion des utilisateurs",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Créer un système qui permettra à l'utilisateur de se connecter avec nom d'utilisateur et un mot de passe",
+                            "Si l'utilisateur à un compte alors onlui demande de se connecter.",
+                            "Sinon on lui demande de créer un compte.",
+                            "Cela permettra à l'utilisateur de pouvoir décoder ses fichiers et pour que les autres utilisateurs ne peuvent pas lire son contenue."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Encodage/Décodage",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Ouvrir les fichiers afin de lire leur contenue et écrire leur contenue dans un nouveau fichier en les encodant ou décodant.",
+                            "Construire plusieurs méthode différentes pour encoder le contenue des fichiers.",
+                            "Faire en sorte que uniquement la personne qui a encoder les fichier puissent décoder son fichier."
                         ],
                         "lien" : [
                             {
@@ -99,7 +69,6 @@
                         ] 
                     }
                 ]
-
             }
         ]
     } 

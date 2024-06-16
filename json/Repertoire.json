@@ -29,7 +29,9 @@
                     },
                     "description" : "",
                     "langage" : [
-                        "Python"
+                        "python",
+                        "html",
+                        "css"
                     ],
                     "objectifs" : [
                         ""
@@ -43,7 +45,7 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Concevoir le programme",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -57,35 +59,7 @@
                         ] 
                     },
                     {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
+                        "titre" : "Adaptation en web",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -99,7 +73,6 @@
                         ] 
                     }
                 ]
-
             }
         ]
     } 

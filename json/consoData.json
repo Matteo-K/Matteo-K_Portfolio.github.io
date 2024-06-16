@@ -27,13 +27,14 @@
                         "alt" : "",
                         "title" : ""
                     },
-                    "description" : "",
+                    "description" : "Construire une base de donnée sur le thème des documents csv disponibles sur le site du gouvernement. Puis j'analyserai ses données",
                     "langage" : [
-                        "SQL",
-                        "Python"
+                        "sql",
+                        "python"
                     ],
                     "objectifs" : [
-                        ""
+                        "Construire une base de donnée et la peulpler",
+                        "Analyser les données en dessinant des diagrammes"
                     ],
                     "competence_developpe" : [
                         ""
@@ -44,63 +45,26 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Construction de la base de donnée",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "J'ai décider de choisir des fichiers csv autour de l'évolution du gaz. Car le prix du gaz variais beaucoup de nos jours avec l'entrée en guerre de la Russie contre l'Ukraine.",
+                            "Construction de la base de donnée sur laragon sur un serveur locale pour ensuite les récupérés les données sur le programme python.",
+                            "Remplir la base de donnée avec les données des fichiers csv."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Analyser les données",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Élaboration d'un programme qui permet de récupérer les données de la base de donnée sur un serveur local avec laragon",
+                            "Récupéré les données avec des requêtes sql depuis le programme python",
+                            "Construire des diagrammes avec Matplotlib et ressortir une conclusion"
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]
-
             }
         ]
     } 

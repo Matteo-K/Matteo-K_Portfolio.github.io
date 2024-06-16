@@ -29,10 +29,11 @@
                     },
                     "description" : "",
                     "langage" : [
-                        "Python"
+                        "python"
                     ],
                     "objectifs" : [
-                        ""
+                        "Réalisation d'un petit programme pour m'aider à réviser ma comptabilité",
+                        "Faire un programme simple à comprendre qui pourrait m'aider dans d'autre cours"
                     ],
                     "competence_developpe" : [
                         ""

@@ -1,37 +1,37 @@
 [
     {
-        "title" : "Repertoire_web",
-        "lien" : "Repertoire_web",
+        "title" : "S2.04",
+        "lien" : "S2.04",
         "compétence" : [
-            1
+            4
         ],
         "image" : {
             "lien" : "",
-            "alt" : "illustration Répertoire web",
-            "title" : "illustration Répertoire web"
+            "alt" : "illustration ",
+            "title" : "illustration "
         },
         "contributeur" : [
+            "Raphaël Bardini",
             "Mattéo Kervadec"
         ],
-        "date" : "mi 2022"
+        "date" : "06/2024"
     },
     {
-        "title" : "Repertoire_web",
-        "depot" : "https://github.com/Matteo-K/Repertoire_web",
+        "title" : "S2.04",
+        "depot" : "https://github.com/Matteo-K/S2.04",
         "content" : [
             {
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
                         "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "alt" : "apperçu base de donnée",
+                        "title" : "apperçu base de donnée"
                     },
                     "description" : "",
                     "langage" : [
-                        "Html",
-                        "CSS",
-                        "Python"
+                        "sql",
+                        "python"
                     ],
                     "objectifs" : [
                         ""

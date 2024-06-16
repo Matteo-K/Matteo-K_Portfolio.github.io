@@ -43,7 +43,7 @@ fetch("json/" + projet + ".json")
                             <a href="index.html#portfolio">
                                 &lt;&nbsp;Retour au Menu
                             </a>
-                            <a href="${file[1].depot}">
+                            <a href="${file[1].depot}" target="blank_">
                                 <img src="images/reseau/github.png" alt="depot" title="depot">
                                 <span>Zone de dépot</span>
                             </a>

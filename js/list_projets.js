@@ -25,7 +25,7 @@ const suggestions = [
     { projet_: "Mattaque-Original-Web", lien: "projet.html?projet=Mattaque-Original-Web", select: false},
     { projet_: "consoData", lien: "projet.html?projet=consoData", select: true},
     { projet_: "jeuDeLaVie", lien: "projet.html?projet=jeuDeLaVie", select: false},
-    { projet_: "Repertoire_web", lien: "projet.html?projet=Repertoire_web", select: false},
     { projet_: "Repertoire", lien: "projet.html?projet=Repertoire", select: false},
+    { projet_: "S2.04", lien: "projet.html?projet=S2.04", select: true},
     { projet_: "Rick", lien: "https://youtu.be/dQw4w9WgXcQ?si=gPv6Yjx-lYoYusla", select: false},
 ];

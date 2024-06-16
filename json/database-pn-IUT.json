@@ -28,15 +28,16 @@
                         "alt" : "",
                         "title" : ""
                     },
-                    "description" : "",
+                    "description" : "Construction d'une base de donnée autour du programme nationnal du BUT informatique",
                     "langage" : [
-                        "SQL"
+                        "sql"
                     ],
                     "objectifs" : [
-                        ""
+                        "Créer un schéma/une représentation de la base de donnée",
+                        "Construire la base de donnée"
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Méthode de construction d'un schéma d'une base de donnée"
                     ]
                 }
             },
@@ -44,7 +45,7 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Construction du schéma",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -58,35 +59,7 @@
                         ] 
                     },
                     {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
+                        "titre" : "Création de la base de donnée",
                         "text" : [
                             "A l'aide de ça j'ai fais ça",
                             "Puis j'ai fais ça",
@@ -100,7 +73,6 @@
                         ] 
                     }
                 ]
-
             }
         ]
     } 

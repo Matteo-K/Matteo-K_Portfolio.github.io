@@ -25,14 +25,14 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "https://s1.qwant.com/thumbr/0x380/b/d/204ae0876f62f046ffb7340c3c8b6fc251754c62c8bc9d0fe75713daa1dc6d/f517f32c3de29226b39dfad71ad689bd.gif?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff5%2F17%2Ff3%2Ff517f32c3de29226b39dfad71ad689bd.gif&q=0&b=1&p=0&a=1",
+                        "lien" : "images/Illustration_project/blogfish_page.png",
                         "alt" : "apperçu du Blogfish",
                         "title" : "apperçu du Blogfish"
                     },
                     "description" : "Site web créer en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieu à forte pression. Ce qui explique son apparence physique quand il est sortie de l'eau.",
                     "langage" : [
-                        "Html",
-                        "CSS"
+                        "html",
+                        "css"
                     ],
                     "objectifs" : [
                         "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne",
