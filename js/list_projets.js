@@ -5,7 +5,7 @@
  */
 
 const suggestions = [
-    { projet_: "Monopoly", lien: "projet.html?projet=Monopoly", select: false},
+    { projet_: "Monopoly", lien: "projet.html?projet=Monopoly", select: true},
     { projet_: "Sudoku", lien: "projet.html?projet=Sudoku", select: false},
     { projet_: "Innosang", lien: "projet.html?projet=Innosang", select: true},
     { projet_: "Portfolio", lien: "projet.html?projet=Portfolio", select: true},
@@ -20,7 +20,7 @@ const suggestions = [
     { projet_: "genDoc", lien: "projet.html?projet=genDoc", select: true},
     { projet_: "Solver-Labyrinthe", lien: "projet.html?projet=Solver-Labyrinthe", select: true},
     { projet_: "bloques-notes", lien: "projet.html?projet=bloques-notes", select: true},
-    { projet_: "Quelque-perle", lien: "projet.html?projet=Quelque-perle", select: true},
+    { projet_: "Quelque-perle", lien: "projet.html?projet=Quelque-perle", select: false},
     { projet_: "Roulette-genshin", lien: "projet.html?projet=Roulette-genshin", select: false},
     { projet_: "Mattaque-Original-Web", lien: "projet.html?projet=Mattaque-Original-Web", select: false},
     { projet_: "consoData", lien: "projet.html?projet=consoData", select: true},

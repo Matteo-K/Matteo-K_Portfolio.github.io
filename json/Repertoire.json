@@ -52,10 +52,6 @@
                             "Mais ça aussi"
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
@@ -66,10 +62,6 @@
                             "Mais ça aussi"
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]

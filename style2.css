@@ -114,6 +114,19 @@ ul,li {
     list-style: none;
 }
 
+/* ###### Mousemove ###### */
+
+.mousemove {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--clr-light-font--);
+    border: pink 2px solid;
+    pointer-events: none;
+}
+
 /* ###### Bloc de navigation latérale ###### */
 
 aside {
@@ -934,7 +947,7 @@ article {
 
 .erreur404 {
     height: 700px;
-    padding-top: 120px;
+    margin-top: 120px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
