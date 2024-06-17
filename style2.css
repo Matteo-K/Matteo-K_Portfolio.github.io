@@ -116,16 +116,20 @@ ul,li {
 
 /* ###### Mousemove ###### */
 
-.mousemove {
+#link_static {
+    width: 50px;
+    height: 50px;
+    background-image: url('images/logo/mousemove/LinkBusy.gif');
+    background-size: cover;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background-color: var(--clr-light-font--);
-    border: pink 2px solid;
     pointer-events: none;
-}
+    transition: all .2s;
+  }
+  
+  .rotation {
+    transform: rotateY(180deg);
+  }
+  
 
 /* ###### Bloc de navigation latérale ###### */
 
@@ -247,13 +251,13 @@ header {
                 cursor: pointer;
                 background-color: var(--clr-search-selcted--);
             }
-            &:nth-child(2), &:nth-child(4),&:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12), &:nth-child(14), &:nth-child(16) {
-                background-color: var(--clr-search-bg2--);
-                border-top: 1px solid var(--clr-dark-font--);
-                border-bottom: 1px solid var(--clr-dark-font--);
-                &:hover {
-                    background-color: var(--clr-search-selcted--);
-                }
+        }
+        .li_color2 {
+            background-color: var(--clr-search-bg2--);
+            border-top: 1px solid var(--clr-dark-font--);
+            border-bottom: 1px solid var(--clr-dark-font--);
+            &:hover {
+                background-color: var(--clr-search-selcted--);
             }
         }
     }
@@ -338,7 +342,7 @@ article {
                 left: -120px;
                 pointer-events: all;
                 transform: rotate(90deg);
-                animation: salut .5s alternate 0s infinite;                
+                animation: salut .8s alternate-reverse .5s infinite;                
             }
             span {
                 font-weight: bold;
@@ -355,7 +359,7 @@ article {
 
 @keyframes salut {
     from {
-        transform: rotate(-30deg);
+        transform: rotate(-70deg);
     } to {
         transform: rotate(20deg);
     }

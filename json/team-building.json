@@ -1,35 +1,35 @@
 [
     {
-        "title" : "Solver-Labyrinthe",
-        "lien" : "Solver-Labyrinthe",
+        "title" : "team-building",
+        "lien" : "team-building",
         "compétence" : [
-            2
+            6
         ],
         "image" : {
-            "lien" : "images/Illustration_project/construction_labyrinth.gif",
-            "alt" : "illustration Labyrinthe",
-            "title" : "illustration Labyrinthe"
+            "lien" : "",
+            "alt" : "illustration ",
+            "title" : "illustration "
         },
         "contributeur" : [
             "Mattéo Kervadec"
         ],
-        "date" : "05/2023"
+        "date" : "06/2024"
     },
     {
-        "title" : "Solver Labyrinthe",
-        "depot" : "https://github.com/Matteo-K/Solver-Labyrinthe",
+        "title" : "team-building",
+        "depot" : "https://github.com/Matteo-K/evenements-de-team-building",
         "content" : [
             {
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "images/Illustration_project/resolution_labyrinth.gif",
-                        "alt" : "Résolution Labyrinthe",
+                        "lien" : "",
+                        "alt" : "",
                         "title" : ""
                     },
                     "description" : "",
                     "langage" : [
-                        "Python"
+                        ""
                     ],
                     "objectifs" : [
                         ""

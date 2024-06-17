@@ -1,21 +1,20 @@
 /* Souris qui bouge */
 
-const mousse_ = document.querySelector('.mousemove');
+const linkStatic = document.getElementById('link_static');
 
-window.addEventListener('mousemove',(event) => {
-    mousse_.style.left = event.pageX + "px";
-    mousse_.style.top = event.pageY + "px";
+document.addEventListener('mousemove', function(e) {
+  // Déplacer l'objet avec la souris
+  linkStatic.style.left = e.pageX + 'px';
+  linkStatic.style.top = e.pageY + 'px';
+
+  // Faire tourner l'image lorsque la souris se déplace de gauche à droite
+  if (e.movementX > 0) {
+    linkStatic.classList.add('rotation');
+  } else {
+    linkStatic.classList.remove('rotation');
+  }
 });
 
-window.addEventListener('mousedown',() => {
-    mousse_.style.transform ="scale(2) translate(-25%, -25%)";
-    mousse_.style.borderColor ="red";
-});
-
-window.addEventListener('mouseup',() => {
-    mousse_.style.transform ="scale(1) translate(-50%, -50%)";
-    mousse_.style.borderColor ="pink";
-});
 
 /* ### Menu navigation ### */
 /* -- ouvre et ferme le menu à l'intéraction du bouton du menu -- */

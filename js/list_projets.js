@@ -27,5 +27,6 @@ const suggestions = [
     { projet_: "jeuDeLaVie", lien: "projet.html?projet=jeuDeLaVie", select: false},
     { projet_: "Repertoire", lien: "projet.html?projet=Repertoire", select: false},
     { projet_: "S2.04", lien: "projet.html?projet=S2.04", select: true},
+    { projet_: "team-building", lien: "projet.html?projet=team-building", select: true},
     { projet_: "Rick", lien: "https://youtu.be/dQw4w9WgXcQ?si=gPv6Yjx-lYoYusla", select: false},
 ];
