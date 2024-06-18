@@ -465,6 +465,7 @@ article {
         background-color: red;
     }
     .comp2 {
+        color: var(--clr-dark-font--);
         background-color: orange;
     }
     .comp3 {
@@ -482,6 +483,7 @@ article {
         background-color: black;
     }
     .autre {
+        color: var(--clr-dark-font--);
         background-color: pink;
     }
 }
