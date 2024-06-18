@@ -6,7 +6,7 @@
             4
         ],
         "image" : {
-            "lien" : "",
+            "lien" : "images/Illustration_project/sae204_statistiques.jpg",
             "alt" : "illustration ",
             "title" : "illustration "
         },
@@ -24,20 +24,21 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "apperçu base de donnée",
-                        "title" : "apperçu base de donnée"
+                        "lien" : "images/Illustration_project/diagBtnRatioFG.png",
+                        "alt" : "apperçu variable explicatives",
+                        "title" : "apperçu variable explicatives"
                     },
-                    "description" : "",
+                    "description" : "Construction d'une base de données autour des collèges.",
                     "langage" : [
                         "sql",
                         "python"
                     ],
                     "objectifs" : [
-                        ""
+                        "Construire une base de données et trouver des corrélations entre les données."
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Utilisation de formule mathématique",
+                        "Construction de la base de données"
                     ]
                 }
             },
@@ -45,63 +46,40 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Création de la base de donnée",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Nous disposons d'un schéma de base de données que nous devons transformer en schéma relationnel que nous utiliserons par la suite pour trier les données.",
+                            "Dans un premier temps moi et mon équipier Raphaël nous sommes charger de faire chacun de notre côté un diagramme des contraintes d'intégrité référencielle afin de mettre en commun et d'essayer d'explorer le sujet.",
+                            "En suite, je me suis chargé de créer les tables pendant que Raphaël se chargeait de faire les relations entre les tables."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Peuplement de labase de donnée",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Pour cette partie, nous disposons de plusieurs document csv avec lesquelles nous devons remplir de donnée les tables que nous avons construites précédemment.",
+                            "Nous utilisons WbImports afin d'importé les données dans le gestionnaire de bases de données (SqlWorkBench).",
+                            "Ensuite avec des tables temporaires, on s'est chargé de remplir les tables fixes."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Analyse des données",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Pour obtenir les données, nous avons dû trouver une problématique et construire une vue pour ensuite l'exporter dans un document csv.",
+                            "Avec ce fichier csv, nous avons essayé d'expliquer \"Qu'est ce qu'il peut expliquer le nombre de SEGPA dans un établissement ?\". Pour cela, nous prenons comme variable endogène le nombre de SEGPA par établissement. Puis nous avons pris plusieurs variables explicatives qui pourraient expliquer ce nombre. Ce sont des variables plus ou moins absurde.",
+                            "Nous avons calculé les corrélations, la matrice de covariance et la régression linéaire. Pour au final conclure qu'il n'y a pas de variable qui pourrait expliquer le nombre de personnes en SEGPA. Mais trois variables sortent du lot (effectif d'élève par établissement, l'IPS et le ratio fille/garçon)."
                         ],
                         "lien" : [
                             {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
+                                "nom" : "compte rendue",
+                                "lien" : "https://github.com/Matteo-K/S2.04/blob/main/cr_bardini_kervadec.pdf"
                             }
                         ] 
                     }
                 ]
-
             }
         ]
     } 

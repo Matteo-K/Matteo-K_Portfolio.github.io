@@ -6,7 +6,7 @@
             5
         ],
         "image" : {
-            "lien" : "",
+            "lien" : "images/Illustration_project/TabaskhoAccueil.png",
             "alt" : "Logo Tabaskho",
             "title" : "Logo Tabaskho"
         },
@@ -26,21 +26,22 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "lien" : "images/Illustration_project/tabaskhoSaison.png",
+                        "alt" : "apperçu Tabask'ho",
+                        "title" : "apperçu Tabask'ho"
                     },
-                    "description" : "",
+                    "description" : "Développer un site web de streaming \"TabasKho\". Le site doit comporter 4 pages. Le site de streaming devra suivre une série en détaillant ses pages.",
                     "langage" : [
-                        "Html",
-                        "CSS",
-                        "Javascript"
+                        "html",
+                        "css",
+                        "javascript"
                     ],
                     "objectifs" : [
-                        ""
+                        "Comprendre les besoins du client.",
+                        "Développer un site web qui suit les attentes."
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Développement web"
                     ]
                 }
             },
@@ -48,11 +49,9 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Conception",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            ""
                         ],
                         "lien" : [
                             {
@@ -62,39 +61,9 @@
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Développement",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "En Javascript, je me suis décidé de réaliser une barre de recherche qui pourrait suggérer des séries"
                         ],
                         "lien" : [
                             {
@@ -104,7 +73,6 @@
                         ] 
                     }
                 ]
-
             }
         ]
     } 

@@ -1,0 +1,72 @@
+[
+    {
+        "title" : "S2.03",
+        "lien" : "S2.03",
+        "compétence" : [
+            3
+        ],
+        "image" : {
+            "lien" : "images/Illustration_project/S203Web.png",
+            "alt" : "illustration Connexion",
+            "title" : "illustration Connexion"
+        },
+        "contributeur" : [
+            "Mattéo Kervadec"
+        ],
+        "date" : "05/2024"
+    },
+    {
+        "title" : "S2.03",
+        "depot" : "https://github.com/Matteo-K/S2.03",
+        "content" : [
+            {
+                "article" : "art_presentation_project",
+                "section" : {
+                    "image" : {
+                        "lien" : "images/Illustration_project/S203Web.png",
+                        "alt" : "apperçu connexion",
+                        "title" : "apperçu connexion"
+                    },
+                    "description" : "Installation d'un serveur appache avec un côté admin et utilisateur",
+                    "langage" : [
+                        "appache",
+                        "html",
+                        "css",
+                        "javascript"
+                    ],
+                    "objectifs" : [
+                        "Installation d'un serveur php et MySQL",
+                        "Réalisés de jolie page web"
+                    ],
+                    "competence_developpe" : [
+                        "Maitrise du javascript",
+                        "Installer un serveur"
+                    ]
+                }
+            },
+            {
+                "article" : "art_etape",
+                "section" : [
+                    {
+                        "titre" : "Installation du serveur appache",
+                        "text" : [
+                            "Pour installer le serveur Appache, nous avons utilisé une machine virtuelle (VirtualBox). Lors du projet, nous avons très souvent eu des problèmes avec la machine virtuelle et donc nous avons recommencer plusieurs fois certaines parties de l'installation.",
+                            "Le MySQL permettait au utilisateur de se connecter au site web via un formulaire de connexion."
+                        ],
+                        "lien" : [
+                        ] 
+                    },
+                    {
+                        "titre" : "Réalisation des pages web",
+                        "text" : [
+                            "Pour accéder au site web, il faut que l'utilisateur se connecte par un formulaire de connexion. Ou il faut qu'il crée un compte. Pour cela, il doit remplir un formulaire. L'ajout du Javascript est utilisé pour rendre le site plus dynamique/vivant. Nous avons également réalisé une page 404 personnalisée et un début de page public.",
+                            "Pour réaliser ce site web, nous nous sommes basés sur le thème de la météo. Chaque page a un lien à la météo. Cela va de la page de connexion à la page 404."
+                        ],
+                        "lien" : [
+                        ] 
+                    }
+                ]
+            }
+        ]
+    } 
+]

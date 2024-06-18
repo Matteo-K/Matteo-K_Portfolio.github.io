@@ -870,6 +870,7 @@ article {
     img:not(section img) {
         float: right;
         width: auto;
+        max-width: 30%;
         max-height: 450px;
         margin-inline: 40px;
         transform: skewX(-4deg);
