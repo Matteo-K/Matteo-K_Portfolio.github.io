@@ -27,17 +27,19 @@
                         "alt" : "",
                         "title" : ""
                     },
-                    "description" : "",
+                    "description" : "Le répertoire est un logiciel qui va enregistrer les numéros de téléphone",
                     "langage" : [
                         "python",
                         "html",
                         "css"
                     ],
                     "objectifs" : [
-                        ""
+                        "Lire des fichiers",
+                        "Manipuler les données"
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Connaissance en css et html",
+                        "Manipulation des fichiers"
                     ]
                 }
             },
@@ -47,9 +49,7 @@
                     {
                         "titre" : "Concevoir le programme",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Le programme initial a pour but d'un menu, d'où on peut enregistrer un numéro et un nom. Puis on peut également rechercher le numéro de quelqu'un à partir de son nom. Toutes les données sont donc stockées dans un fichier."
                         ],
                         "lien" : [
                         ] 
@@ -57,9 +57,7 @@
                     {
                         "titre" : "Adaptation en web",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Ensuite, il a fallu se familiariser avec laragon pour faire du back-end en python et du html & css en front-end. La partie front-end se chargeait de guider l'utilisateur vers les pages. Et la partie Back-end enregistrait les numéros dans un fichier et pouvais les afficher grâce au nom associé."
                         ],
                         "lien" : [
                         ] 

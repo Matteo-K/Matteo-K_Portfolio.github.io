@@ -16,6 +16,11 @@ fetch("json/" + projet + ".json")
                         ${file[1].title}
                     </h3>
             `;
+            card += `
+            <time>
+                ${file[0].date}
+            </time>
+            `;
             if (file[1].content[0].section.image !== undefined) {
                 card += `
                     <img src="${file[1].content[0].section.image.lien}" alt="${file[1].content[0].section.image.alt}" title="${file[1].content[0].section.image.title}">
