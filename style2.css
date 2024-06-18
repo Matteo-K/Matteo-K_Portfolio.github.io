@@ -518,6 +518,7 @@ article {
         img {
             position: relative;
             width: 300px;
+            max-height: 400px;
             margin: 10px;
             margin-inline: 80px;
             object-fit: cover;
