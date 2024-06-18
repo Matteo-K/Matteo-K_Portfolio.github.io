@@ -468,9 +468,11 @@ article {
         background-color: orange;
     }
     .comp3 {
+        color: var(--clr-dark-font--);
         background-color: yellow;
     }
     .comp4 {
+        color: var(--clr-dark-font--);
         background-color: lightgreen;
     }
     .comp5 {
