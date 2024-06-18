@@ -81,7 +81,7 @@ fetch("json/" + projet + ".json")
                     card += `
                     <section id="langage">
                         <h4>
-                            Langage(s)
+                            Technologie(s)
                         </h4>
                         <ul>
                     `;

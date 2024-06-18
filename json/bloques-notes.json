@@ -23,9 +23,9 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "lien" : "images/Illustration_project/bloques-notes.png",
+                        "alt" : "Illustration bloques-notes",
+                        "title" : "Illustration bloques-notes"
                     },
                     "description" : "Programme qui permet d'encoder et décoder les fichiers",
                     "langage" : [
@@ -62,10 +62,6 @@
                             "Faire en sorte que uniquement la personne qui a encoder les fichier puissent décoder son fichier."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]

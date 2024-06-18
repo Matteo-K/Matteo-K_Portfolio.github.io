@@ -32,8 +32,8 @@
                     },
                     "description" : "Gestion du projet du Patio. En préparant les différents déroulements afin de bien s'organiser pour le développement du logiciel.",
                     "langage" : [
-                        "Java",
-                        "JavaFX"
+                        "java",
+                        "javaFX"
                     ],
                     "objectifs" : [
                         "Gérer un projet en tout point. Préparation et suivi du projet en temps réel.",

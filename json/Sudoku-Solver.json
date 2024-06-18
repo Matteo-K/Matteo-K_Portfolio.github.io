@@ -18,25 +18,27 @@
     },
     {
         "title" : "Sudoku-Solver",
-        "depot" : "",
+        "depot" : "https://github.com/Matteo-K/Sudoku-Solver",
         "content" : [
             {
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "lien" : "images/Illustration_project/grilleSudoku.png",
+                        "alt" : "apperçu grille de sudoku",
+                        "title" : "apperçu grille de sudoku"
                     },
-                    "description" : "",
+                    "description" : "Réalisation d'un programme qui peut trouver la solution du sudoku.",
                     "langage" : [
                         "C"
                     ],
                     "objectifs" : [
-                        ""
+                        "Résoudre un suddoku.",
+                        "Résoudre le plus rapidement possible un sudoku."
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Optimisation",
+                        "Analyse d'un problème"
                     ]
                 }
             },
@@ -44,63 +46,23 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Résoudre le sudoku",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Au début du projet, on a commencé à faire les techniques classiques de résolution. Telle que le singleton caché, le singleton nu, les paires cachés, ...",
+                            "Puis on s'est rendu compte qu'on pouvait réaliser les N cachés et les N nus. Ce qui pourrait faire gagner beaucoup de temps."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Optimisation",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Après plusieurs analyse, on s'est rendue compte que la fonction qui était appelée le plus de fois était la fonction de vérification que l'élément peut être placée ou non. Donc on s'est arrangé pour l'optimiser au maximum pour qu'elle atteigne une très basse multiplicité."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]
-
             }
         ]
     } 

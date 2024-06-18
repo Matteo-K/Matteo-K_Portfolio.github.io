@@ -6,7 +6,7 @@
             2
         ],
         "image" : {
-            "lien" : "images/Illustration_project/resolutionNdames.gif",
+            "lien" : "images/Illustration_project/pbNQueen.png",
             "alt" : "illustration Jeu des 8 dames",
             "title" : "illustration Jeu des 8 dames"
         },
@@ -23,19 +23,21 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
+                        "lien" : "images/Illustration_project/resolutionNdames.gif",
                         "alt" : "",
                         "title" : ""
                     },
-                    "description" : "",
+                    "description" : "Le problème des N reines consiste à placer N reines sur un échiquier de N x N cases de manière à ce qu'aucune reine ne puisse menacer une autre.",
                     "langage" : [
                         "python"
                     ],
                     "objectifs" : [
-                        ""
+                        "Trouver des techniques pour résoudre le problème",
+                        "Trouver les façons les plus rapides et moins coûteux en mémoires."
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Optimisation",
+                        "Reflexion"
                     ]
                 }
             },
@@ -43,63 +45,23 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "",
+                        "titre" : "Le backtracking",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Le backtracking est l'une des solutions les plus sûrs et rapide pour trouver des solutions. Le backtracking parcours une solution une par une. Et dès qu'il est bloqué,il repart en arrière et recommence.",
+                            "C'est une méthode très rapide."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "",
+                        "titre" : "Le symétrie",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Parmi toutes les solutions que l'on a trouvées, je n'aurais jamais parié que cela soit celle-là la plus rapide et celle qui utilise le moins de mémoire. Elle déplace 2 reines à la fois, ce qui la rend très rapide. Mais le seul problème étant qu'elle ne peut trouver des solutions seulement si elles sont en symétrie."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]
-
             }
         ]
     } 

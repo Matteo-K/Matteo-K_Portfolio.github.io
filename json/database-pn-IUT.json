@@ -6,9 +6,9 @@
             4
         ],
         "image" : {
-            "lien" : "",
-            "alt" : "logo Database",
-            "title" : "logo Database"
+            "lien" : "images/Illustration_project/pnSchemaDatabase.png",
+            "alt" : "schema Database",
+            "title" : "schema Database"
         },
         "contributeur" : [
             "Mattéo Kervadec",
@@ -24,7 +24,7 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
+                        "lien" : "images/Illustration_project/PnIutLannionDB.png",
                         "alt" : "",
                         "title" : ""
                     },
@@ -37,7 +37,7 @@
                         "Construire la base de donnée"
                     ],
                     "competence_developpe" : [
-                        "Méthode de construction d'un schéma d'une base de donnée"
+                        "Méthode de construction d'un schéma d'une base de données"
                     ]
                 }
             },
@@ -47,29 +47,17 @@
                     {
                         "titre" : "Construction du schéma",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "Le sujet de cette SAE consistais à créer une base de données de toute pièce. À partir d'une demande, nous devions créer un schéma de base de données. Ce sujet était la construction d'une base de donnée sur le programme national du BUT informatique."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     },
                     {
-                        "titre" : "Création de la base de donnée",
+                        "titre" : "Création de la base de données",
                         "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
+                            "À partir de la correction du schéma que nous avions fait précédemment, nous devions construire le modèle relationnel de la base de données avec le SQL."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
                         ] 
                     }
                 ]
