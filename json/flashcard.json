@@ -23,17 +23,17 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
+                        "lien" : "images/Illustration_project/question-flashcard.png",
                         "alt" : "apperçu des flashcard",
                         "title" : "apperçu des flashcard"
                     },
-                    "description" : "Programme qui pose un intitulé comme \"La date de la révolution française\" puis quand l'utilisateur demande, le programme lui donner la réponse ainsi l'utilisateur peut passer à la prochaine intituler.",
+                    "description" : "Un programme qui pose un intitulé comme \"La date de la révolution française\" puis quand l'utilisateur demande, le programme lui donner la réponse ainsi l'utilisateur peut passer à la prochaine intituler.",
                     "langage" : [
                         "python"
                     ],
                     "objectifs" : [
-                        "Réalisation d'un petit programme pour m'aider à réviser ma comptabilité",
-                        "Faire un programme simple à comprendre qui pourrait m'aider dans d'autre cours"
+                        "Réalisation d'un petit programme pour m'aider à réviser ma comptabilité.",
+                        "Faire un programme simple à comprendre qui pourrait m'aider dans d'autre cours."
                     ],
                     "competence_developpe" : [
                         "Manipulation des fichiers",
@@ -45,55 +45,36 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "Réalisation d'une maquette",
+                        "titre" : "Liste des fonctionnalités",
                         "text" : [
-                            "Avec le site web Figma, j'ai réaliser une maquette du site web",
-                            "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio",
-                            "Étant seul sur le projet et peucde temps pour réaliser ce site web, je dûs ne pas m'arrêter sur les détails."
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Maquette Figma",
-                                "lien" : "https://www.figma.com/design/PEORQaCJZNJELGpY5JEGaK/Portfolio?node-id=0-1&t=a8PqPSP1n0KvJVrH-0"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "Conception du site en html/css",
-                        "text" : [
-                            "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construis la structure du site",
-                            "Malheureusement, vu que je me suis précipiter sur la réalisation, j'ai eu différente idée qui sont arriver en cours de route. Donc cela m'a entrainer à modifier régulièrement la structure html",
-                            "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviables"
+                            "Pour faire des cartes-mémoires qui peuvent s'adapter à chaque apprentissage, il faut plusieurs techniques de mémorisation.",
+                            "Ouverture de fichier - L'utilisateur peut entrer le chemin absolu du fichier. Ainsi l'utilisateur peut étudier librement son sujet. Ce qui rend le logiciel dynamique.",
+                            "Apprentissage - L'ensemble des cartes s'affiches avec la question et la réponse en face.",
+                            "Question-réponse - Une question ou une réponse s'affiche. Et le but est de donner sa réponse ou question. Au bout de 20 questions, le programme donne le score/résultat de l'utilisateur. Mais aussi l'ensemble des questions dont il a eu faux.",
+                            "Carte - Les questions/réponses s'affichent une par une appuyant sur entrer pour faire défiler les cartes."
                         ],
                         "lien" : [
                         ] 
                     },
                     {
-                        "titre" : "L'ajout du javascript",
+                        "titre" : "Implémentation",
                         "text" : [
-                            "Pour dynamiser le site web, je voulu rajouter du javascript. Mais n'ayant jamais utiliser ni appris à faire du javascript, j'ai suivi des cours en ligne durant mes temps libres",
-                            "Le javascript m'a permis de créer une barre de recherche dynamique afin d'orienté l'utilisateur dans sa recherche",
-                            "Mais cela m'a permis aussi de découvrir que l'on pouvais insérer du javascript dans le html"
+                            "À la base, j'ai voulu réaliser ce logiciel pour m'aider dans mes révisions et pourquoi pas pour d'autres personnes. Donc j'ai décidé de le réalisé en python vu que c'est un langage de programmation que beaucoup connaissent. Sinon je l'aurai réaliser en perl pour continuer d'apprendre ce langage.",
+                            "Mais j'ai découvert que nous pouvons rendre des fichiers python exécutable. Donc j'ai décidé de me renseigner et de tester."
                         ],
                         "lien" : [
                         ] 
                     },
                     {
-                        "titre" : "La génération automatique des projets",
+                        "titre" : "Futur fonctionnalité",
                         "text" : [
-                            "A l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réaliser un programme qui génère une page html à partir du contenue des fichiers",
-                            "A la base, je voulais que chaque projet avait un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utilisés pour les listés dans la page d'acceuil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requête par heure qui ne suffirais pas à son utilisation.",
-                            "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette api."
+                            "Pour des futures fonctionnalités, j'aimerais  que l'utilisateur puisse choisir entre 4 propositions. Ces propositions seront prises aléatoirement parmi d'autres questions. Mais parmi ces choix, il y a la bonne réponse.",
+                            "Ensuite,l'autre fonctionnalité serait de pouvoir prendre un thème et le déposer dans des tableaux."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "API Github",
-                                "lien" : "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28"
-                            }
                         ] 
                     }
                 ]
-
             }
         ]
     } 
