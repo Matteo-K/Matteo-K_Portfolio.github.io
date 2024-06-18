@@ -29,17 +29,17 @@
                         "alt" : "apperçu du Blogfish",
                         "title" : "apperçu du Blogfish"
                     },
-                    "description" : "Site web créer en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieu à forte pression. Ce qui explique son apparence physique quand il est sortie de l'eau.",
+                    "description" : "Site web créé en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieux à forte pression. Ce qui explique son apparence physique quand il est sorti de l'eau.",
                     "langage" : [
                         "html",
                         "css"
                     ],
                     "objectifs" : [
-                        "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne",
-                        "Évaluer notre niveau en Html"
+                        "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne.",
+                        "Évaluer notre niveau en Html."
                     ],
                     "competence_developpe" : [
-                        "Autonomie : Apprendre à manipuler le Html",
+                        "Autonomie : Apprendre à manipuler le Html.",
                         ""
                     ]
                 }
@@ -51,7 +51,7 @@
                         "titre" : "Mise en forme de l'idée",
                         "text" : [
                             "Dès le début, l'image du blobfish nous est venue à l'idée",
-                            "Appartir de cela, il fallait construire 3 pages plus ou moins cohérente qui habirais ce blobfish.",
+                            "À partir de cela, il fallait construire 3 pages plus ou moins cohérentes qui habillerais ce blobfish.",
                             "Pour cela, on créa une page autour des produits alimentaire fictifs à base de blobfish, des produits dérivées et comment adopter un blobfish."
                         ],
                         "lien" : [
@@ -65,8 +65,8 @@
                         "titre" : "Création des pages personnels",
                         "text" : [
                             "Chaque personne du groupe devait construire sa page, je me suis chargé de la partie produits divers",
-                            "N'ayant aucune base en html et css. On décide de créer une structure globale pour qu'ensuite chacun change la partie principale de sa page. Pourainsi garder uniformisation du site web",
-                            "Pour faire ma page principale, je créer un tableau qui me permettrait d'organiser chaque élément dans sa case. Vu que je ne connaissait aucun moyen de changer la position des blocs je trouva cette solution correcte."
+                            "N'ayant aucune base en html et css. On décide de créer une structure globale pour qu'ensuite chacun change la partie principale de sa page. Pour ainsi garder l'uniformisation du site web",
+                            "Pour faire ma page principale, je créais un tableau qui me permettrait d'organiser chaque élément dans sa case. Vu que je ne connaissais aucun moyen de changer la position des blocs, je trouvai cette solution correcte."
                         ],
                         "lien" : [
                         ] 
@@ -74,8 +74,8 @@
                     {
                         "titre" : "Habiller le Blogfish",
                         "text" : [
-                            "La charte graphique du site c'est tourné vers la couleur du blobfish. Ayant une couleur rose, nous utillisons une couleur plus claire comme le blanc pour faire contraste",
-                            "Pour aligner les blocs avec d'autre, on utilisa beaucoup les padding, margin et les display inline. Ce qui rendait la page peu responsive"
+                            "La charte graphique du site, c'est tourné vers la couleur du blobfish. Ayant une couleur rose, nous utilisons une couleur plus claire comme le blanc pour faire contraste.",
+                            "Pour aligner les blocs avec d'autres, on utilisa beaucoup les padding, margin et les display-inline. Ce qui rendait la page peu responsive"
                         ],
                         "lien" : [
                         ] 

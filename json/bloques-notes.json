@@ -6,9 +6,9 @@
             2
         ],
         "image" : {
-            "lien" : "",
-            "alt" : "Logo bloques-notes",
-            "title" : "Logo bloques-notes"
+            "lien" : "images/Illustration_project/bloques-notes.png",
+            "alt" : "Illustration bloques-notes",
+            "title" : "Illustration bloques-notes"
         },
         "contributeur" : [
             "Mattéo Kervadec"

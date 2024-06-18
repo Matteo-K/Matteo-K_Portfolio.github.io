@@ -25,9 +25,9 @@ fetch("json/" + projet + ".json")
                     <video
                     width="480"
                     controls
-                    poster="${file[1].section[0].video.poster}">
+                    poster="${file[1].content[0].section.video.poster}">
                     <source
-                        src="${file[1].section[0].video.lien}"
+                        src="${file[1].content[0].section.video.lien}"
                         type="video/mp4" />
                     Votre navigateur ne permet pas de lire les vidéos.
                     </video>
@@ -162,13 +162,13 @@ fetch("json/" + projet + ".json")
                     card += `
                         <div>
                             <span>
-                                Source:
+                                Source :
                             </span>
                         `;
                     link_size = file[1].content[1].section[index].lien.length
                     for (let index_lien = 0; index_lien < link_size; index_lien++) {
                         card += `
-                            <a href="${file[1].content[1].section[index].lien[index_lien].lien}">
+                            <a href="${file[1].content[1].section[index].lien[index_lien].lien}" target="blank_">
                                 ${file[1].content[1].section[index].lien[index_lien].nom}
                             </a>
                         `;

@@ -23,22 +23,25 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "lien" : "images/Illustration_project/portfolio_AboutMe.png",
+                        "alt" : "Représentation d'un projet",
+                        "title" : "Représentation d'un projet"
                     },
-                    "description" : "",
+                    "description" : "Un site web qui retrace mes projets d'informatique réalisé. Certain projet sont innachevés. Mais verront certainement le jour dans plusieurs mois/années. Il sert notamment à promouvoir mes compétences.",
                     "langage" : [
-                        "Html",
-                        "CSS",
-                        "Javascript",
-                        "Json"
+                        "html",
+                        "css",
+                        "javascript",
+                        "json"
                     ],
                     "objectifs" : [
-                        ""
+                        "Réaliser un site web pour archiver mes projets",
+                        "Rendre le site dynamique pour faciliter l'ajout de projet à l'avenir"
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Autonomie",
+                        "organisation",
+                        "rigueur"
                     ]
                 }
             },
@@ -48,9 +51,9 @@
                     {
                         "titre" : "Réalisation d'une maquette",
                         "text" : [
-                            "Avec le site web Figma, j'ai réaliser une maquette du site web",
-                            "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio",
-                            "Étant seul sur le projet et peucde temps pour réaliser ce site web, je dûs ne pas m'arrêter sur les détails."
+                            "Avec le site web Figma, j'ai réalisé une maquette du site web.",
+                            "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio.",
+                            "Étant seul sur le projet et ayant peu de temps pour réaliser ce site web, je dus ne pas m'arrêter sur les détails."
                         ],
                         "lien" : [
                             {
@@ -62,9 +65,9 @@
                     {
                         "titre" : "Conception du site en html/css",
                         "text" : [
-                            "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construis la structure du site",
-                            "Malheureusement, vu que je me suis précipiter sur la réalisation, j'ai eu différente idée qui sont arriver en cours de route. Donc cela m'a entrainer à modifier régulièrement la structure html",
-                            "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviables"
+                            "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construit la structure du site.",
+                            "Malheureusement, vu que je me suis précipité sur la réalisation, j'ai eu différentes idées qui sont arrivées en cours de route. Donc cela m'a entraîné à modifier régulièrement la structure html.",
+                            "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviales."
                         ],
                         "lien" : [
                         ] 
@@ -72,9 +75,9 @@
                     {
                         "titre" : "L'ajout du javascript",
                         "text" : [
-                            "Pour dynamiser le site web, je voulu rajouter du javascript. Mais n'ayant jamais utiliser ni appris à faire du javascript, j'ai suivi des cours en ligne durant mes temps libres",
-                            "Le javascript m'a permis de créer une barre de recherche dynamique afin d'orienté l'utilisateur dans sa recherche",
-                            "Mais cela m'a permis aussi de découvrir que l'on pouvais insérer du javascript dans le html"
+                            "Pour dynamiser le site web, je voulus rajouter du javaScript. Mais n'ayant jamais utilisé ni appris à faire du javaScript, j'ai suivi des cours en ligne durant mes temps libres.",
+                            "Le javaScript m'a permis de créer une barre de recherche dynamique afin d'orienter l'utilisateur dans sa recherche.",
+                            "Mais cela m'a permis aussi de découvrir que l'on pouvait insérer du javaScript dans le html."
                         ],
                         "lien" : [
                         ] 
@@ -82,9 +85,9 @@
                     {
                         "titre" : "La génération automatique des projets",
                         "text" : [
-                            "A l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réaliser un programme qui génère une page html à partir du contenue des fichiers",
-                            "A la base, je voulais que chaque projet avait un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utilisés pour les listés dans la page d'acceuil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requête par heure qui ne suffirais pas à son utilisation.",
-                            "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette api."
+                            "À l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réalisé un programme qui génère une page html à partir du contenu des fichiers.",
+                            "À la base, je voulais que chaque projet eût un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utiliser pour les lister dans la page d'accueil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requêtes par heure qui ne suffiraient pas à son utilisation.",
+                            "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette API."
                         ],
                         "lien" : [
                             {

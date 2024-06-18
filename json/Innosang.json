@@ -25,17 +25,18 @@
             {
                 "article" : "art_presentation_project",
                 "section" : {
-                    "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                    "video" : {
+                        "poster" : "images/Illustration_project/Innosang_Poster.png",
+                        "lien" : "https://youtu.be/8ASkQJEALjc?si=pl41sUZn4-Zd_rLg"
                     },
-                    "description" : "",
+                    "description" : "Réalisation d'un court-métrage de fin d'année de l'option cinéma.<br>Coquillet et Cassandra, deux inspecteurs sont appelés sur une scène de crime. Il y retrouve un cadavre  et peu de réponses. Mais qui est mort ?",
                     "objectifs" : [
-                        ""
+                        "Réaliser un court-métrage qui va être projeté au cinéma Ti-Hanok"
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Travail d'équipe",
+                        "Organisation d'un projet",
+                        "Apprendre à dire Non"
                     ]
                 }
             },
@@ -43,50 +44,61 @@
                 "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "Réalisation d'une maquette",
+                        "titre" : "Trouver l'enquête",
                         "text" : [
-                            "Avec le site web Figma, j'ai réaliser une maquette du site web",
-                            "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio",
-                            "Étant seul sur le projet et peucde temps pour réaliser ce site web, je dûs ne pas m'arrêter sur les détails."
+                            "L'idée de l'enquête de police est arrivée très rapidement. Étant dans une idée de cadre d'environ 10 minutes, l'enquête ne devait pas faire le tour de la ville. Durant le brainstorming, il y a eu plein d'idée très intéressante à explorer comme l'idée d'une boucle temporelle avec un appel téléphonique qui serait le début de l'enquête.", 
+                            "Mais il y a eu également des idées plus abstrait où l'équipe commençait à partir vers des idées plus farfelues qui ressortaient de l'idée initiale. Telle que l'idée d'une personne s'appelant Rechen (râteau en allemand), un collectionneur de râteau. C'est un criminel qui tue ses victimes en laissant toujours lui une trace de râteau. L'idée par loin, mais s'éloigne beaucoup de ce que l'on veut raconter initialement. Il y a eu d'autres idées comme l'intégration d'une autre personne qui serait mort et qui parlerais avec d'autre mort. Un peu comme le film 6<sup>ème</sup> sens. Au final, nous sommes partis sur une autre idée dont je vous laisse regarder plus haut ou sur Youtube sur le lien ci-dessous."
                         ],
                         "lien" : [
                             {
-                                "nom" : "Maquette Figma",
-                                "lien" : "https://www.figma.com/design/PEORQaCJZNJELGpY5JEGaK/Portfolio?node-id=0-1&t=a8PqPSP1n0KvJVrH-0"
+                                "nom" : "Wikipédia 6<sup>ème</sup> sens",
+                                "lien" : "https://fr.wikipedia.org/wiki/Sixième_Sens_(film)"
+                            },
+                            {
+                                "nom" : "Innosang",
+                                "lien" : "https://youtu.be/8ASkQJEALjc?si=pl41sUZn4-Zd_rLg"
                             }
                         ] 
                     },
                     {
-                        "titre" : "Conception du site en html/css",
+                        "titre" : "Organisation des scènes de tournages",
                         "text" : [
-                            "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construis la structure du site",
-                            "Malheureusement, vu que je me suis précipiter sur la réalisation, j'ai eu différente idée qui sont arriver en cours de route. Donc cela m'a entrainer à modifier régulièrement la structure html",
-                            "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviables"
+                            "Pour faire jouer notre film, nous avons demandé à des bénévoles d'une école de théâtre de bien vouloir être acteur/actrice dans notre court-métrage. 4 personnes ont répondu à la demande et seulement 3 étaient sélectionnés. Car l'acteur principal Coquillet était une connaissance de Cyprien Fiala (un membre du groupe). Une fois avoir sélectionner les acteurs, on leur demanda leurs disponibilités et on se rendit compte que nous n'avons que 3 jours pour tourner.",
+                            "Étant des cinéphiles amateurs, on estimait qu'il fallait être rapide. Donc nous sélectionnons une date, demandons la permission d'accès au lieu de tournage. Nous préparons les accessoires qu'il nous fallait et le jour de tournage arriva à grands pas."
                         ],
                         "lien" : [
                         ] 
                     },
                     {
-                        "titre" : "L'ajout du javascript",
+                        "titre" : "Tournage du film",
                         "text" : [
-                            "Pour dynamiser le site web, je voulu rajouter du javascript. Mais n'ayant jamais utiliser ni appris à faire du javascript, j'ai suivi des cours en ligne durant mes temps libres",
-                            "Le javascript m'a permis de créer une barre de recherche dynamique afin d'orienté l'utilisateur dans sa recherche",
-                            "Mais cela m'a permis aussi de découvrir que l'on pouvais insérer du javascript dans le html"
+                            "Le tournage s'est mieux passé que ce que l'on avait prévu. Au lieu des 3 jours prévus, le tournage se finissait à la fin de la journée, car nous étions finalement plus organisés que nous le croyons. Le tournage s'est bien passé, mais il n'y a eu pas de problème technique. Comme le son d'une chute d'eau en arrière-plan. Tourner à proximité d'une route. Mais en général tout s'est bien déroulé. Et je pense que tout le monde s'est bien amusé."
                         ],
                         "lien" : [
                         ] 
                     },
                     {
-                        "titre" : "La génération automatique des projets",
+                        "titre" : "Montage",
                         "text" : [
-                            "A l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réaliser un programme qui génère une page html à partir du contenue des fichiers",
-                            "A la base, je voulais que chaque projet avait un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utilisés pour les listés dans la page d'acceuil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requête par heure qui ne suffirais pas à son utilisation.",
-                            "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette api."
+                            "Le montage fut rude et assez long. Il dut y avoir quelque complexité comme le fait que tout le monde n'utilise pas le même logiciel se rend des parties monté non-exploitables. Pour le montage, on a suivi les scènes que l'on s'était réparties précédemment dans la préparation. Durant le montage, on s'est aperçu de certains problèmes que l'on a essayé d'éviter durant le tournage. Comme un faux-jour durant les premières scènes de bureau que l'on a essayé d'éviter en mettant quelque chose devant la fenêtre, mais cela à rendue pire que si elle n'y était pas, je pense.",
+                            "La plus grosse question que l'on s'est posée durant le tournage étant \"Qu'est ce que connaît le spectateur ?\", \"Est-ce qu'il a vu ça facilement ?\" et \"Est ce que le spectateur ne connais déjà pas tout à ce moment-là ?\". Les principales questions se tournaient au tour de la connaissance du spectateur. Une fois le tournage finit, il était temps de la présentation du film à nos encadrants puis de la projection finale."
                         ],
                         "lien" : [
                             {
-                                "nom" : "API Github",
-                                "lien" : "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28"
+                                "nom" : "Logiciel Davinci Resolve",
+                                "lien" : "https://www.blackmagicdesign.com/fr/products/davinciresolve"
+                            }
+                        ] 
+                    },
+                    {
+                        "titre" : "Projection",
+                        "text" : [
+                            "Le jour du tournage était un moment incroyable. C'était le moment où tous les groupes découvraient la version finale de tous les projets. Ayant connaissance de tous les sujets et parcours de chacun dans leur court-métrage, c'était un moment fantastique à partager avec une salle de cinéma rempli. Il n'était pas forcément tous présent pour notre court-métrage. Mais j'étais plutôt ému quand les crédits se sont terminés."
+                        ],
+                        "lien" : [
+                            {
+                                "nom" : "Cinéma Ti Hanok",
+                                "lien" : "https://cinematihanok.bzh/Programmation/?scroll#date"
                             }
                         ] 
                     }

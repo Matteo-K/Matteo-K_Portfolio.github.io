@@ -126,9 +126,9 @@ ul,li {
     transition: all .2s;
   }
   
-  .rotation {
-    transform: rotateY(180deg);
-  }
+.rotation {
+    transform: rotateY(180deg) translateX(100%);
+}
   
 
 /* ###### Bloc de navigation latérale ###### */
@@ -247,6 +247,7 @@ header {
             width: auto;
             background-color: var(--clr-search-bg1--);
             text-wrap: nowrap;
+            transition: none;
             &:hover{
                 cursor: pointer;
                 background-color: var(--clr-search-selcted--);
@@ -267,7 +268,7 @@ header {
 
 article {
     margin: 0;
-    border: var(--clr-nav-bg--) 7px double;
+    border: var(--clr-nav-bg--) 14px double;
     background-color: var(--clr-art1-bg--);
     &:nth-child(2),&:nth-child(4),&:nth-child(6),&:nth-child(8) {
         background-color: var(--clr-art2-bg--);
@@ -868,7 +869,8 @@ article {
     margin-top: 120px;
     img:not(section img) {
         float: right;
-        width: 300px;
+        width: auto;
+        max-height: 450px;
         margin-inline: 40px;
         transform: skewX(-4deg);
         border: var(--clr-light-dark-font--) 5px solid;
@@ -876,6 +878,12 @@ article {
         &:hover {
             box-shadow: var(--clr-search-iconhvr--) 5px 5px, var(--clr-search-icon--) 10px 10px;
         }
+    }
+    video {
+        float: right;
+        width: auto;
+        max-height: 300px;
+        margin-inline: 40px;
     }
     #objectifs li:first-child {
         padding-left: 20px;
@@ -941,9 +949,13 @@ article {
             text-shadow: 2px 0 var(--clr-light-font--), -2px 0 var(--clr-light-font--), 0 2px var(--clr-light-font--), 0 -2px var(--clr-light-font--),
                         1px 1px var(--clr-light-font--), -1px -1px var(--clr-light-font--), 1px -1px var(--clr-light-font--), -1px 1px var(--clr-light-font--);
         }
+        a {
+            width: 150px;
+            text-align: center;
+        }
     }
     p {
-        color: var(--clr-light-font--);
+        color: var(--clr-dark-font--);
     }
 }
 
@@ -1093,7 +1105,7 @@ footer {
         border-radius: 20px;
     }
     a {
-        color: var(--clr-link-font--);
+        color: var(--clr-link-font-ft--);
         text-decoration: none;
         &:hover:not(address:nth-child(2) a) {
             color: var(--clr-link-hover--);

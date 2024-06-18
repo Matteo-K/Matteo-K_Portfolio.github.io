@@ -22,6 +22,7 @@ document.addEventListener('mousemove', function(e) {
 let open_menu = 0;
 
 document.querySelector('header div + img').addEventListener('click',() => {
+    // si la souris sort du cadre puis appuie sur le bouton, ils feront la même action donc on met une condition
     if (open_menu == 0) {
         aside_nav.style.transform = "translate(0)"; 
     } else {
@@ -57,7 +58,7 @@ try {
         parcours_compteur++;
     });
 } catch (error) {
-    console.log("pas de bloc parcours (disposition des blocs");
+
 }
 
 
@@ -93,7 +94,6 @@ try {
         }
     }
 } catch (error) {
-    console.log("pas de graph parcours (Couleur des blocs)")
 }
 
 
@@ -129,7 +129,7 @@ try {
         e.preventDefault();
     },false);   
 } catch (error) {
-    console.log("pas de cv");
+    
 }
 
 

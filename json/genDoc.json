@@ -6,7 +6,7 @@
             3
         ],
         "image" : {
-            "lien" : "",
+            "lien" : "images/Illustration_project/to_pdf.png",
             "alt" : "illustration genDoc",
             "title" : "illustration genDoc"
         },
@@ -33,9 +33,10 @@
                     "description" : "",
                     "langage" : [
                         "php",
-                        "Markdown",
-                        "Html",
-                        "CSS"
+                        "markdown",
+                        "html",
+                        "css",
+                        "docker"
                     ],
                     "objectifs" : [
                         ""

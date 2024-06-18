@@ -26,72 +26,71 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "lien" : "images/Illustration_project/logicielLePatio.png",
+                        "alt" : "Aperçu Logiciel Le Patio",
+                        "title" : "Aperçu Logiciel Le Patio"
                     },
-                    "description" : "",
+                    "description" : "Gestion du projet du Patio. En préparant les différents déroulements afin de bien s'organiser pour le développement du logiciel.",
                     "langage" : [
                         "Java",
                         "JavaFX"
                     ],
                     "objectifs" : [
-                        ""
+                        "Gérer un projet en tout point. Préparation et suivi du projet en temps réel.",
+                        "Développer un logiciel facile à prendre en main. Suivant une demande client."
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Gestion d'un projet",
+                        "Travail d'équipe",
+                        "Organisation"
                     ]
                 }
             },
             {
-                "article" : "",
+                "article" : "art_etape",
                 "section" : [
                     {
-                        "titre" : "Réalisation d'une maquette",
+                        "titre" : "Prendre connaissance du sujet",
                         "text" : [
-                            "Avec le site web Figma, j'ai réaliser une maquette du site web",
-                            "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio",
-                            "Étant seul sur le projet et peucde temps pour réaliser ce site web, je dûs ne pas m'arrêter sur les détails."
+                            "Le patio est une salle de spectacle géré par M. Malraux. Dans sa requête, il nous demande d'élaborer un logiciel pour la caisse afin de gérer l'entièreté de sa salle de spectacle. C'est-à-dire les spectacles, un planning avec toutes les représentations, une gestion des tarifs, ...",
+                            "La demande était très complète et comprenait énormément de partie à remplir dans le document des Spécifications du logiciel (SEL)."
                         ],
                         "lien" : [
                             {
-                                "nom" : "Maquette Figma",
-                                "lien" : "https://www.figma.com/design/PEORQaCJZNJELGpY5JEGaK/Portfolio?node-id=0-1&t=a8PqPSP1n0KvJVrH-0"
+                                "nom" : "Sujet le patio",
+                                "lien" : "https://github.com/Matteo-K/Le-patio/blob/main/Conception/BilleterieLePatio_Word.V8.pdf"
                             }
                         ] 
                     },
                     {
-                        "titre" : "Conception du site en html/css",
+                        "titre" : "Préparation du projet",
                         "text" : [
-                            "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construis la structure du site",
-                            "Malheureusement, vu que je me suis précipiter sur la réalisation, j'ai eu différente idée qui sont arriver en cours de route. Donc cela m'a entrainer à modifier régulièrement la structure html",
-                            "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviables"
+                            "Heureusement, on ne dut pas concevoir l'entièreté du logiciel. Moi et mon équipe devions se charger du Lot N°10. C'est-à-dire l'affichage et la création des catégories de spectateurs, l'affichage des données d'un spectacle. Et l'affichage d'un planning de chaque représentation qui peut être trié par genre et catégorie.",
+                            "Pour préparer le projet, on dut réaliser un organigramme des tâches qui aura pour but de rentrer toutes les étapes à réaliser dans ce lot. Ensuite, nous avons réalisé une matrice Raci afin de se répartir les tâches. C'est-à-dire qui est le responsable, qui est l'acteur de la partie et qui doit être informé des tâches.",
+                            "Enfin, nous avons réalisé un diagramme de Gantt prévisionnel afin de prévoir comment va être répartie en temps et en charges le projet."
                         ],
                         "lien" : [
                         ] 
                     },
                     {
-                        "titre" : "L'ajout du javascript",
+                        "titre" : "Développement du logiciel",
                         "text" : [
-                            "Pour dynamiser le site web, je voulu rajouter du javascript. Mais n'ayant jamais utiliser ni appris à faire du javascript, j'ai suivi des cours en ligne durant mes temps libres",
-                            "Le javascript m'a permis de créer une barre de recherche dynamique afin d'orienté l'utilisateur dans sa recherche",
-                            "Mais cela m'a permis aussi de découvrir que l'on pouvais insérer du javascript dans le html"
+                            "Pour la réalisation du logiciel, nous avons suivi l'ensemble des diagrammes réalisé dans la préparation du sujet.",
+                            "Pour la conception, nous avons réalisé un diagramme UML, un diagramme d'activité et un scene graph de l'interface graphique.",
+                            "Le développement se divisa en deux parties, la création des classes Java pour y ajouter des données. Et la réalisation des interfaces graphiques. Pour ensuite lier les deux et faire un logiciel fonctionnel.",
+                            "Pour finir, nous avons réalisé des tests. Tout d'abord des tests unitaires et des tests d'intégrations. Et après, nous avons réalisé des tests manuels de l'interface graphique."
                         ],
                         "lien" : [
                         ] 
                     },
                     {
-                        "titre" : "La génération automatique des projets",
+                        "titre" : "Suivi du projet",
                         "text" : [
-                            "A l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réaliser un programme qui génère une page html à partir du contenue des fichiers",
-                            "A la base, je voulais que chaque projet avait un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utilisés pour les listés dans la page d'acceuil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requête par heure qui ne suffirais pas à son utilisation.",
-                            "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette api."
+                            "En même temps de réaliser le projet, entre les séances, nous avons avancé sur le diagramme de Gantt réel pour voir nos avancées/retard par rapport à ce qu'il y avait de prévu.",
+                            "Cependant, nous avons quelques problèmes car entre les séances, certaines personnes avançaient sur le projet durant leur temps libre. Cela avait donc une cause directe sur le diagramme. Mais ce n'était pas un grand problème car lors de la création des affichages, on se rendit compte qu'il fallait réaliser des classes modèle pour mettre les données dans l'affichage. Par exemple, il y avait encore plus de classe à créer pour l'affichage des représentations dans le planning.",
+                            "Pour cela, on put s'aider d'un schéma UML qui nous a été fourni. Donc au final, on a réussi à livrer le projet à temps. Et ça c'est le plus important."
                         ],
                         "lien" : [
-                            {
-                                "nom" : "API Github",
-                                "lien" : "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28"
-                            }
                         ] 
                     }
                 ]

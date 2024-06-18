@@ -24,10 +24,10 @@
                 "section" : {
                     "image" : {
                         "lien" : "",
-                        "alt" : "",
-                        "title" : ""
+                        "alt" : "apperçu des flashcard",
+                        "title" : "apperçu des flashcard"
                     },
-                    "description" : "",
+                    "description" : "Programme qui pose un intitulé comme \"La date de la révolution française\" puis quand l'utilisateur demande, le programme lui donner la réponse ainsi l'utilisateur peut passer à la prochaine intituler.",
                     "langage" : [
                         "python"
                     ],
@@ -36,7 +36,8 @@
                         "Faire un programme simple à comprendre qui pourrait m'aider dans d'autre cours"
                     ],
                     "competence_developpe" : [
-                        ""
+                        "Manipulation des fichiers",
+                        "Réaliser un .exe depuis un fichier python"
                     ]
                 }
             },
