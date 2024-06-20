@@ -38,11 +38,19 @@ fetch("json/" + projet + ".json")
                     </video>
 
                 `;
-            } else if (file[1].content[0].section.lienVideo !== undefined) {
+            } else if (file[1].content[0].section.iframeYT !== undefined) {
                 card += `
-                    <a href="${file[1].content[0].section.lienVideo.lien}">
-                        <img src="${file[1].content[0].section.lienVideo.poster}" alt="${file[1].title}" title="${file[1].title}">
-                    </a>
+                    <div>
+                        <iframe 
+                            src="${file[1].content[0].section.iframeYT}" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        <p> Double cliquez ou appuyez sur 'f' pour mettre en grand écran </p>
+                    </div>
                 `;
             }
             card += `

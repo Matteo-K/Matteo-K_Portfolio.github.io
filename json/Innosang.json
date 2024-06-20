@@ -25,10 +25,7 @@
             {
                 "article" : "art_presentation_project",
                 "section" : {
-                    "lienVideo" : {
-                        "poster" : "images/Illustration_project/Innosang_Poster.png",
-                        "lien" : "https://youtu.be/8ASkQJEALjc?si=tlzaavU-jWVtx2_d"
-                    },
+                    "iframeYT" : "https://www.youtube.com/embed/8ASkQJEALjc?si=pfucqLa0LUReMOq5",
                     "description" : "Réalisation d'un court-métrage de fin d'année de l'option cinéma.<br>Coquillet et Cassandra, deux inspecteurs sont appelés sur une scène de crime. Il y retrouve un cadavre  et peu de réponses. Mais qui est mort ?",
                     "objectifs" : [
                         "Réaliser un court-métrage qui va être projeté au cinéma Ti-Hanok"
@@ -53,10 +50,6 @@
                             {
                                 "nom" : "Wikipédia 6<sup>ème</sup> sens",
                                 "lien" : "https://fr.wikipedia.org/wiki/Sixième_Sens_(film)"
-                            },
-                            {
-                                "nom" : "Innosang",
-                                "lien" : "https://youtu.be/8ASkQJEALjc?si=pl41sUZn4-Zd_rLg"
                             }
                         ] 
                     },

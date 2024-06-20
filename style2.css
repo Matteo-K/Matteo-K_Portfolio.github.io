@@ -898,6 +898,17 @@ article {
             max-height: none;
         }
     }
+    time + div {
+        float: right;
+        margin-inline: 40px;
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+        p {
+            margin-top: 1%;
+        }
+    }
     time {
         position: absolute;
         top: 10px;
