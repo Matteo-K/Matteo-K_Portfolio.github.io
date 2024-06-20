@@ -21,6 +21,7 @@
     {
         "title" : "Tabaskho",
         "depot" : "https://github.com/Matteo-K/TabasKho",
+        "site" : "https://matteo-k.github.io/TabasKho/",
         "content" : [
             {
                 "article" : "art_presentation_project",

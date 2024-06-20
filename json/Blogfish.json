@@ -20,6 +20,7 @@
     {
         "title" : "Blogfish",
         "depot" : "https://github.com/Matteo-K/Blogfish",
+        "site" : "https://matteo-k.github.io/Blogfish/",
         "content" : [
             {
                 "article" : "art_presentation_project",

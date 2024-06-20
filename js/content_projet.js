@@ -66,6 +66,15 @@ fetch("json/" + projet + ".json")
                                 <img src="images/reseau/github.png" alt="depot" title="depot">
                                 <span>Zone de dépot</span>
                             </a>
+                    `;
+                    if (file[1].site !== undefined) {
+                        card += `
+                        <a href="${file[1].site}" target="blank_">
+                            Visiter le site
+                        </a>
+                        `;
+                    }
+            card += `        
                         </div>
                     </section>
                     <section id="description">

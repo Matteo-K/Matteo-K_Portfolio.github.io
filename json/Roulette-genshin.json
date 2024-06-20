@@ -18,6 +18,7 @@
     {
         "title" : "Roulette-genshin",
         "depot" : "https://github.com/Matteo-K/Roulette-genshin",
+        "site" : "https://matteo-k.github.io/Roulette-genshin/",
         "content" : [
             {
                 "article" : "art_presentation_project",
