@@ -23,7 +23,7 @@
                 "article" : "art_presentation_project",
                 "section" : {
                     "image" : {
-                        "lien" : "images/Illustration_project/portfolio_AboutMe.png",
+                        "lien" : "images/Illustration_project/portfolio_aboutMe.png",
                         "alt" : "Représentation d'un projet",
                         "title" : "Représentation d'un projet"
                     },

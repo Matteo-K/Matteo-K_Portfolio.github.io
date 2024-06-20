@@ -25,7 +25,7 @@ fetch("json/" + projet + ".json")
                 card += `
                     <img src="${file[1].content[0].section.image.lien}" alt="${file[1].content[0].section.image.alt}" title="${file[1].content[0].section.image.title}">
                 `;
-            } else {
+            } else if (file[1].content[0].section.video !== undefined) {
                 card += `
                     <video
                     width="480"
@@ -37,6 +37,12 @@ fetch("json/" + projet + ".json")
                     Votre navigateur ne permet pas de lire les vidéos.
                     </video>
 
+                `;
+            } else if (file[1].content[0].section.lienVideo !== undefined) {
+                card += `
+                    <a href="${file[1].content[0].section.lienVideo.lien}">
+                        <img src="${file[1].content[0].section.lienVideo.poster}" alt="${file[1].title}" title="${file[1].title}">
+                    </a>
                 `;
             }
             card += `

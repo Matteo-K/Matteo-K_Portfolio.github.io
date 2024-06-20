@@ -30,7 +30,7 @@
                     },
                     "description" : "Réalisation d'un programme qui peut trouver la solution du sudoku.",
                     "langage" : [
-                        "C"
+                        "c"
                     ],
                     "objectifs" : [
                         "Résoudre un suddoku.",

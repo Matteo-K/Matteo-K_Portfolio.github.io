@@ -46,6 +46,14 @@
                             "Dans cet événement, nous avons décidé de diviser la journée en deux parties. Quelque activité le matin et un tournoi d'Art Martiaux Historiques Européens (AMHE). Durant la matinée, le groupe sera divisé en trois parties avec des rotations toutes les 1h30. Nous avons un cours d'AMHE, un cours d'histoire avec la visite du château de Fougère, mais également du jeu de rôle."
                         ],
                         "lien" : [
+                            {
+                                "nom" : "site web Cyim",
+                                "lien" : "https://www.cyim.com/fr"
+                            },
+                            {
+                                "nom" : "FF AMHE",
+                                "lien" : "https://www.ffamhe.fr"
+                            }
                         ] 
                     },
                     {

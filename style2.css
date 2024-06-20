@@ -844,7 +844,7 @@ article {
         text-indent: 40px;
     }
     #art_presentation_project, #art_etape {
-        a {
+        a:not(time + a) {
             text-decoration: none;
             margin-inline: 10px;
             padding: 5px;
@@ -884,6 +884,18 @@ article {
         box-shadow: var(--clr-search-iconhvr--) 4px 4px;
         &:hover {
             box-shadow: var(--clr-search-iconhvr--) 5px 5px, var(--clr-search-icon--) 10px 10px;
+        }
+    }
+    a:not(section a) {
+        width: auto;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 100px;
+        transform: skewX(-4deg);
+        img {
+            float: right;
+            height: auto;
+            max-height: none;
         }
     }
     time {

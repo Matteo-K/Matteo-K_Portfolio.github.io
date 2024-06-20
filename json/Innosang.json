@@ -25,9 +25,9 @@
             {
                 "article" : "art_presentation_project",
                 "section" : {
-                    "video" : {
+                    "lienVideo" : {
                         "poster" : "images/Illustration_project/Innosang_Poster.png",
-                        "lien" : ""
+                        "lien" : "https://youtu.be/8ASkQJEALjc?si=tlzaavU-jWVtx2_d"
                     },
                     "description" : "Réalisation d'un court-métrage de fin d'année de l'option cinéma.<br>Coquillet et Cassandra, deux inspecteurs sont appelés sur une scène de crime. Il y retrouve un cadavre  et peu de réponses. Mais qui est mort ?",
                     "objectifs" : [
