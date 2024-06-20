@@ -585,7 +585,7 @@ article {
         /* bloc de technologie */
         >li:not(p + ul li) {
             position: relative;
-            height: 180px;
+            height: 200px;
             width: 300px;
             padding: 5px;
             margin: 15px;
