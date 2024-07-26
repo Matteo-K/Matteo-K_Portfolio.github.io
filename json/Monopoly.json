@@ -1,68 +1,55 @@
-[
-    {
-        "title" : "Monopoly",
-        "lien" : "Monopoly",
-        "compétence" : [
-            1
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/Monopoly.gif",
-            "alt" : "illustration Monopoly",
-            "title" : "illustration Monopoly"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec"
-        ],
-        "date" : "15/03/23"
+{
+    "title" : "Monopoly",
+    "lien" : "Monopoly",
+    "depot" : "https://github.com/Matteo-K/Monopoly",
+    "compétence" : [
+        1
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/Monopoly.gif",
+        "alt" : "illustration Monopoly",
+        "title" : "illustration Monopoly"
     },
-    {
-        "title" : "Monopoly",
-        "depot" : "https://github.com/Matteo-K/Monopoly",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
-                    },
-                    "description" : "Reproduction du jeu emblématique le \"Monopoly\"",
-                    "langage" : [
-                        "python"
-                    ],
-                    "objectifs" : [
-                        "Réaliser un jeu qui fonctionne",
-                        "Se familliarisé avec les classes python"
-                    ],
-                    "competence_developpe" : [
-                        "Connaissance des classes",
-                        "Autonomie",
-                        "Construire une interfaces graphiques"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Réalisation du jeu",
-                        "text" : [
-                            "Réalisation du fonctionnement de base du Monopoly. C'est-à-dire un plateau, des cartes, des joueurs et des cartes."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "La suite ?",
-                        "text" : [
-                            "Le jeu est encore en phase de développement. Pour le continuer, je voulais en apprendre plus sur les classes et le développement en général. En attendant, je m'occupais plutôt de réaliser des petits projets afin d'aller à mon rythme."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "15/03/23",
+    "presentation" : {
+        "image" : {
+            "lien" : "",
+            "alt" : "",
+            "title" : ""
+        },
+        "description" : "Reproduction du jeu emblématique le \"Monopoly\"",
+        "langage" : [
+            "python"
+        ],
+        "objectifs" : [
+            "Réaliser un jeu qui fonctionne",
+            "Se familliarisé avec les classes python"
+        ],
+        "competence_developpe" : [
+            "Connaissance des classes",
+            "Autonomie",
+            "Construire une interfaces graphiques"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Réalisation du jeu",
+            "text" : [
+                "Réalisation du fonctionnement de base du Monopoly. C'est-à-dire un plateau, des cartes, des joueurs et des cartes."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "La suite ?",
+            "text" : [
+                "Le jeu est encore en phase de développement. Pour le continuer, je voulais en apprendre plus sur les classes et le développement en général. En attendant, je m'occupais plutôt de réaliser des petits projets afin d'aller à mon rythme."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

@@ -1,67 +1,54 @@
-[
-    {
-        "title" : "database-pn-IUT",
-        "lien" : "database-pn-IUT",
-        "compétence" : [
-            4
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/pnSchemaDatabase.png",
-            "alt" : "schema Database",
-            "title" : "schema Database"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec",
-            "Stanislas Rolland"
-        ],
-        "date" : "01/2024"
+{
+    "title" : "Database Programme Nationnal But info",
+    "lien" : "database-pn-IUT",
+    "depot" : "https://github.com/Matteo-K/database-pn-IUT",
+    "compétence" : [
+        4
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/pnSchemaDatabase.png",
+        "alt" : "schema Database",
+        "title" : "schema Database"
     },
-    {
-        "title" : "Database Programme Nationnal But info",
-        "depot" : "https://github.com/Matteo-K/database-pn-IUT",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "images/Illustration_project/PnIutLannionDB.png",
-                        "alt" : "",
-                        "title" : ""
-                    },
-                    "description" : "Construction d'une base de donnée autour du programme nationnal du BUT informatique",
-                    "langage" : [
-                        "sql"
-                    ],
-                    "objectifs" : [
-                        "Créer un schéma/une représentation de la base de donnée",
-                        "Construire la base de donnée"
-                    ],
-                    "competence_developpe" : [
-                        "Méthode de construction d'un schéma d'une base de données"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Construction du schéma",
-                        "text" : [
-                            "Le sujet de cette SAE consistais à créer une base de données de toute pièce. À partir d'une demande, nous devions créer un schéma de base de données. Ce sujet était la construction d'une base de donnée sur le programme national du BUT informatique."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Création de la base de données",
-                        "text" : [
-                            "À partir de la correction du schéma que nous avions fait précédemment, nous devions construire le modèle relationnel de la base de données avec le SQL."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Mattéo Kervadec",
+        "Stanislas Rolland"
+    ],
+    "date" : "01/2024",
+    "presentation" : {
+        "image" : {
+            "lien" : "images/Illustration_project/PnIutLannionDB.png",
+            "alt" : "",
+            "title" : ""
+        },
+        "description" : "Construction d'une base de donnée autour du programme nationnal du BUT informatique",
+        "langage" : [
+            "sql"
+        ],
+        "objectifs" : [
+            "Créer un schéma/une représentation de la base de donnée",
+            "Construire la base de donnée"
+        ],
+        "competence_developpe" : [
+            "Méthode de construction d'un schéma d'une base de données"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Construction du schéma",
+            "text" : [
+                "Le sujet de cette SAE consistais à créer une base de données de toute pièce. À partir d'une demande, nous devions créer un schéma de base de données. Ce sujet était la construction d'une base de donnée sur le programme national du BUT informatique."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Création de la base de données",
+            "text" : [
+                "À partir de la correction du schéma que nous avions fait précédemment, nous devions construire le modèle relationnel de la base de données avec le SQL."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

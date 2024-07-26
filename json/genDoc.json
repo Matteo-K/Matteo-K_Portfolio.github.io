@@ -1,77 +1,64 @@
-[
-    {
-        "title" : "genDoc",
-        "lien" : "genDoc",
-        "compétence" : [
-            3
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/to_pdf.png",
-            "alt" : "illustration genDoc",
-            "title" : "illustration genDoc"
-        },
-        "contributeur" : [
-            "Raphaël Bardini",
-            "Marius Chartier--Le Goff",
-            "Mattéo Kervadec",
-            "Stanislas Rolland"
-        ],
-        "date" : "01/2024"
+{
+    "title" : "genDoc",
+    "lien" : "genDoc",
+    "depot" : "https://github.com/Matteo-K/genDoc",
+    "compétence" : [
+        3
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/to_pdf.png",
+        "alt" : "illustration genDoc",
+        "title" : "illustration genDoc"
     },
-    {
-        "title" : "Génération de documentation",
-        "depot" : "https://github.com/Matteo-K/genDoc",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "images/Illustration_project/docu_technique.png",
-                        "alt" : "apperçu",
-                        "title" : "apperçu"
-                    },
-                    "description" : "Génération de la documentation en format pdf suivant des fichiers c et un fichier markdown.",
-                    "langage" : [
-                        "php",
-                        "markdown",
-                        "html",
-                        "css",
-                        "docker"
-                    ],
-                    "objectifs" : [
-                        "Générer de la documentation",
-                        "Apprendre a utiliser docker",
-                        "Apprendre le php"
-                    ],
-                    "competence_developpe" : [
-                        "Travail d'équipe",
-                        "Php & docker",
-                        "Générer un fichier html depuis un php"
-                    ]
-                }
+    "contributeur" : [
+        "Raphaël Bardini",
+        "Marius Chartier--Le Goff",
+        "Mattéo Kervadec",
+        "Stanislas Rolland"
+    ],
+    "date" : "01/2024",
+    "presentation" : {
+        "image" : {
+                "lien" : "images/Illustration_project/docu_technique.png",
+                "alt" : "apperçu",
+                "title" : "apperçu"
             },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Documentation technique",
-                        "text" : [
-                            "Le principe de cette partie est de prendre les commentaires des fichiers c et d'en faire un pdf.",
-                            "Pour cela, avec un fichier bash on envoie les fichiers c dans un fichier php qui va s'occuper de sélectionner l'ensemble des parties de la documentation des fichiers c. Puis avec le fichier php, on en fait un fichier html qui permettre de modifier le html en pdf. Toute la génération se passe dans un conteneur d'un docker qui va permettre de garantir une sécurité. Mais également de pouvoir commenté le code en une commande."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Documentation utilisateur",
-                        "text" : [
-                            "Pour la génération utilisateur, on part un peu du même principe. Mais le fichier source initial est un document markdown. Ainsi, avec le php, on récupère les informations du markdown. Puis on le change en html puis en pdf. Dans les deux parties, quand on veut récupérer des données, on utilise des expressions régulières (regex)."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
-        ]
-    } 
-]
+            "description" : "Génération de la documentation en format pdf suivant des fichiers c et un fichier markdown.",
+            "langage" : [
+                "php",
+                "markdown",
+                "html",
+                "css",
+                "docker"
+            ],
+            "objectifs" : [
+                "Générer de la documentation",
+                "Apprendre a utiliser docker",
+                "Apprendre le php"
+            ],
+            "competence_developpe" : [
+                "Travail d'équipe",
+                "Php & docker",
+                "Générer un fichier html depuis un php"
+            ]
+    },
+    "etape" : [
+        {
+            "titre" : "Documentation technique",
+            "text" : [
+                "Le principe de cette partie est de prendre les commentaires des fichiers c et d'en faire un pdf.",
+                "Pour cela, avec un fichier bash on envoie les fichiers c dans un fichier php qui va s'occuper de sélectionner l'ensemble des parties de la documentation des fichiers c. Puis avec le fichier php, on en fait un fichier html qui permettre de modifier le html en pdf. Toute la génération se passe dans un conteneur d'un docker qui va permettre de garantir une sécurité. Mais également de pouvoir commenté le code en une commande."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Documentation utilisateur",
+            "text" : [
+                "Pour la génération utilisateur, on part un peu du même principe. Mais le fichier source initial est un document markdown. Ainsi, avec le php, on récupère les informations du markdown. Puis on le change en html puis en pdf. Dans les deux parties, quand on veut récupérer des données, on utilise des expressions régulières (regex)."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

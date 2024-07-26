@@ -1,106 +1,37 @@
-[
-    {
-        "title" : "Sudoku",
-        "lien" : "Sudoku",
-        "compétence" : [
-            1
-        ],
+{
+    "title" : "Sudoku",
+    "lien" : "Sudoku",
+    "depot" : "https://github.com/Matteo-K/Sudoku",
+    "compétence" : [
+        1
+    ],
+    "image" : {
+        "lien" : "",
+        "alt" : "illustration Sudoku",
+        "title" : "illustration Sudoku"
+    },
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "11/2023",
+    "presentation" : {
         "image" : {
             "lien" : "",
-            "alt" : "illustration Sudoku",
-            "title" : "illustration Sudoku"
+            "alt" : "",
+            "title" : ""
         },
-        "contributeur" : [
-            "Mattéo Kervadec"
+        "description" : "",
+        "langage" : [
+            "C"
         ],
-        "date" : "11/2023"
-    },
-    {
-        "title" : "Sudoku",
-        "depot" : "https://github.com/Matteo-K/Sudoku",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
-                    },
-                    "description" : "",
-                    "langage" : [
-                        "C"
-                    ],
-                    "objectifs" : [
-                        ""
-                    ],
-                    "competence_developpe" : [
-                        ""
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "",
-                        "text" : [
-                            "A l'aide de ça j'ai fais ça",
-                            "Puis j'ai fais ça",
-                            "Mais ça aussi"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Youtube",
-                                "lien" : "https://youtube.com"
-                            }
-                        ] 
-                    }
-                ]
-
-            }
+        "objectifs" : [
+            ""
+        ],
+        "competence_developpe" : [
+            ""
         ]
-    } 
-]
+    },
+    "etape" : [
+
+    ]
+}

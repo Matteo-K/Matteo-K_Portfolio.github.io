@@ -48,11 +48,11 @@ select.addEventListener("change",function() {
                 if (response.ok) {
                     response.json().then(file => {
                         // Affiche le contenu du fichier JSON
-                        file[0].compétence.forEach(element => {
+                        file.compétence.forEach(element => {
                             if (element == index_select) {
                                 projet = `
                                     <h3>
-                                        ${file[0].title}
+                                        ${file.title}
                                     </h3>
                                     <div>
                                         <span>
@@ -60,19 +60,19 @@ select.addEventListener("change",function() {
                                         </span>
                                         <span>
                                             `;
-                                        file[0].contributeur.forEach(element => {
+                                        file.contributeur.forEach(element => {
                                             projet += `<span>${element}</span>`;
                                         });
                                         projet += `
                                         </span>
                                     </div>
                                     <time>
-                                        ${file[0].date}
+                                        ${file.date}
                                     </time>
                                 `;
                                 let projetElement = document.createElement("li");
-                                projetElement.style.backgroundImage = "url("+file[0].image.lien+")";
-                                projetElement.setAttribute("onclick","window.location.href='projet.html?projet="+file[0].lien+"'");
+                                projetElement.style.backgroundImage = "url("+file.image.lien+")";
+                                projetElement.setAttribute("onclick","window.location.href='projet.html?projet="+file.lien+"'");
                                 projetElement.innerHTML = projet;
                                 bloc.appendChild(projetElement);
 

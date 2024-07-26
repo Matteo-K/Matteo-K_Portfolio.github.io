@@ -1,88 +1,75 @@
-[
-    {
-        "title" : "Blogfish",
-        "lien" : "Blogfish",
-        "compétence" : [
-            1
-        ],
-        "image" : {
-            "lien" : "https://s1.qwant.com/thumbr/0x380/b/d/204ae0876f62f046ffb7340c3c8b6fc251754c62c8bc9d0fe75713daa1dc6d/f517f32c3de29226b39dfad71ad689bd.gif?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff5%2F17%2Ff3%2Ff517f32c3de29226b39dfad71ad689bd.gif&q=0&b=1&p=0&a=1",
-            "alt" : "illustration Blogfish",
-            "title" : "illustration Blogfish"
-        },
-        "contributeur" : [
-            "Élie Béguin",
-            "Cyprien Fiala",
-            "Mattéo Kervadec"
-        ],
-        "date" : "début 2021"
+{
+    "title" : "Blogfish",
+    "lien" : "Blogfish",
+    "depot" : "https://github.com/Matteo-K/Blogfish",
+    "site" : "https://matteo-k.github.io/Blogfish/",
+    "compétence" : [
+        1
+    ],
+    "image" : {
+        "lien" : "https://s1.qwant.com/thumbr/0x380/b/d/204ae0876f62f046ffb7340c3c8b6fc251754c62c8bc9d0fe75713daa1dc6d/f517f32c3de29226b39dfad71ad689bd.gif?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff5%2F17%2Ff3%2Ff517f32c3de29226b39dfad71ad689bd.gif&q=0&b=1&p=0&a=1",
+        "alt" : "illustration Blogfish",
+        "title" : "illustration Blogfish"
     },
-    {
-        "title" : "Blogfish",
-        "depot" : "https://github.com/Matteo-K/Blogfish",
-        "site" : "https://matteo-k.github.io/Blogfish/",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "images/Illustration_project/blogfish_page.png",
-                        "alt" : "apperçu du Blogfish",
-                        "title" : "apperçu du Blogfish"
-                    },
-                    "description" : "Site web créé en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieux à forte pression. Ce qui explique son apparence physique quand il est sorti de l'eau.",
-                    "langage" : [
-                        "html",
-                        "css"
-                    ],
-                    "objectifs" : [
-                        "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne.",
-                        "Évaluer notre niveau en Html."
-                    ],
-                    "competence_developpe" : [
-                        "Autonomie : Apprendre à manipuler le Html.",
-                        ""
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Mise en forme de l'idée",
-                        "text" : [
-                            "Dès le début, l'image du blobfish nous est venue à l'idée",
-                            "À partir de cela, il fallait construire 3 pages plus ou moins cohérentes qui habillerais ce blobfish.",
-                            "Pour cela, on créa une page autour des produits alimentaire fictifs à base de blobfish, des produits dérivées et comment adopter un blobfish."
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Wikipédia Blobfish",
-                                "lien" : "https://fr.wikipedia.org/wiki/Blobfish"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "Création des pages personnels",
-                        "text" : [
-                            "Chaque personne du groupe devait construire sa page, je me suis chargé de la partie produits divers",
-                            "N'ayant aucune base en html et css. On décide de créer une structure globale pour qu'ensuite chacun change la partie principale de sa page. Pour ainsi garder l'uniformisation du site web",
-                            "Pour faire ma page principale, je créais un tableau qui me permettrait d'organiser chaque élément dans sa case. Vu que je ne connaissais aucun moyen de changer la position des blocs, je trouvai cette solution correcte."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Habiller le Blogfish",
-                        "text" : [
-                            "La charte graphique du site, c'est tourné vers la couleur du blobfish. Ayant une couleur rose, nous utilisons une couleur plus claire comme le blanc pour faire contraste.",
-                            "Pour aligner les blocs avec d'autres, on utilisa beaucoup les padding, margin et les display-inline. Ce qui rendait la page peu responsive"
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Élie Béguin",
+        "Cyprien Fiala",
+        "Mattéo Kervadec"
+    ],
+    "date" : "début 2021",
+    "presentation" : {
+        "image" : {
+                "lien" : "images/Illustration_project/blogfish_page.png",
+                "alt" : "apperçu du Blogfish",
+                "title" : "apperçu du Blogfish"
+        },
+        "description" : "Site web créé en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieux à forte pression. Ce qui explique son apparence physique quand il est sorti de l'eau.",
+        "langage" : [
+            "html",
+            "css"
+        ],
+        "objectifs" : [
+            "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne.",
+            "Évaluer notre niveau en Html."
+        ],
+        "competence_developpe" : [
+            "Autonomie : Apprendre à manipuler le Html.",
+            ""
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Mise en forme de l'idée",
+            "text" : [
+                "Dès le début, l'image du blobfish nous est venue à l'idée",
+                "À partir de cela, il fallait construire 3 pages plus ou moins cohérentes qui habillerais ce blobfish.",
+                "Pour cela, on créa une page autour des produits alimentaire fictifs à base de blobfish, des produits dérivées et comment adopter un blobfish."
+            ],
+            "lien" : [
+                {
+                    "nom" : "Wikipédia Blobfish",
+                    "lien" : "https://fr.wikipedia.org/wiki/Blobfish"
+                }
+            ] 
+        },
+        {
+            "titre" : "Création des pages personnels",
+            "text" : [
+                "Chaque personne du groupe devait construire sa page, je me suis chargé de la partie produits divers",
+                "N'ayant aucune base en html et css. On décide de créer une structure globale pour qu'ensuite chacun change la partie principale de sa page. Pour ainsi garder l'uniformisation du site web",
+                "Pour faire ma page principale, je créais un tableau qui me permettrait d'organiser chaque élément dans sa case. Vu que je ne connaissais aucun moyen de changer la position des blocs, je trouvai cette solution correcte."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Habiller le Blogfish",
+            "text" : [
+                "La charte graphique du site, c'est tourné vers la couleur du blobfish. Ayant une couleur rose, nous utilisons une couleur plus claire comme le blanc pour faire contraste.",
+                "Pour aligner les blocs avec d'autres, on utilisa beaucoup les padding, margin et les display-inline. Ce qui rendait la page peu responsive"
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

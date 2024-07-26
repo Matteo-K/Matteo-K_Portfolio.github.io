@@ -1,67 +1,53 @@
-[
-    {
-        "title" : "Solver-Labyrinthe",
-        "lien" : "Solver-Labyrinthe",
-        "compétence" : [
-            2
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/construction_labyrinth.gif",
-            "alt" : "illustration Labyrinthe",
-            "title" : "illustration Labyrinthe"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec"
-        ],
-        "date" : "05/2023"
+{
+    "title" : "Solver-Labyrinthe",
+    "lien" : "Solver-Labyrinthe",
+    "depot" : "https://github.com/Matteo-K/Solver-Labyrinthe",
+    "compétence" : [
+        2
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/construction_labyrinth.gif",
+        "alt" : "illustration Labyrinthe",
+        "title" : "illustration Labyrinthe"
     },
-    {
-        "title" : "Solver Labyrinthe",
-        "depot" : "https://github.com/Matteo-K/Solver-Labyrinthe",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "images/Illustration_project/resolution_labyrinth.gif",
-                        "alt" : "Résolution Labyrinthe",
-                        "title" : "Résolution Labyrinthe"
-                    },
-                    "description" : "Recherche de différent moyen pour optimiser la recherche d'une solution d'un labyrinthe",
-                    "langage" : [
-                        "python"
-                    ],
-                    "objectifs" : [
-                        "Tester différente approche pour résoudre le problème"
-                    ],
-                    "competence_developpe" : [
-                        "Optimisation",
-                        "L'analyse"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "L'usage des graphes",
-                        "text" : [
-                            "Avec les graphes, on peut relier facilement chaque case à un passage. Ainsi, on peut délimiter facilement la présence d'un mur ou non lors du parcours du labyrinthe dans le graphe. Suivant la connaissance du labyrinthe, on peut créer un graphe orienté ou non. Si l'on connaît le point de départ et d'arrivé, on peut orienter le graphe suivant le point de départ ou d'arriver. Cette solution fonctionne quand on teste une seule fois un labyrinthe. Mais si on teste le labyrinthe en rentrant manuellement le point d'entrer et de sortie. Alors il vaudrait mieux créer un graphe non-orienté."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Backtracking",
-                        "text" : [
-                            "On teste chaque passage un à un. Si le chemin est bloqué alors on retourne en arrière et on repart d'un chemin adjacent. On fait cette manipulation jusqu'à que l'on trouve l'arrivée."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-
-            }
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "05/2023",
+    "presentation" : {
+        "image" : {
+            "lien" : "images/Illustration_project/resolution_labyrinth.gif",
+            "alt" : "Résolution Labyrinthe",
+            "title" : "Résolution Labyrinthe"
+        },
+        "description" : "Recherche de différent moyen pour optimiser la recherche d'une solution d'un labyrinthe",
+        "langage" : [
+            "python"
+        ],
+        "objectifs" : [
+            "Tester différente approche pour résoudre le problème"
+        ],
+        "competence_developpe" : [
+            "Optimisation",
+            "L'analyse"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "L'usage des graphes",
+            "text" : [
+                "Avec les graphes, on peut relier facilement chaque case à un passage. Ainsi, on peut délimiter facilement la présence d'un mur ou non lors du parcours du labyrinthe dans le graphe. Suivant la connaissance du labyrinthe, on peut créer un graphe orienté ou non. Si l'on connaît le point de départ et d'arrivé, on peut orienter le graphe suivant le point de départ ou d'arriver. Cette solution fonctionne quand on teste une seule fois un labyrinthe. Mais si on teste le labyrinthe en rentrant manuellement le point d'entrer et de sortie. Alors il vaudrait mieux créer un graphe non-orienté."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Backtracking",
+            "text" : [
+                "On teste chaque passage un à un. Si le chemin est bloqué alors on retourne en arrière et on repart d'un chemin adjacent. On fait cette manipulation jusqu'à que l'on trouve l'arrivée."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

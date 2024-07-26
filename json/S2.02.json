@@ -1,68 +1,55 @@
-[
-    {
-        "title" : "S2.02",
-        "lien" : "S2.02",
-        "compétence" : [
-            2
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/pbNQueen.png",
-            "alt" : "illustration Jeu des 8 dames",
-            "title" : "illustration Jeu des 8 dames"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec", "Raphaël Bardini", "Paolo Toe", "Marius Chartier--Le Goff"
-        ],
-        "date" : "02/2024"
+{
+    "title" : "S2.02",
+    "lien" : "S2.02",
+    "depot" : "https://github.com/Matteo-K/S2.02",
+    "compétence" : [
+        2
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/pbNQueen.png",
+        "alt" : "illustration Jeu des 8 dames",
+        "title" : "illustration Jeu des 8 dames"
     },
-    {
-        "title" : "Jeu des N dames",
-        "depot" : "https://github.com/Matteo-K/S2.02",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "images/Illustration_project/resolutionNdames.gif",
-                        "alt" : "",
-                        "title" : ""
-                    },
-                    "description" : "Le problème des N reines consiste à placer N reines sur un échiquier de N x N cases de manière à ce qu'aucune reine ne puisse menacer une autre.",
-                    "langage" : [
-                        "python"
-                    ],
-                    "objectifs" : [
-                        "Trouver des techniques pour résoudre le problème",
-                        "Trouver les façons les plus rapides et moins coûteux en mémoires."
-                    ],
-                    "competence_developpe" : [
-                        "Optimisation",
-                        "Reflexion"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Le backtracking",
-                        "text" : [
-                            "Le backtracking est l'une des solutions les plus sûrs et rapide pour trouver des solutions. Le backtracking parcours une solution une par une. Et dès qu'il est bloqué,il repart en arrière et recommence.",
-                            "C'est une méthode très rapide."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Le symétrie",
-                        "text" : [
-                            "Parmi toutes les solutions que l'on a trouvées, je n'aurais jamais parié que cela soit celle-là la plus rapide et celle qui utilise le moins de mémoire. Elle déplace 2 reines à la fois, ce qui la rend très rapide. Mais le seul problème étant qu'elle ne peut trouver des solutions seulement si elles sont en symétrie."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Mattéo Kervadec", "Raphaël Bardini", "Paolo Toe", "Marius Chartier--Le Goff"
+    ],
+    "date" : "02/2024",
+    "presentation" : {
+        "image" : {
+            "lien" : "images/Illustration_project/resolutionNdames.gif",
+            "alt" : "",
+            "title" : ""
+        },
+        "description" : "Le problème des N reines consiste à placer N reines sur un échiquier de N x N cases de manière à ce qu'aucune reine ne puisse menacer une autre.",
+        "langage" : [
+            "python"
+        ],
+        "objectifs" : [
+            "Trouver des techniques pour résoudre le problème",
+            "Trouver les façons les plus rapides et moins coûteux en mémoires."
+        ],
+        "competence_developpe" : [
+            "Optimisation",
+            "Reflexion"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Le backtracking",
+            "text" : [
+                "Le backtracking est l'une des solutions les plus sûrs et rapide pour trouver des solutions. Le backtracking parcours une solution une par une. Et dès qu'il est bloqué,il repart en arrière et recommence.",
+                "C'est une méthode très rapide."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Le symétrie",
+            "text" : [
+                "Parmi toutes les solutions que l'on a trouvées, je n'aurais jamais parié que cela soit celle-là la plus rapide et celle qui utilise le moins de mémoire. Elle déplace 2 reines à la fois, ce qui la rend très rapide. Mais le seul problème étant qu'elle ne peut trouver des solutions seulement si elles sont en symétrie."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

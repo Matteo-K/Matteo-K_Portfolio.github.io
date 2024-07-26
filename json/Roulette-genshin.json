@@ -1,84 +1,71 @@
-[
-    {
-        "title" : "Roulette-genshin",
-        "lien" : "Roulette-genshin",
-        "compétence" : [
-            1
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/genshin_aléatoire.png",
-            "alt" : "Roulette-genshin",
-            "title" : "Logo Roulette-genshin"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec"
-        ],
-        "date" : "07/2023"
+{
+    "title" : "Roulette-genshin",
+    "lien" : "Roulette-genshin",
+    "depot" : "https://github.com/Matteo-K/Roulette-genshin",
+    "site" : "https://matteo-k.github.io/Roulette-genshin/",
+    "compétence" : [
+        1
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/genshin_aléatoire.png",
+        "alt" : "Roulette-genshin",
+        "title" : "Logo Roulette-genshin"
     },
-    {
-        "title" : "Roulette-genshin",
-        "depot" : "https://github.com/Matteo-K/Roulette-genshin",
-        "site" : "https://matteo-k.github.io/Roulette-genshin/",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "",
-                        "alt" : "apperçu de l'interface graphique",
-                        "title" : "apperçu de l'interface graphique"
-                    },
-                    "description" : "Génération d'un système aéatoire pour renforcer la difficulté dans le jeu genshin impact",
-                    "langage" : [
-                        "python"
-                    ],
-                    "objectifs" : [
-                        "Réaliser une génération aléatoire.",
-                        "Prochain objectifs : Générer aléatoirement un résultat depuis un fichier",
-                        "Prochain objectifs : Réaliser une version web de la génération"
-                    ],
-                    "competence_developpe" : [
-                        "Construction d'une interface graphique tkinter."
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Système aléatoire",
-                        "text" : [
-                            "Avec la bibliothèque random, je génère plusieurs personnage du jeu aléatoirement.",
-                            "La petite difficulté étant qu'un personnage ne peut pas apparaitre 2 fois dans la liste de résultat",
-                            "Dans le futur, j'aimerais pourvoir générer des choses aléatoires suivant un fichier qui contiendrais la liste des personnages"
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Interface graphique",
-                        "text" : [
-                            "Avec tkinter, réaliser une interface qui va afficher l'image des boss et des personnages sélectionner.",
-                            "Affiche un boss et 4 personnages quand on lance la génération",
-                            "Dans le futur, j'aimerais modéliser cette génération en une roue qui affiche un peersonnage 1 par 1. Et dans 2 listes de 4 pour un autre mode de jeu de genshin impact"
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Version web",
-                        "text" : [
-                            "Dans le futur, je compte en faire une version web pour qu'il soit plus accessible"
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Prochainement en  web",
-                                "lien" : ""
-                            }
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "07/2023",
+    "presentation" : {
+        "image" : {
+            "lien" : "",
+            "alt" : "apperçu de l'interface graphique",
+            "title" : "apperçu de l'interface graphique"
+        },
+        "description" : "Génération d'un système aéatoire pour renforcer la difficulté dans le jeu genshin impact",
+        "langage" : [
+            "python"
+        ],
+        "objectifs" : [
+            "Réaliser une génération aléatoire.",
+            "Prochain objectifs : Générer aléatoirement un résultat depuis un fichier",
+            "Prochain objectifs : Réaliser une version web de la génération"
+        ],
+        "competence_developpe" : [
+            "Construction d'une interface graphique tkinter."
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Système aléatoire",
+            "text" : [
+                "Avec la bibliothèque random, je génère plusieurs personnage du jeu aléatoirement.",
+                "La petite difficulté étant qu'un personnage ne peut pas apparaitre 2 fois dans la liste de résultat",
+                "Dans le futur, j'aimerais pourvoir générer des choses aléatoires suivant un fichier qui contiendrais la liste des personnages"
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Interface graphique",
+            "text" : [
+                "Avec tkinter, réaliser une interface qui va afficher l'image des boss et des personnages sélectionner.",
+                "Affiche un boss et 4 personnages quand on lance la génération",
+                "Dans le futur, j'aimerais modéliser cette génération en une roue qui affiche un peersonnage 1 par 1. Et dans 2 listes de 4 pour un autre mode de jeu de genshin impact"
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Version web",
+            "text" : [
+                "Dans le futur, je compte en faire une version web pour qu'il soit plus accessible"
+            ],
+            "lien" : [
+                {
+                    "nom" : "Prochainement en  web",
+                    "lien" : ""
+                }
+            ] 
+        }
+    ]
+}

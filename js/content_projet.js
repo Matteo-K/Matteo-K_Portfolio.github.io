@@ -5,44 +5,43 @@ let main = document.querySelector("main");
 let title = document.querySelector("title");
 let text_size, size, link_size;
 
-fetch("json/" + projet + ".json")
-.then(response => {
-    if (response.ok) {
-        response.json().then(file => {
-            title.innerText = file[1].title;
+fetch("json/" + projet + ".json").then((response) => {
+  if (response.ok) {
+    response.json().then((file) => {
+      title.innerText = file.title;
 
-            let card = `
+      let card = `
                     <h3>
-                        ${file[1].title}
+                        ${file.title}
                     </h3>
             `;
-            card += `
+      card += `
             <time>
-                ${file[0].date}
+                ${file.date}
             </time>
             `;
-            if (file[1].content[0].section.image !== undefined) {
-                card += `
-                    <img src="${file[1].content[0].section.image.lien}" alt="${file[1].content[0].section.image.alt}" title="${file[1].content[0].section.image.title}">
+      if (file.presentation.image !== undefined) {
+        card += `
+                    <img src="${file.presentation.image.lien}" alt="${file.presentation.image.alt}" title="${file.presentation.image.title}">
                 `;
-            } else if (file[1].content[0].section.video !== undefined) {
-                card += `
+      } else if (file.presentation.video !== undefined) {
+        card += `
                     <video
                     width="480"
                     controls
-                    poster="${file[1].content[0].section.video.poster}">
+                    poster="${file.presentation.video.poster}">
                     <source
-                        src="${file[1].content[0].section.video.lien}"
+                        src="${file.presentationvideo.lien}"
                         type="video/mp4" />
                     Votre navigateur ne permet pas de lire les vidéos.
                     </video>
 
                 `;
-            } else if (file[1].content[0].section.iframeYT !== undefined) {
-                card += `
+      } else if (file.presentation.iframeYT !== undefined) {
+        card += `
                     <div>
                         <iframe 
-                            src="${file[1].content[0].section.iframeYT}" 
+                            src="${file.presentation.iframeYT}" 
                             title="YouTube video player" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -52,8 +51,8 @@ fetch("json/" + projet + ".json")
                         <p> Double cliquez ou appuyez sur 'f' pour mettre en grand écran </p>
                     </div>
                 `;
-            }
-            card += `
+      }
+      card += `
                     <section id="lienPratique">
                         <h4>
                             Lien pratique
@@ -62,19 +61,19 @@ fetch("json/" + projet + ".json")
                             <a href="index.html#portfolio">
                                 &lt;&nbsp;Retour au Menu
                             </a>
-                            <a href="${file[1].depot}" target="blank_">
+                            <a href="${file.depot}" target="blank_">
                                 <img src="images/reseau/github.png" alt="depot" title="depot">
                                 <span>Zone de dépot</span>
                             </a>
                     `;
-                    if (file[1].site !== undefined) {
-                        card += `
-                        <a href="${file[1].site}" target="blank_">
+      if (file.site !== undefined) {
+        card += `
+                        <a href="${file.site}" target="blank_">
                             Visiter le site
                         </a>
                         `;
-                    }
-            card += `        
+      }
+      card += `        
                         </div>
                     </section>
                     <section id="description">
@@ -82,146 +81,145 @@ fetch("json/" + projet + ".json")
                             Description
                         </h4>
                         <p>
-                            ${file[1].content[0].section.description}
+                            ${file.presentation.description}
                         </p>
                     </section>
                 `;
-                    card += `
+      card += `
                     <section id="objectifs">
                         <h4>
                             Objectif(s)
                         </h4>
                         <ul>
                     `;
-                    file[1].content[0].section.objectifs.forEach(element => {
-                        card += `
+      file.presentation.objectifs.forEach((element) => {
+        card += `
                             <li>
                                 ${element}
                             </li>
                         `;
-                    });
-                    card += `
+      });
+      card += `
                         </ul>
                     </section>
                     <div>
                 `;
-                if (file[1].content[0].section.langage !== undefined) {
-                    card += `
+      if (file.presentation.langage !== undefined) {
+        card += `
                     <section id="langage">
                         <h4>
                             Technologie(s)
                         </h4>
                         <ul>
                     `;
-                    file[1].content[0].section.langage.forEach(element => {
-                        card += `
+        file.presentation.langage.forEach((element) => {
+          card += `
                             <li>
                                 <img src="images/logo/technologies/${element}.png" alt="${element}" title="${element}">    
                             </li>
                         `;
-                    });
-                    card += `
+        });
+        card += `
                         </ul>
                     </section>
                     `;
-                };
-                card += `
+      }
+      card += `
                 <section id="competence_developpe">
                     <h4>
                         Compétences développées
                     </h4>
                     <ul>
                 `;
-                file[1].content[0].section.competence_developpe.forEach(element => {
-                    card += `
+      file.presentation.competence_developpe.forEach((element) => {
+        card += `
                         <li>
                             ${element}
                         </li>
                     `;
-                });
-                card += `
+      });
+      card += `
                     </ul>
                 </section>
             </div>
                 `;
 
-                let article1 = document.createElement("article")
-                article1.setAttribute("id",file[1].content[0].article);
-                article1.innerHTML = card;
-                main.appendChild(article1);
+      let article1 = document.createElement("article");
+      article1.setAttribute("id", "art_presentation_project");
+      article1.innerHTML = card;
+      main.appendChild(article1);
 
-            card = `
+      card = `
                 <h3>
                     Étape de réalisation
                 </h3>
             `;
-            size = file[1].content[1].section.length;
-            for (let index = 0; index < size; index++)  {
-                card += `
-                    <section id="etape${index+1}">
+      size = file.etape.length;
+      for (let index = 0; index < size; index++) {
+        card += `
+                    <section id="etape${index + 1}">
                         <h4>
                 `;
-                if (typeof file[1].content[1].section[index].titre === "undefined") {
-                    card += `
-                        Étape ${index+1}
+        if (typeof file.etape[index].titre === "undefined") {
+          card += `
+                        Étape ${index + 1}
                     `;
-                } else {
-                    card += `
-                        Étape ${index+1} : ${file[1].content[1].section[index].titre}
+        } else {
+          card += `
+                        Étape ${index + 1} : ${file.etape[index].titre}
                     `;
-                }
-                
-                 
-                card += `
+        }
+
+        card += `
                         </h4>
                         <p>
                 `;
 
-                text_size = file[1].content[1].section[index].text.length
-                for (let index_text = 0; index_text < text_size; index_text++) {
-                    card += `
-                        ${file[1].content[1].section[index].text[index_text]}<br>
+        text_size = file.etape[index].text.length;
+        for (let index_text = 0; index_text < text_size; index_text++) {
+          card += `
+                        ${file.etape[index].text[index_text]}<br>
                     `;
-                }
-                card += `
+        }
+        card += `
                     </p>
                 `;
-                if (file[1].content[1].section[index].lien.length != 0) {
-                    card += `
+        if (file.etape[index].lien.length != 0) {
+          card += `
                         <div>
                             <span>
                                 Source :
                             </span>
                         `;
-                    link_size = file[1].content[1].section[index].lien.length
-                    for (let index_lien = 0; index_lien < link_size; index_lien++) {
-                        card += `
-                            <a href="${file[1].content[1].section[index].lien[index_lien].lien}" target="blank_">
-                                ${file[1].content[1].section[index].lien[index_lien].nom}
+          link_size = file.etape[index].lien.length;
+          for (let index_lien = 0; index_lien < link_size; index_lien++) {
+            card += `
+                            <a href="${file.etape[index].lien[index_lien].lien}" target="blank_">
+                                ${file.etape[index].lien[index_lien].nom}
                             </a>
                         `;
-                    }
-                    card += `
+          }
+          card += `
                         </div>
-                    `; 
-                }
-                card += `
+                    `;
+        }
+        card += `
                     </section>
                 `;
-            };
-            card += `
+      }
+      card += `
                 </article>
             `;
 
-            let article2 = document.createElement("article")
-            article2.setAttribute("id",file[1].content[1].article);
-            article2.innerHTML = card;
-            main.appendChild(article2);
-        });
-    } else {
-        title.innerText = "Erreur 404";
+      let article2 = document.createElement("article");
+      article2.setAttribute("id", "art_etape");
+      article2.innerHTML = card;
+      main.appendChild(article2);
+    });
+  } else {
+    title.innerText = "Erreur 404";
 
-        let card = `
+    let card = `
         <article class="erreur404">
             <img src="images/logo/erreur404.png" alt="erreur404">
             <br>
@@ -233,6 +231,6 @@ fetch("json/" + projet + ".json")
         </article>
         `;
 
-        main.insertAdjacentHTML('beforeend', card);
-    }
+    main.insertAdjacentHTML("beforeend", card);
+  }
 });

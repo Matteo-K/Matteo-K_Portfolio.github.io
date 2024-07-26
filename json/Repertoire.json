@@ -1,69 +1,56 @@
-[
-    {
-        "title" : "Repertoire",
-        "lien" : "Repertoire",
-        "compétence" : [
-            1
-        ],
+{
+    "title" : "Repertoire",
+    "lien" : "Repertoire",
+    "depot" : "https://github.com/Matteo-K/Repertoire",
+    "compétence" : [
+        1
+    ],
+    "image" : {
+        "lien" : "",
+        "alt" : "illustration Répertoire",
+        "title" : "illustration Répertoire"
+    },
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "fin 2021",
+    "presentation" : {
         "image" : {
             "lien" : "",
-            "alt" : "illustration Répertoire",
-            "title" : "illustration Répertoire"
+            "alt" : "",
+            "title" : ""
         },
-        "contributeur" : [
-            "Mattéo Kervadec"
+        "description" : "Le répertoire est un logiciel qui va enregistrer les numéros de téléphone",
+        "langage" : [
+            "python",
+            "html",
+            "css"
         ],
-        "date" : "fin 2021"
-    },
-    {
-        "title" : "Repertoire",
-        "depot" : "https://github.com/Matteo-K/Repertoire",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "",
-                        "alt" : "",
-                        "title" : ""
-                    },
-                    "description" : "Le répertoire est un logiciel qui va enregistrer les numéros de téléphone",
-                    "langage" : [
-                        "python",
-                        "html",
-                        "css"
-                    ],
-                    "objectifs" : [
-                        "Lire des fichiers",
-                        "Manipuler les données"
-                    ],
-                    "competence_developpe" : [
-                        "Connaissance en css et html",
-                        "Manipulation des fichiers"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Concevoir le programme",
-                        "text" : [
-                            "Le programme initial a pour but d'un menu, d'où on peut enregistrer un numéro et un nom. Puis on peut également rechercher le numéro de quelqu'un à partir de son nom. Toutes les données sont donc stockées dans un fichier."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Adaptation en web",
-                        "text" : [
-                            "Ensuite, il a fallu se familiariser avec laragon pour faire du back-end en python et du html & css en front-end. La partie front-end se chargeait de guider l'utilisateur vers les pages. Et la partie Back-end enregistrait les numéros dans un fichier et pouvais les afficher grâce au nom associé."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
+        "objectifs" : [
+            "Lire des fichiers",
+            "Manipuler les données"
+        ],
+        "competence_developpe" : [
+            "Connaissance en css et html",
+            "Manipulation des fichiers"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Concevoir le programme",
+            "text" : [
+                "Le programme initial a pour but d'un menu, d'où on peut enregistrer un numéro et un nom. Puis on peut également rechercher le numéro de quelqu'un à partir de son nom. Toutes les données sont donc stockées dans un fichier."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Adaptation en web",
+            "text" : [
+                "Ensuite, il a fallu se familiariser avec laragon pour faire du back-end en python et du html & css en front-end. La partie front-end se chargeait de guider l'utilisateur vers les pages. Et la partie Back-end enregistrait les numéros dans un fichier et pouvais les afficher grâce au nom associé."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}

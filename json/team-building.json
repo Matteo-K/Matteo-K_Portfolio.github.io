@@ -1,75 +1,62 @@
-[
-    {
-        "title" : "team-building",
-        "lien" : "team-building",
-        "compétence" : [
-            6
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/chevalierDUnJour.png",
-            "alt" : "illustration Chevalierd'un jour",
-            "title" : "illustration Chevalierd'un jour"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec"
-        ],
-        "date" : "06/2024"
+{
+    "title" : "team-building",
+    "lien" : "team-building",
+    "depot" : "https://github.com/Matteo-K/evenements-de-team-building",
+    "compétence" : [
+        6
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/chevalierDUnJour.png",
+        "alt" : "illustration Chevalierd'un jour",
+        "title" : "illustration Chevalierd'un jour"
     },
-    {
-        "title" : "team-building",
-        "depot" : "https://github.com/Matteo-K/evenements-de-team-building",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "video" : {
-                        "poster" : "images/Illustration_project/chevalierDUnJour.png",
-                        "lien" : "images/Illustration_project/film_sae206_kervadec_bardini_toe_chartier.mp4"
-                    },
-                    "description" : "Organisation d'une journée de team building autour de la chevalerie.",
-                    "objectifs" : [
-                        "Organiser un événement de team building."
-                    ],
-                    "competence_developpe" : [
-                        "Organisation",
-                        "Prise de recherche"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Choix du thème",
-                        "text" : [
-                            "L'événement est de titre fictif. Nous avons décidé d'organiser une journée de temps médiévale pour l'entreprise Cyim. Une entreprise d'avancée technologique. Alors nous nous décider que rien de mieux qu'un retour aux racines pour progresser.",
-                            "Dans cet événement, nous avons décidé de diviser la journée en deux parties. Quelque activité le matin et un tournoi d'Art Martiaux Historiques Européens (AMHE). Durant la matinée, le groupe sera divisé en trois parties avec des rotations toutes les 1h30. Nous avons un cours d'AMHE, un cours d'histoire avec la visite du château de Fougère, mais également du jeu de rôle."
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "site web Cyim",
-                                "lien" : "https://www.cyim.com/fr"
-                            },
-                            {
-                                "nom" : "FF AMHE",
-                                "lien" : "https://www.ffamhe.fr"
-                            }
-                        ] 
-                    },
-                    {
-                        "titre" : "Flyer et film",
-                        "text" : [
-                            "Pour informer les participants de l'événement, nous avons créé un flyer que nous disposerons sur l'entrée de l'entreprise. Mais nous avons également préparé un petit court-métrage du tournoi d'AMHE afin de motiver des gens à participer. Surtout qu'il y a deux places au Puys du fou à gagner."
-                        ],
-                        "lien" : [
-                            {
-                                "nom" : "Flyer",
-                                "lien" : "https://github.com/Matteo-K/evenements-de-team-building/blob/main/flyer_sae206_kervadec_toe_bardini_chartier--le_goff.pdf"
-                            }
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "06/2024",
+    "presentation" : {
+        "video" : {
+            "poster" : "images/Illustration_project/chevalierDUnJour.png",
+            "lien" : "images/Illustration_project/film_sae206_kervadec_bardini_toe_chartier.mp4"
+        },
+        "description" : "Organisation d'une journée de team building autour de la chevalerie.",
+        "objectifs" : [
+            "Organiser un événement de team building."
+        ],
+        "competence_developpe" : [
+            "Organisation",
+            "Prise de recherche"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Choix du thème",
+            "text" : [
+                "L'événement est de titre fictif. Nous avons décidé d'organiser une journée de temps médiévale pour l'entreprise Cyim. Une entreprise d'avancée technologique. Alors nous nous décider que rien de mieux qu'un retour aux racines pour progresser.",
+                "Dans cet événement, nous avons décidé de diviser la journée en deux parties. Quelque activité le matin et un tournoi d'Art Martiaux Historiques Européens (AMHE). Durant la matinée, le groupe sera divisé en trois parties avec des rotations toutes les 1h30. Nous avons un cours d'AMHE, un cours d'histoire avec la visite du château de Fougère, mais également du jeu de rôle."
+            ],
+            "lien" : [
+                {
+                    "nom" : "site web Cyim",
+                    "lien" : "https://www.cyim.com/fr"
+                },
+                {
+                    "nom" : "FF AMHE",
+                    "lien" : "https://www.ffamhe.fr"
+                }
+            ] 
+        },
+        {
+            "titre" : "Flyer et film",
+            "text" : [
+                "Pour informer les participants de l'événement, nous avons créé un flyer que nous disposerons sur l'entrée de l'entreprise. Mais nous avons également préparé un petit court-métrage du tournoi d'AMHE afin de motiver des gens à participer. Surtout qu'il y a deux places au Puys du fou à gagner."
+            ],
+            "lien" : [
+                {
+                    "nom" : "Flyer",
+                    "lien" : "https://github.com/Matteo-K/evenements-de-team-building/blob/main/flyer_sae206_kervadec_toe_bardini_chartier--le_goff.pdf"
+                }
+            ] 
+        }
+    ]
+}

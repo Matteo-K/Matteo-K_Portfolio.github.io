@@ -1,72 +1,59 @@
-[
-    {
-        "title" : "consoData",
-        "lien" : "consoData",
-        "compétence" : [
-            4
-        ],
-        "image" : {
-            "lien" : "images/Illustration_project/consoData.png",
-            "alt" : "Logo database",
-            "title" : "Logo database"
-        },
-        "contributeur" : [
-            "Mattéo Kervadec"
-        ],
-        "date" : "02/2023"
+{
+    "title" : "consoData",
+    "lien" : "consoData",
+    "depot" : "https://github.com/Matteo-K/consoData",
+    "compétence" : [
+        4
+    ],
+    "image" : {
+        "lien" : "images/Illustration_project/consoData.png",
+        "alt" : "Logo database",
+        "title" : "Logo database"
     },
-    {
-        "title" : "consoData",
-        "depot" : "https://github.com/Matteo-K/consoData",
-        "content" : [
-            {
-                "article" : "art_presentation_project",
-                "section" : {
-                    "image" : {
-                        "lien" : "images/Illustration_project/consoDataPrix.png",
-                        "alt" : "apperçu data",
-                        "title" : "apperçu data"
-                    },
-                    "description" : "Construire une base de données sur le thème des documents csv disponibles sur le site du gouvernement. Puis j'analyserai ses données.",
-                    "langage" : [
-                        "sql",
-                        "python"
-                    ],
-                    "objectifs" : [
-                        "Construire une base de données et la peupler.",
-                        "Analyser les données en dessinant des diagrammes."
-                    ],
-                    "competence_developpe" : [
-                        "Matplotlib",
-                        "Requête SQL"
-                    ]
-                }
-            },
-            {
-                "article" : "art_etape",
-                "section" : [
-                    {
-                        "titre" : "Construction de la base de donnée",
-                        "text" : [
-                            "J'ai décidé de choisir des fichiers csv autour de l'évolution du gaz. Car le prix du gaz variait beaucoup de nos jours avec l'entrée en guerre de la Russie contre l'Ukraine.",
-                            "Construction de la base de données sur laragon sur un serveur locale pour ensuite les récupérés les données sur le programme python.",
-                            "Remplir la base de données avec les données des fichiers csv."
-                        ],
-                        "lien" : [
-                        ] 
-                    },
-                    {
-                        "titre" : "Analyser les données",
-                        "text" : [
-                            "Élaboration d'un programme qui permet de récupérer les données de la base de données sur un serveur local avec laragon.",
-                            "Récupéré les données avec des requêtes sql depuis le programme python.",
-                            "Construire des diagrammes avec Matplotlib et ressortir une conclusion."
-                        ],
-                        "lien" : [
-                        ] 
-                    }
-                ]
-            }
+    "contributeur" : [
+        "Mattéo Kervadec"
+    ],
+    "date" : "02/2023",
+    "presentation" : {
+        "image" : {
+            "lien" : "images/Illustration_project/consoDataPrix.png",
+            "alt" : "apperçu data",
+            "title" : "apperçu data"
+        },
+        "description" : "Construire une base de données sur le thème des documents csv disponibles sur le site du gouvernement. Puis j'analyserai ses données.",
+        "langage" : [
+            "sql",
+            "python"
+        ],
+        "objectifs" : [
+            "Construire une base de données et la peupler.",
+            "Analyser les données en dessinant des diagrammes."
+        ],
+        "competence_developpe" : [
+            "Matplotlib",
+            "Requête SQL"
         ]
-    } 
-]
+    },
+    "etape" : [
+        {
+            "titre" : "Construction de la base de donnée",
+            "text" : [
+                "J'ai décidé de choisir des fichiers csv autour de l'évolution du gaz. Car le prix du gaz variait beaucoup de nos jours avec l'entrée en guerre de la Russie contre l'Ukraine.",
+                "Construction de la base de données sur laragon sur un serveur locale pour ensuite les récupérés les données sur le programme python.",
+                "Remplir la base de données avec les données des fichiers csv."
+            ],
+            "lien" : [
+            ] 
+        },
+        {
+            "titre" : "Analyser les données",
+            "text" : [
+                "Élaboration d'un programme qui permet de récupérer les données de la base de données sur un serveur local avec laragon.",
+                "Récupéré les données avec des requêtes sql depuis le programme python.",
+                "Construire des diagrammes avec Matplotlib et ressortir une conclusion."
+            ],
+            "lien" : [
+            ] 
+        }
+    ]
+}
