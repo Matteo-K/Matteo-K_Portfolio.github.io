@@ -1404,6 +1404,11 @@ footer {
 
   /* Téléphone ---------------------- */
   @media screen and (max-width: 767px) {
+    #home {
+      h2::before {
+        display: none;
+      }
+    }
     aside {
       width: 310px;
     }
