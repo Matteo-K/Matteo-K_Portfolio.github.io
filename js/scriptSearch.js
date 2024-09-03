@@ -10,36 +10,53 @@ let page;
 // Si l'utilisateur n'appuie pas sur la suggestions
 let userData;
 
-inputBox.onkeyup = (e) => {
-  userData = e.target.value; // Valeur de l'entrée de l'utilisateur
-  let listeVide = [];
-  if (userData) {
-    if (userData === "*") {
-      listeVide = suggestions;
-    } else {
-      listeVide = suggestions.filter((data) => {
-        // Filtre toutes les suggestions contenant l'entrée de l'utilisateur
-        return data.projet_
-          .toLocaleLowerCase()
-          .includes(userData.toLocaleLowerCase());
-      });
-    }
-    console.log(listeVide);
-    listeVide = listeVide.map((data) => {
-      // Insère la suggestion
-      return (data = `<li>${data.projet_}</li>`);
+fetch("json/projets.json").then((response) => {
+  if (response.ok) {
+    response.json().then((file) => {
+      inputBox.onkeyup = (e) => {
+        userData = e.target.value; // Valeur de l'entrée de l'utilisateur
+        let listeVide = [];
+        if (userData) {
+          if (userData === "*") {
+            listeVide = file;
+          } else {
+            listeVide = file.filter((data) => {
+              // Filtre toutes les suggestions contenant l'entrée de l'utilisateur
+              return data.title
+                .toLocaleLowerCase()
+                .includes(userData.toLocaleLowerCase());
+            });
+          }
+          listeVide = listeVide.map((data) => {
+            // Insère la suggestion
+            return (data = `<li>${data.title}</li>`);
+          });
+          searchWrapper.classList.add("active"); // Affiche la boîte d'auto-complétion
+          afficheSuggestions(listeVide);
+          let allList = suggBox.querySelectorAll("li");
+          for (let i = 0; i < allList.length; i++) {
+            // Ajoute un attribut sur un clic dans tous les <li>
+            allList[i].setAttribute("onclick", "selectLink(this)");
+          }
+        } else {
+          searchWrapper.classList.remove("active"); // Masque la boîte d'auto-complétion si la barre de recherche est vide
+        }
+      };
+
+      function linkSelect() {
+        page = `#`;
+        // Attribue à la page si le nom est exactement le même
+        for (let id = 0; id < file.length; id++) {
+          if (file[id].title.toUpperCase() === userData.toUpperCase()) {
+            page = "projet.html?projet=" + file[id].lien;
+            lienTag.setAttribute("href", page);
+            lienTag.click();
+          }
+        }
+      }
     });
-    searchWrapper.classList.add("active"); // Affiche la boîte d'auto-complétion
-    afficheSuggestions(listeVide);
-    let allList = suggBox.querySelectorAll("li");
-    for (let i = 0; i < allList.length; i++) {
-      // Ajoute un attribut sur un clic dans tous les <li>
-      allList[i].setAttribute("onclick", "selectLink(this)");
-    }
-  } else {
-    searchWrapper.classList.remove("active"); // Masque la boîte d'auto-complétion si la barre de recherche est vide
   }
-};
+});
 
 logoSearch.addEventListener("click", () => {
   linkSelect();
@@ -50,18 +67,6 @@ inputBox.addEventListener("keypress", (e) => {
     linkSelect();
   }
 });
-
-function linkSelect() {
-  page = `#`;
-  // Attribue à la page si le nom est exactement le même
-  for (let id = 0; id < suggestions.length; id++) {
-    if (suggestions[id].projet_.toUpperCase() === userData.toUpperCase()) {
-      page = suggestions[id].lien;
-      lienTag.setAttribute("href", page);
-      lienTag.click();
-    }
-  }
-}
 
 let lienPage;
 

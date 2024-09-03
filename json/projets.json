@@ -1,0 +1,1242 @@
+[
+  {
+    "title": "Blogfish",
+    "lien": "Blogfish",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Blogfish",
+    "site": "https://matteo-k.github.io/Blogfish/",
+    "compétence": [1],
+    "image": {
+      "lien": "https://s1.qwant.com/thumbr/0x380/b/d/204ae0876f62f046ffb7340c3c8b6fc251754c62c8bc9d0fe75713daa1dc6d/f517f32c3de29226b39dfad71ad689bd.gif?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff5%2F17%2Ff3%2Ff517f32c3de29226b39dfad71ad689bd.gif&q=0&b=1&p=0&a=1",
+      "alt": "illustration Blogfish",
+      "title": "illustration Blogfish"
+    },
+    "contributeur": ["Élie Béguin", "Cyprien Fiala", "Mattéo Kervadec"],
+    "date": "début 2021",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/blogfish_page.png",
+        "alt": "apperçu du Blogfish",
+        "title": "apperçu du Blogfish"
+      },
+      "description": "Site web créé en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieux à forte pression. Ce qui explique son apparence physique quand il est sorti de l'eau.",
+      "langage": ["html", "css"],
+      "objectifs": [
+        "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne.",
+        "Évaluer notre niveau en Html."
+      ],
+      "competence_developpe": ["Autonomie : Apprendre à manipuler le Html.", ""]
+    },
+    "etape": [
+      {
+        "titre": "Mise en forme de l'idée",
+        "text": [
+          "Dès le début, l'image du blobfish nous est venue à l'idée",
+          "À partir de cela, il fallait construire 3 pages plus ou moins cohérentes qui habillerais ce blobfish.",
+          "Pour cela, on créa une page autour des produits alimentaire fictifs à base de blobfish, des produits dérivées et comment adopter un blobfish."
+        ],
+        "lien": [
+          {
+            "nom": "Wikipédia Blobfish",
+            "lien": "https://fr.wikipedia.org/wiki/Blobfish"
+          }
+        ]
+      },
+      {
+        "titre": "Création des pages personnels",
+        "text": [
+          "Chaque personne du groupe devait construire sa page, je me suis chargé de la partie produits divers",
+          "N'ayant aucune base en html et css. On décide de créer une structure globale pour qu'ensuite chacun change la partie principale de sa page. Pour ainsi garder l'uniformisation du site web",
+          "Pour faire ma page principale, je créais un tableau qui me permettrait d'organiser chaque élément dans sa case. Vu que je ne connaissais aucun moyen de changer la position des blocs, je trouvai cette solution correcte."
+        ]
+      },
+      {
+        "titre": "Habiller le Blogfish",
+        "text": [
+          "La charte graphique du site, c'est tourné vers la couleur du blobfish. Ayant une couleur rose, nous utilisons une couleur plus claire comme le blanc pour faire contraste.",
+          "Pour aligner les blocs avec d'autres, on utilisa beaucoup les padding, margin et les display-inline. Ce qui rendait la page peu responsive"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "bloques-notes",
+    "lien": "bloques-notes",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/bloques-notes",
+    "compétence": [2],
+    "image": {
+      "lien": "images/Illustration_project/bloques-notes.png",
+      "alt": "Illustration bloques-notes",
+      "title": "Illustration bloques-notes"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "03/2023",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/bloques-notes.png",
+        "alt": "Illustration bloques-notes",
+        "title": "Illustration bloques-notes"
+      },
+      "description": "Programme qui permet d'encoder et décoder les fichiers",
+      "langage": ["perl"],
+      "objectifs": [
+        "Trouver une manière de sécuriser mais fichiers pour qu'il soit décoder uniquement avec mais mots de passe."
+      ],
+      "competence_developpe": ["Sécurisation des données", "Méthode d'encodage"]
+    },
+    "etape": [
+      {
+        "titre": "Gestion des utilisateurs",
+        "text": [
+          "Créer un système qui permettra à l'utilisateur de se connecter avec nom d'utilisateur et un mot de passe",
+          "Si l'utilisateur à un compte alors onlui demande de se connecter.",
+          "Sinon on lui demande de créer un compte.",
+          "Cela permettra à l'utilisateur de pouvoir décoder ses fichiers et pour que les autres utilisateurs ne peuvent pas lire son contenue."
+        ]
+      },
+      {
+        "titre": "Encodage/Décodage",
+        "text": [
+          "Ouvrir les fichiers afin de lire leur contenue et écrire leur contenue dans un nouveau fichier en les encodant ou décodant.",
+          "Construire plusieurs méthode différentes pour encoder le contenue des fichiers.",
+          "Faire en sorte que uniquement la personne qui a encoder les fichier puissent décoder son fichier."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "consoData",
+    "lien": "consoData",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/consoData",
+    "compétence": [4],
+    "image": {
+      "lien": "images/Illustration_project/consoData.png",
+      "alt": "Logo database",
+      "title": "Logo database"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "02/2023",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/consoDataPrix.png",
+        "alt": "apperçu data",
+        "title": "apperçu data"
+      },
+      "description": "Construire une base de données sur le thème des documents csv disponibles sur le site du gouvernement. Puis j'analyserai ses données.",
+      "langage": ["sql", "python"],
+      "objectifs": [
+        "Construire une base de données et la peupler.",
+        "Analyser les données en dessinant des diagrammes."
+      ],
+      "competence_developpe": ["Matplotlib", "Requête SQL"]
+    },
+    "etape": [
+      {
+        "titre": "Construction de la base de donnée",
+        "text": [
+          "J'ai décidé de choisir des fichiers csv autour de l'évolution du gaz. Car le prix du gaz variait beaucoup de nos jours avec l'entrée en guerre de la Russie contre l'Ukraine.",
+          "Construction de la base de données sur laragon sur un serveur locale pour ensuite les récupérés les données sur le programme python.",
+          "Remplir la base de données avec les données des fichiers csv."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Analyser les données",
+        "text": [
+          "Élaboration d'un programme qui permet de récupérer les données de la base de données sur un serveur local avec laragon.",
+          "Récupéré les données avec des requêtes sql depuis le programme python.",
+          "Construire des diagrammes avec Matplotlib et ressortir une conclusion."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Database Programme Nationnal But info",
+    "lien": "database-pn-IUT",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/database-pn-IUT",
+    "compétence": [4],
+    "image": {
+      "lien": "images/Illustration_project/pnSchemaDatabase.png",
+      "alt": "schema Database",
+      "title": "schema Database"
+    },
+    "contributeur": ["Mattéo Kervadec", "Stanislas Rolland"],
+    "date": "01/2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/PnIutLannionDB.png",
+        "alt": "",
+        "title": ""
+      },
+      "description": "Construction d'une base de donnée autour du programme nationnal du BUT informatique",
+      "langage": ["sql"],
+      "objectifs": [
+        "Créer un schéma/une représentation de la base de donnée",
+        "Construire la base de donnée"
+      ],
+      "competence_developpe": [
+        "Méthode de construction d'un schéma d'une base de données"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Construction du schéma",
+        "text": [
+          "Le sujet de cette SAE consistais à créer une base de données de toute pièce. À partir d'une demande, nous devions créer un schéma de base de données. Ce sujet était la construction d'une base de donnée sur le programme national du BUT informatique."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Création de la base de données",
+        "text": [
+          "À partir de la correction du schéma que nous avions fait précédemment, nous devions construire le modèle relationnel de la base de données avec le SQL."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "SAE 1.06",
+    "lien": "decouverte-environnement-eco-num",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/decouverte-environnement-eco-num",
+    "compétence": [6],
+    "image": {
+      "lien": "images/Illustration_project/focusEntertainment.png",
+      "alt": "illustration S1.06",
+      "title": "illustration S1.06"
+    },
+    "contributeur": [
+      "Raphaël Bardini",
+      "Marius Chartier--Le Goff",
+      "Mattéo Kervadec",
+      "Stanislas Rolland"
+    ],
+    "date": "10/2023",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/Logo_RSE.png",
+        "alt": "Logo RSE",
+        "title": "Logo RSE"
+      },
+      "description": "Réalisez les rapports Responsabilité Sociétale des Entreprises (RSE)",
+      "objectifs": ["Découvrir la RSE et son impact"],
+      "competence_developpe": [
+        "Prise d'information",
+        "Mise en place d'outil de recherche",
+        "Recherche documentaire"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Choix de l'entreprise",
+        "text": [
+          "Notre choix, c'est porté sur focus entertainment, une entreprise d'édition et de création de jeu vidéo bretonne.",
+          "Cette entreprise pouvait poser plein de questions par rapport à son impact écologique et social."
+        ],
+        "lien": [
+          {
+            "nom": "RSE Focus Entertainment",
+            "lien": "https://www.focus-entmt.com/fr/company/responsibility"
+          }
+        ]
+      },
+      {
+        "titre": "Déroulement de la SAE",
+        "text": [
+          "Durant cette SAE, nous avons dû relever les caractéristiques de l'entreprise. Ainsi qu'un diagnostic externe. Mais surtout une synthèse de sa RSE.",
+          "D'ailleurs, Focus Entertainment avait déjà une conscience de son impact RSE. Et donc on peut retrouver directement sur leur site leur RSE."
+        ],
+        "lien": [
+          {
+            "nom": "Rapport RSE",
+            "lien": "https://github.com/Matteo-K/decouverte-environnement-eco-num/blob/main/dossier_CHARTIER--LE_GOFF_ROLLAND_KERVADEC_BARDINI.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "flashcard",
+    "lien": "flashcard",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/flashCard",
+    "compétence": [1],
+    "image": {
+      "lien": "https://repository-images.githubusercontent.com/458857316/4633fa6d-813b-4a8b-ba52-a462b128d7ae",
+      "alt": "illustration flashcard",
+      "title": "illustration flashcard"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "début 2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/question-flashcard.png",
+        "alt": "apperçu des flashcard",
+        "title": "apperçu des flashcard"
+      },
+      "description": "Un programme qui pose un intitulé comme \"La date de la révolution française\" puis quand l'utilisateur demande, le programme lui donner la réponse ainsi l'utilisateur peut passer à la prochaine intituler.",
+      "langage": ["python"],
+      "objectifs": [
+        "Réalisation d'un petit programme pour m'aider à réviser ma comptabilité.",
+        "Faire un programme simple à comprendre qui pourrait m'aider dans d'autre cours."
+      ],
+      "competence_developpe": [
+        "Manipulation des fichiers",
+        "Réaliser un .exe depuis un fichier python"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Liste des fonctionnalités",
+        "text": [
+          "Pour faire des cartes-mémoires qui peuvent s'adapter à chaque apprentissage, il faut plusieurs techniques de mémorisation.",
+          "Ouverture de fichier - L'utilisateur peut entrer le chemin absolu du fichier. Ainsi l'utilisateur peut étudier librement son sujet. Ce qui rend le logiciel dynamique.",
+          "Apprentissage - L'ensemble des cartes s'affiches avec la question et la réponse en face.",
+          "Question-réponse - Une question ou une réponse s'affiche. Et le but est de donner sa réponse ou question. Au bout de 20 questions, le programme donne le score/résultat de l'utilisateur. Mais aussi l'ensemble des questions dont il a eu faux.",
+          "Carte - Les questions/réponses s'affichent une par une appuyant sur entrer pour faire défiler les cartes."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Implémentation",
+        "text": [
+          "À la base, j'ai voulu réaliser ce logiciel pour m'aider dans mes révisions et pourquoi pas pour d'autres personnes. Donc j'ai décidé de le réalisé en python vu que c'est un langage de programmation que beaucoup connaissent. Sinon je l'aurai réaliser en perl pour continuer d'apprendre ce langage.",
+          "Mais j'ai découvert que nous pouvons rendre des fichiers python exécutable. Donc j'ai décidé de me renseigner et de tester."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Futur fonctionnalité",
+        "text": [
+          "Pour des futures fonctionnalités, j'aimerais  que l'utilisateur puisse choisir entre 4 propositions. Ces propositions seront prises aléatoirement parmi d'autres questions. Mais parmi ces choix, il y a la bonne réponse.",
+          "Ensuite,l'autre fonctionnalité serait de pouvoir prendre un thème et le déposer dans des tableaux."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "genDoc",
+    "lien": "genDoc",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/genDoc",
+    "compétence": [3],
+    "image": {
+      "lien": "images/Illustration_project/to_pdf.png",
+      "alt": "illustration genDoc",
+      "title": "illustration genDoc"
+    },
+    "contributeur": [
+      "Raphaël Bardini",
+      "Marius Chartier--Le Goff",
+      "Mattéo Kervadec",
+      "Stanislas Rolland"
+    ],
+    "date": "01/2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/docu_technique.png",
+        "alt": "apperçu",
+        "title": "apperçu"
+      },
+      "description": "Génération de la documentation en format pdf suivant des fichiers c et un fichier markdown.",
+      "langage": ["php", "markdown", "html", "css", "docker"],
+      "objectifs": [
+        "Générer de la documentation",
+        "Apprendre a utiliser docker",
+        "Apprendre le php"
+      ],
+      "competence_developpe": [
+        "Travail d'équipe",
+        "Php & docker",
+        "Générer un fichier html depuis un php"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Documentation technique",
+        "text": [
+          "Le principe de cette partie est de prendre les commentaires des fichiers c et d'en faire un pdf.",
+          "Pour cela, avec un fichier bash on envoie les fichiers c dans un fichier php qui va s'occuper de sélectionner l'ensemble des parties de la documentation des fichiers c. Puis avec le fichier php, on en fait un fichier html qui permettre de modifier le html en pdf. Toute la génération se passe dans un conteneur d'un docker qui va permettre de garantir une sécurité. Mais également de pouvoir commenté le code en une commande."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Documentation utilisateur",
+        "text": [
+          "Pour la génération utilisateur, on part un peu du même principe. Mais le fichier source initial est un document markdown. Ainsi, avec le php, on récupère les informations du markdown. Puis on le change en html puis en pdf. Dans les deux parties, quand on veut récupérer des données, on utilise des expressions régulières (regex)."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Innosang",
+    "lien": "Innosang",
+    "selectionner": true,
+    "depot": "https://youtu.be/8ASkQJEALjc?si=tlzaavU-jWVtx2_d",
+    "compétence": [7],
+    "image": {
+      "lien": "images/Illustration_project/Innosang.png",
+      "alt": "illustration Innosang",
+      "title": "illustration Innosang"
+    },
+    "contributeur": [
+      "Elie Beguin",
+      "Cyprien Fiala",
+      "Mattéo Kervadec",
+      "Amandine Lorcy"
+    ],
+    "date": "15/06/23",
+    "presentation": {
+      "iframeYT": "https://www.youtube.com/embed/8ASkQJEALjc?si=pfucqLa0LUReMOq5",
+      "description": "Réalisation d'un court-métrage de fin d'année de l'option cinéma.<br>Coquillet et Cassandra, deux inspecteurs sont appelés sur une scène de crime. Il y retrouve un cadavre  et peu de réponses. Mais qui est mort ?",
+      "objectifs": [
+        "Réaliser un court-métrage qui va être projeté au cinéma Ti-Hanok"
+      ],
+      "competence_developpe": [
+        "Travail d'équipe",
+        "Organisation d'un projet",
+        "Apprendre à dire Non"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Trouver l'enquête",
+        "text": [
+          "L'idée de l'enquête de police est arrivée très rapidement. Étant dans une idée de cadre d'environ 10 minutes, l'enquête ne devait pas faire le tour de la ville. Durant le brainstorming, il y a eu plein d'idée très intéressante à explorer comme l'idée d'une boucle temporelle avec un appel téléphonique qui serait le début de l'enquête.",
+          "Mais il y a eu également des idées plus abstrait où l'équipe commençait à partir vers des idées plus farfelues qui ressortaient de l'idée initiale. Telle que l'idée d'une personne s'appelant Rechen (râteau en allemand), un collectionneur de râteau. C'est un criminel qui tue ses victimes en laissant toujours lui une trace de râteau. L'idée par loin, mais s'éloigne beaucoup de ce que l'on veut raconter initialement. Il y a eu d'autres idées comme l'intégration d'une autre personne qui serait mort et qui parlerais avec d'autre mort. Un peu comme le film 6<sup>ème</sup> sens. Au final, nous sommes partis sur une autre idée dont je vous laisse regarder sur Youtube avec le lien ci-dessous."
+        ],
+        "lien": [
+          {
+            "nom": "Wikipédia 6<sup>ème</sup> sens",
+            "lien": "https://fr.wikipedia.org/wiki/Sixième_Sens_(film)"
+          }
+        ]
+      },
+      {
+        "titre": "Organisation des scènes de tournages",
+        "text": [
+          "Pour faire jouer notre film, nous avons demandé à des bénévoles d'une école de théâtre de bien vouloir être acteur/actrice dans notre court-métrage. 4 personnes ont répondu à la demande et seulement 3 étaient sélectionnés. Car l'acteur principal Coquillet était une connaissance de Cyprien Fiala (un membre du groupe). Une fois avoir sélectionner les acteurs, on leur demanda leurs disponibilités et on se rendit compte que nous n'avons que 3 jours pour tourner.",
+          "Étant des cinéphiles amateurs, on estimait qu'il fallait être rapide. Donc nous sélectionnons une date, demandons la permission d'accès au lieu de tournage. Nous préparons les accessoires qu'il nous fallait et le jour de tournage arriva à grands pas."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Tournage du film",
+        "text": [
+          "Le tournage s'est mieux passé que ce que l'on avait prévu. Au lieu des 3 jours prévus, le tournage se finissait à la fin de la journée, car nous étions finalement plus organisés que nous le croyons. Le tournage s'est bien passé, mais il n'y a eu pas de problème technique. Comme le son d'une chute d'eau en arrière-plan. Tourner à proximité d'une route. Mais en général tout s'est bien déroulé. Et je pense que tout le monde s'est bien amusé."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Montage",
+        "text": [
+          "Le montage fut rude et assez long. Il dut y avoir quelque complexité comme le fait que tout le monde n'utilise pas le même logiciel se rend des parties monté non-exploitables. Pour le montage, on a suivi les scènes que l'on s'était réparties précédemment dans la préparation. Durant le montage, on s'est aperçu de certains problèmes que l'on a essayé d'éviter durant le tournage. Comme un faux-jour durant les premières scènes de bureau que l'on a essayé d'éviter en mettant quelque chose devant la fenêtre, mais cela à rendue pire que si elle n'y était pas, je pense.",
+          "La plus grosse question que l'on s'est posée durant le tournage étant \"Qu'est ce que connaît le spectateur ?\", \"Est-ce qu'il a vu ça facilement ?\" et \"Est ce que le spectateur ne connais déjà pas tout à ce moment-là ?\". Les principales questions se tournaient au tour de la connaissance du spectateur. Une fois le tournage finit, il était temps de la présentation du film à nos encadrants puis de la projection finale."
+        ],
+        "lien": [
+          {
+            "nom": "Logiciel Davinci Resolve",
+            "lien": "https://www.blackmagicdesign.com/fr/products/davinciresolve"
+          }
+        ]
+      },
+      {
+        "titre": "Projection",
+        "text": [
+          "Le jour du tournage était un moment incroyable. C'était le moment où tous les groupes découvraient la version finale de tous les projets. Ayant connaissance de tous les sujets et parcours de chacun dans leur court-métrage, c'était un moment fantastique à partager avec une salle de cinéma rempli. Il n'était pas forcément tous présent pour notre court-métrage. Mais j'étais plutôt ému quand les crédits se sont terminés."
+        ],
+        "lien": [
+          {
+            "nom": "Cinéma Ti Hanok",
+            "lien": "https://cinematihanok.bzh/Programmation/?scroll#date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "jeuDeLaVie",
+    "lien": "jeuDeLaVie",
+    "selectionner": false,
+    "depot": "https://github.com/Matteo-K/jeuDeLaVie",
+    "compétence": [1],
+    "image": {
+      "lien": "",
+      "alt": "illustration Jeu de la vie",
+      "title": "illustration Jeu de la vie"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "11/2022",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "",
+        "title": ""
+      },
+      "description": "",
+      "langage": ["Python"],
+      "objectifs": [""],
+      "competence_developpe": [""]
+    },
+    "etape": []
+  },
+  {
+    "title": "Le-patio",
+    "lien": "Le-patio",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Le-patio",
+    "compétence": [1, 5],
+    "image": {
+      "lien": "images/Illustration_project/lePatio.png",
+      "alt": "illustration Le patio",
+      "title": "illustration Le patio"
+    },
+    "contributeur": [
+      "Raphaël Bardini",
+      "Marius Chartier--Le Goff",
+      "Mattéo Kervadec",
+      "Paolo Toe"
+    ],
+    "date": "17/06/2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/logicielLePatio.png",
+        "alt": "Aperçu Logiciel Le Patio",
+        "title": "Aperçu Logiciel Le Patio"
+      },
+      "description": "Gestion du projet du Patio. En préparant les différents déroulements afin de bien s'organiser pour le développement du logiciel.",
+      "langage": ["java", "javafx"],
+      "objectifs": [
+        "Gérer un projet en tout point. Préparation et suivi du projet en temps réel.",
+        "Développer un logiciel facile à prendre en main. Suivant une demande client."
+      ],
+      "competence_developpe": [
+        "Gestion d'un projet",
+        "Travail d'équipe",
+        "Organisation"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Prendre connaissance du sujet",
+        "text": [
+          "Le patio est une salle de spectacle géré par M. Malraux. Dans sa requête, il nous demande d'élaborer un logiciel pour la caisse afin de gérer l'entièreté de sa salle de spectacle. C'est-à-dire les spectacles, un planning avec toutes les représentations, une gestion des tarifs, ...",
+          "La demande était très complète et comprenait énormément de partie à remplir dans le document des Spécifications du logiciel (SEL)."
+        ],
+        "lien": [
+          {
+            "nom": "Sujet le patio",
+            "lien": "https://github.com/Matteo-K/Le-patio/blob/main/Conception/BilleterieLePatio_Word.V8.pdf"
+          }
+        ]
+      },
+      {
+        "titre": "Préparation du projet",
+        "text": [
+          "Heureusement, on ne dut pas concevoir l'entièreté du logiciel. Moi et mon équipe devions se charger du Lot N°10. C'est-à-dire l'affichage et la création des catégories de spectateurs, l'affichage des données d'un spectacle. Et l'affichage d'un planning de chaque représentation qui peut être trié par genre et catégorie.",
+          "Pour préparer le projet, on dut réaliser un organigramme des tâches qui aura pour but de rentrer toutes les étapes à réaliser dans ce lot. Ensuite, nous avons réalisé une matrice Raci afin de se répartir les tâches. C'est-à-dire qui est le responsable, qui est l'acteur de la partie et qui doit être informé des tâches.",
+          "Enfin, nous avons réalisé un diagramme de Gantt prévisionnel afin de prévoir comment va être répartie en temps et en charges le projet."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Développement du logiciel",
+        "text": [
+          "Pour la réalisation du logiciel, nous avons suivi l'ensemble des diagrammes réalisé dans la préparation du sujet.",
+          "Pour la conception, nous avons réalisé un diagramme UML, un diagramme d'activité et un scene graph de l'interface graphique.",
+          "Le développement se divisa en deux parties, la création des classes Java pour y ajouter des données. Et la réalisation des interfaces graphiques. Pour ensuite lier les deux et faire un logiciel fonctionnel.",
+          "Pour finir, nous avons réalisé des tests. Tout d'abord des tests unitaires et des tests d'intégrations. Et après, nous avons réalisé des tests manuels de l'interface graphique."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Suivi du projet",
+        "text": [
+          "En même temps de réaliser le projet, entre les séances, nous avons avancé sur le diagramme de Gantt réel pour voir nos avancées/retard par rapport à ce qu'il y avait de prévu.",
+          "Cependant, nous avons quelques problèmes car entre les séances, certaines personnes avançaient sur le projet durant leur temps libre. Cela avait donc une cause directe sur le diagramme. Mais ce n'était pas un grand problème car lors de la création des affichages, on se rendit compte qu'il fallait réaliser des classes modèle pour mettre les données dans l'affichage. Par exemple, il y avait encore plus de classe à créer pour l'affichage des représentations dans le planning.",
+          "Pour cela, on put s'aider d'un schéma UML qui nous a été fourni. Donc au final, on a réussi à livrer le projet à temps. Et ça c'est le plus important."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Mattaque-Original-Web",
+    "lien": "Mattaque-Original-Web",
+    "selectionner": false,
+    "depot": "https://github.com/Matteo-K/Mattaque-Original-Web",
+    "compétence": [1],
+    "image": {
+      "lien": "",
+      "alt": "Logo first web site",
+      "title": "Logo first web site"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "07/2023",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "",
+        "title": ""
+      },
+      "description": "",
+      "langage": ["Html", "CSS"],
+      "objectifs": [""],
+      "competence_developpe": [""]
+    },
+    "etape": []
+  },
+  {
+    "title": "Monopoly",
+    "lien": "Monopoly",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Monopoly",
+    "compétence": [1],
+    "image": {
+      "lien": "images/Illustration_project/Monopoly.gif",
+      "alt": "illustration Monopoly",
+      "title": "illustration Monopoly"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "15/03/23",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "",
+        "title": ""
+      },
+      "description": "Reproduction du jeu emblématique le \"Monopoly\"",
+      "langage": ["python"],
+      "objectifs": [
+        "Réaliser un jeu qui fonctionne",
+        "Se familliarisé avec les classes python"
+      ],
+      "competence_developpe": [
+        "Connaissance des classes",
+        "Autonomie",
+        "Construire une interfaces graphiques"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Réalisation du jeu",
+        "text": [
+          "Réalisation du fonctionnement de base du Monopoly. C'est-à-dire un plateau, des cartes, des joueurs et des cartes."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "La suite ?",
+        "text": [
+          "Le jeu est encore en phase de développement. Pour le continuer, je voulais en apprendre plus sur les classes et le développement en général. En attendant, je m'occupais plutôt de réaliser des petits projets afin d'aller à mon rythme."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Portfolio",
+    "lien": "Portfolio",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Matteo-K_Portfolio.github.io",
+    "compétence": [1],
+    "image": {
+      "lien": "images/Illustration_project/portfolio_menu.png",
+      "alt": "Logo Portfolio",
+      "title": "Logo Portfolio"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "18/06/24",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/portfolio_aboutMe.png",
+        "alt": "Représentation d'un projet",
+        "title": "Représentation d'un projet"
+      },
+      "description": "Un site web qui retrace mes projets d'informatique réalisé. Certain projet sont innachevés. Mais verront certainement le jour dans plusieurs mois/années. Il sert notamment à promouvoir mes compétences.",
+      "langage": ["html", "css", "javascript", "json"],
+      "objectifs": [
+        "Réaliser un site web pour archiver mes projets",
+        "Rendre le site dynamique pour faciliter l'ajout de projet à l'avenir"
+      ],
+      "competence_developpe": ["Autonomie", "organisation", "rigueur"]
+    },
+    "etape": [
+      {
+        "titre": "Réalisation d'une maquette",
+        "text": [
+          "Avec le site web Figma, j'ai réalisé une maquette du site web.",
+          "Cette maquette visait à donner une idée approximative du résultat que pourrait donner le portfolio.",
+          "Étant seul sur le projet et ayant peu de temps pour réaliser ce site web, je dus ne pas m'arrêter sur les détails."
+        ],
+        "lien": [
+          {
+            "nom": "Maquette Figma",
+            "lien": "https://www.figma.com/design/PEORQaCJZNJELGpY5JEGaK/Portfolio?node-id=0-1&t=a8PqPSP1n0KvJVrH-0"
+          }
+        ]
+      },
+      {
+        "titre": "Conception du site en html/css",
+        "text": [
+          "Suite au plan que je me suis fixé avec la maquette Figma, j'ai construit la structure du site.",
+          "Malheureusement, vu que je me suis précipité sur la réalisation, j'ai eu différentes idées qui sont arrivées en cours de route. Donc cela m'a entraîné à modifier régulièrement la structure html.",
+          "Une fois la structure fixe, je me suis chargé du css afin de rendre les pages conviviales."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "L'ajout du javascript",
+        "text": [
+          "Pour dynamiser le site web, je voulus rajouter du javaScript. Mais n'ayant jamais utilisé ni appris à faire du javaScript, j'ai suivi des cours en ligne durant mes temps libres.",
+          "Le javaScript m'a permis de créer une barre de recherche dynamique afin d'orienter l'utilisateur dans sa recherche.",
+          "Mais cela m'a permis aussi de découvrir que l'on pouvait insérer du javaScript dans le html."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "La génération automatique des projets",
+        "text": [
+          "À l'aide de fichiers json qui répertorient l'ensemble de projets, j'ai réalisé un programme qui génère une page html à partir du contenu des fichiers.",
+          "À la base, je voulais que chaque projet eût un fichier json dans son répertoire. Avec l'<b>API de github</b>, je voulais prendre les fichiers un à un des répertoires puis de les utiliser pour les lister dans la page d'accueil et d'afficher leur contenue dans la page de projet. Mais l'api avait un certain nombre de requêtes par heure qui ne suffiraient pas à son utilisation.",
+          "Donc les fichiers json sont stocké dans ce projet et ne nécessiterons pas l'utilisation de cette API."
+        ],
+        "lien": [
+          {
+            "nom": "API Github",
+            "lien": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api?apiVersion=2022-11-28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Quelque-perle",
+    "lien": "Quelque-perle",
+    "selectionner": false,
+    "depot": "https://github.com/Matteo-K/Quelque-perle",
+    "compétence": [1],
+    "image": {
+      "lien": "images/Illustration_project/perl_logo.png",
+      "alt": "Logo perl",
+      "title": "Logo perl"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "02/2024",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "",
+        "title": ""
+      },
+      "description": "Ensemble de plusieurs petit programme en perl, réaliser pour apprendre à maîtriser ",
+      "langage": ["Perl"],
+      "objectifs": [""],
+      "competence_developpe": [""]
+    },
+    "etape": []
+  },
+  {
+    "title": "Repertoire",
+    "lien": "Repertoire",
+    "selectionner": false,
+    "depot": "https://github.com/Matteo-K/Repertoire",
+    "compétence": [1],
+    "image": {
+      "lien": "",
+      "alt": "illustration Répertoire",
+      "title": "illustration Répertoire"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "fin 2021",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "",
+        "title": ""
+      },
+      "description": "Le répertoire est un logiciel qui va enregistrer les numéros de téléphone",
+      "langage": ["python", "html", "css"],
+      "objectifs": ["Lire des fichiers", "Manipuler les données"],
+      "competence_developpe": [
+        "Connaissance en css et html",
+        "Manipulation des fichiers"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Concevoir le programme",
+        "text": [
+          "Le programme initial a pour but d'un menu, d'où on peut enregistrer un numéro et un nom. Puis on peut également rechercher le numéro de quelqu'un à partir de son nom. Toutes les données sont donc stockées dans un fichier."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Adaptation en web",
+        "text": [
+          "Ensuite, il a fallu se familiariser avec laragon pour faire du back-end en python et du html & css en front-end. La partie front-end se chargeait de guider l'utilisateur vers les pages. Et la partie Back-end enregistrait les numéros dans un fichier et pouvais les afficher grâce au nom associé."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Roulette-genshin",
+    "lien": "Roulette-genshin",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Roulette-genshin",
+    "site": "https://matteo-k.github.io/Roulette-genshin/",
+    "compétence": [1],
+    "image": {
+      "lien": "images/Illustration_project/genshin_aléatoire.png",
+      "alt": "Roulette-genshin",
+      "title": "Logo Roulette-genshin"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "07/2023",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "apperçu de l'interface graphique",
+        "title": "apperçu de l'interface graphique"
+      },
+      "description": "Génération d'un système aéatoire pour renforcer la difficulté dans le jeu genshin impact",
+      "langage": ["python"],
+      "objectifs": [
+        "Réaliser une génération aléatoire.",
+        "Prochain objectifs : Générer aléatoirement un résultat depuis un fichier",
+        "Prochain objectifs : Réaliser une version web de la génération"
+      ],
+      "competence_developpe": [
+        "Construction d'une interface graphique tkinter."
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Système aléatoire",
+        "text": [
+          "Avec la bibliothèque random, je génère plusieurs personnage du jeu aléatoirement.",
+          "La petite difficulté étant qu'un personnage ne peut pas apparaitre 2 fois dans la liste de résultat",
+          "Dans le futur, j'aimerais pourvoir générer des choses aléatoires suivant un fichier qui contiendrais la liste des personnages"
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Interface graphique",
+        "text": [
+          "Avec tkinter, réaliser une interface qui va afficher l'image des boss et des personnages sélectionner.",
+          "Affiche un boss et 4 personnages quand on lance la génération",
+          "Dans le futur, j'aimerais modéliser cette génération en une roue qui affiche un peersonnage 1 par 1. Et dans 2 listes de 4 pour un autre mode de jeu de genshin impact"
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Version web",
+        "text": [
+          "Dans le futur, je compte en faire une version web pour qu'il soit plus accessible"
+        ],
+        "lien": [
+          {
+            "nom": "Prochainement en  web",
+            "lien": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "S2.02",
+    "lien": "S2.02",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/S2.02",
+    "compétence": [2],
+    "image": {
+      "lien": "images/Illustration_project/pbNQueen.png",
+      "alt": "illustration Jeu des 8 dames",
+      "title": "illustration Jeu des 8 dames"
+    },
+    "contributeur": [
+      "Mattéo Kervadec",
+      "Raphaël Bardini",
+      "Paolo Toe",
+      "Marius Chartier--Le Goff"
+    ],
+    "date": "02/2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/resolutionNdames.gif",
+        "alt": "",
+        "title": ""
+      },
+      "description": "Le problème des N reines consiste à placer N reines sur un échiquier de N x N cases de manière à ce qu'aucune reine ne puisse menacer une autre.",
+      "langage": ["python"],
+      "objectifs": [
+        "Trouver des techniques pour résoudre le problème",
+        "Trouver les façons les plus rapides et moins coûteux en mémoires."
+      ],
+      "competence_developpe": ["Optimisation", "Reflexion"]
+    },
+    "etape": [
+      {
+        "titre": "Le backtracking",
+        "text": [
+          "Le backtracking est l'une des solutions les plus sûrs et rapide pour trouver des solutions. Le backtracking parcours une solution une par une. Et dès qu'il est bloqué,il repart en arrière et recommence.",
+          "C'est une méthode très rapide."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Le symétrie",
+        "text": [
+          "Parmi toutes les solutions que l'on a trouvées, je n'aurais jamais parié que cela soit celle-là la plus rapide et celle qui utilise le moins de mémoire. Elle déplace 2 reines à la fois, ce qui la rend très rapide. Mais le seul problème étant qu'elle ne peut trouver des solutions seulement si elles sont en symétrie."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "S2.03",
+    "lien": "S2.03",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/S2.03",
+    "compétence": [3],
+    "image": {
+      "lien": "images/Illustration_project/S203Web.png",
+      "alt": "illustration Connexion",
+      "title": "illustration Connexion"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "05/2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/S203Web.png",
+        "alt": "apperçu connexion",
+        "title": "apperçu connexion"
+      },
+      "description": "Installation d'un serveur appache avec un côté admin et utilisateur",
+      "langage": ["appache", "html", "css", "javascript"],
+      "objectifs": [
+        "Installation d'un serveur php et MySQL",
+        "Réalisés de jolie page web"
+      ],
+      "competence_developpe": ["Maitrise du javascript", "Installer un serveur"]
+    },
+    "etape": [
+      {
+        "titre": "Installation du serveur appache",
+        "text": [
+          "Pour installer le serveur Appache, nous avons utilisé une machine virtuelle (VirtualBox). Lors du projet, nous avons très souvent eu des problèmes avec la machine virtuelle et donc nous avons recommencer plusieurs fois certaines parties de l'installation.",
+          "Le MySQL permettait au utilisateur de se connecter au site web via un formulaire de connexion."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Réalisation des pages web",
+        "text": [
+          "Pour accéder au site web, il faut que l'utilisateur se connecte par un formulaire de connexion. Ou il faut qu'il crée un compte. Pour cela, il doit remplir un formulaire. L'ajout du Javascript est utilisé pour rendre le site plus dynamique/vivant. Nous avons également réalisé une page 404 personnalisée et un début de page public.",
+          "Pour réaliser ce site web, nous nous sommes basés sur le thème de la météo. Chaque page a un lien à la météo. Cela va de la page de connexion à la page 404."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "S2.04",
+    "lien": "S2.04",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/S2.04",
+    "compétence": [4],
+    "image": {
+      "lien": "images/Illustration_project/sae204_statistiques.jpg",
+      "alt": "illustration ",
+      "title": "illustration "
+    },
+    "contributeur": ["Raphaël Bardini", "Mattéo Kervadec"],
+    "date": "06/2024",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/diagBtnRatioFG.png",
+        "alt": "apperçu variable explicatives",
+        "title": "apperçu variable explicatives"
+      },
+      "description": "Construction d'une base de données autour des collèges.",
+      "langage": ["sql", "python"],
+      "objectifs": [
+        "Construire une base de données et trouver des corrélations entre les données."
+      ],
+      "competence_developpe": [
+        "Utilisation de formule mathématique",
+        "Construction de la base de données"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Création de la base de donnée",
+        "text": [
+          "Nous disposons d'un schéma de base de données que nous devons transformer en schéma relationnel que nous utiliserons par la suite pour trier les données.",
+          "Dans un premier temps moi et mon équipier Raphaël nous sommes charger de faire chacun de notre côté un diagramme des contraintes d'intégrité référencielle afin de mettre en commun et d'essayer d'explorer le sujet.",
+          "En suite, je me suis chargé de créer les tables pendant que Raphaël se chargeait de faire les relations entre les tables."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Peuplement de labase de donnée",
+        "text": [
+          "Pour cette partie, nous disposons de plusieurs document csv avec lesquelles nous devons remplir de donnée les tables que nous avons construites précédemment.",
+          "Nous utilisons WbImports afin d'importé les données dans le gestionnaire de bases de données (SqlWorkBench).",
+          "Ensuite avec des tables temporaires, on s'est chargé de remplir les tables fixes."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Analyse des données",
+        "text": [
+          "Pour obtenir les données, nous avons dû trouver une problématique et construire une vue pour ensuite l'exporter dans un document csv.",
+          "Avec ce fichier csv, nous avons essayé d'expliquer \"Qu'est ce qu'il peut expliquer le nombre de SEGPA dans un établissement ?\". Pour cela, nous prenons comme variable endogène le nombre de SEGPA par établissement. Puis nous avons pris plusieurs variables explicatives qui pourraient expliquer ce nombre. Ce sont des variables plus ou moins absurde.",
+          "Nous avons calculé les corrélations, la matrice de covariance et la régression linéaire. Pour au final conclure qu'il n'y a pas de variable qui pourrait expliquer le nombre de personnes en SEGPA. Mais trois variables sortent du lot (effectif d'élève par établissement, l'IPS et le ratio fille/garçon)."
+        ],
+        "lien": [
+          {
+            "nom": "compte rendue",
+            "lien": "https://github.com/Matteo-K/S2.04/blob/main/cr_bardini_kervadec.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Solver-Labyrinthe",
+    "lien": "Solver-Labyrinthe",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Solver-Labyrinthe",
+    "compétence": [2],
+    "image": {
+      "lien": "images/Illustration_project/construction_labyrinth.gif",
+      "alt": "illustration Labyrinthe",
+      "title": "illustration Labyrinthe"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "05/2023",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/resolution_labyrinth.gif",
+        "alt": "Résolution Labyrinthe",
+        "title": "Résolution Labyrinthe"
+      },
+      "description": "Recherche de différent moyen pour optimiser la recherche d'une solution d'un labyrinthe",
+      "langage": ["python"],
+      "objectifs": ["Tester différente approche pour résoudre le problème"],
+      "competence_developpe": ["Optimisation", "L'analyse"]
+    },
+    "etape": [
+      {
+        "titre": "L'usage des graphes",
+        "text": [
+          "Avec les graphes, on peut relier facilement chaque case à un passage. Ainsi, on peut délimiter facilement la présence d'un mur ou non lors du parcours du labyrinthe dans le graphe. Suivant la connaissance du labyrinthe, on peut créer un graphe orienté ou non. Si l'on connaît le point de départ et d'arrivé, on peut orienter le graphe suivant le point de départ ou d'arriver. Cette solution fonctionne quand on teste une seule fois un labyrinthe. Mais si on teste le labyrinthe en rentrant manuellement le point d'entrer et de sortie. Alors il vaudrait mieux créer un graphe non-orienté."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Backtracking",
+        "text": [
+          "On teste chaque passage un à un. Si le chemin est bloqué alors on retourne en arrière et on repart d'un chemin adjacent. On fait cette manipulation jusqu'à que l'on trouve l'arrivée."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Sudoku-Solver",
+    "lien": "Sudoku-Solver",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/Sudoku-Solver",
+    "compétence": [2],
+    "image": {
+      "lien": "images/Illustration_project/sudoku-solver.gif",
+      "alt": "illustration Sudoku",
+      "title": "illustration Sudoku"
+    },
+    "contributeur": ["Raphaël Bardini", "Mattéo Kervadec"],
+    "date": "12/2023",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/grilleSudoku.png",
+        "alt": "apperçu grille de sudoku",
+        "title": "apperçu grille de sudoku"
+      },
+      "description": "Réalisation d'un programme qui peut trouver la solution du sudoku.",
+      "langage": ["c"],
+      "objectifs": [
+        "Résoudre un suddoku.",
+        "Résoudre le plus rapidement possible un sudoku."
+      ],
+      "competence_developpe": ["Optimisation", "Analyse d'un problème"]
+    },
+    "etape": [
+      {
+        "titre": "Résoudre le sudoku",
+        "text": [
+          "Au début du projet, on a commencé à faire les techniques classiques de résolution. Telle que le singleton caché, le singleton nu, les paires cachés, ...",
+          "Puis on s'est rendu compte qu'on pouvait réaliser les N cachés et les N nus. Ce qui pourrait faire gagner beaucoup de temps."
+        ],
+        "lien": []
+      },
+      {
+        "titre": "Optimisation",
+        "text": [
+          "Après plusieurs analyse, on s'est rendue compte que la fonction qui était appelée le plus de fois était la fonction de vérification que l'élément peut être placée ou non. Donc on s'est arrangé pour l'optimiser au maximum pour qu'elle atteigne une très basse multiplicité."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "Sudoku",
+    "lien": "Sudoku",
+    "selectionner": false,
+    "depot": "https://github.com/Matteo-K/Sudoku",
+    "compétence": [1],
+    "image": {
+      "lien": "",
+      "alt": "illustration Sudoku",
+      "title": "illustration Sudoku"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "11/2023",
+    "presentation": {
+      "image": {
+        "lien": "",
+        "alt": "",
+        "title": ""
+      },
+      "description": "",
+      "langage": ["C"],
+      "objectifs": [""],
+      "competence_developpe": [""]
+    },
+    "etape": []
+  },
+  {
+    "title": "Tabaskho",
+    "lien": "Tabaskho",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/TabasKho",
+    "site": "https://matteo-k.github.io/TabasKho/",
+    "compétence": [5],
+    "image": {
+      "lien": "images/Illustration_project/TabaskhoAccueil.png",
+      "alt": "Logo Tabaskho",
+      "title": "Logo Tabaskho"
+    },
+    "contributeur": [
+      "Raphaël Bardini",
+      "Marius Chartier--Le Goff",
+      "Mattéo Kervadec",
+      "Stanislas Rolland"
+    ],
+    "date": "12/2023",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/tabaskhoSaison.png",
+        "alt": "apperçu Tabask'ho",
+        "title": "apperçu Tabask'ho"
+      },
+      "description": "Développer un site web de streaming \"TabasKho\". Le site doit comporter 4 pages. Le site de streaming devra suivre une série en détaillant ses pages.",
+      "langage": ["html", "css", "javascript", "figma"],
+      "objectifs": [
+        "Comprendre les besoins du client.",
+        "Développer un site web qui suit les attentes."
+      ],
+      "competence_developpe": [
+        "Développement web",
+        "Apprentissage du Javascript",
+        "Prise en main de Figma"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Conception",
+        "text": [
+          "Nous devons réaliser un site web autour d'un site de streaming nommé tabask'ho. Le site web doit comporter une série de notre choix où nous devons y rajouter des informations.",
+          "Notre choix s'est porté sur la série \"The Last of Us\". Pour s'organiser, nous avons créé un scene graph afin de déterminer les liens entre les pages. Ensuite, nous avons réalisé une charte-graphique et un Figma.",
+          "Le Figma devait être un maximum détaillé afin d'éviter les ambiguïtés lors du développement."
+        ],
+        "lien": [
+          {
+            "nom": "Lien Figma",
+            "lien": "https://www.figma.com/proto/NjIGNYDxaEK6PBTtWQahTF/Tabas'KHO-Maquette?node-id=85-2&t=0RY4pFjsJnpj2jwf-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=85%3A2&show-proto-sidebar=1"
+          }
+        ]
+      },
+      {
+        "titre": "Développement",
+        "text": [
+          "Dans un premier temps, nous nous sommes chargé de réaliser le header et le footer, car il était commun à tout le groupe. Ensuite, chacun s'est occupé de faire sa partie du travail en respectant le Figma.",
+          "En JavaScript, je me suis décidé de réaliser une barre de recherche qui pourrait suggérer des séries aux utilisateurs afin de rendre la navigation plus rapide."
+        ],
+        "lien": []
+      }
+    ]
+  },
+  {
+    "title": "S2.06 : team-building",
+    "lien": "team-building",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/evenements-de-team-building",
+    "compétence": [6],
+    "image": {
+      "lien": "images/Illustration_project/chevalierDUnJour.png",
+      "alt": "illustration Chevalierd'un jour",
+      "title": "illustration Chevalierd'un jour"
+    },
+    "contributeur": ["Mattéo Kervadec"],
+    "date": "06/2024",
+    "presentation": {
+      "video": {
+        "poster": "images/Illustration_project/chevalierDUnJour.png",
+        "lien": "images/Illustration_project/film_sae206_kervadec_bardini_toe_chartier.mp4"
+      },
+      "description": "Organisation d'une journée de team building autour de la chevalerie.",
+      "objectifs": ["Organiser un événement de team building."],
+      "competence_developpe": ["Organisation", "Prise de recherche"]
+    },
+    "etape": [
+      {
+        "titre": "Choix du thème",
+        "text": [
+          "L'événement est de titre fictif. Nous avons décidé d'organiser une journée de temps médiévale pour l'entreprise Cyim. Une entreprise d'avancée technologique. Alors nous nous décider que rien de mieux qu'un retour aux racines pour progresser.",
+          "Dans cet événement, nous avons décidé de diviser la journée en deux parties. Quelque activité le matin et un tournoi d'Art Martiaux Historiques Européens (AMHE). Durant la matinée, le groupe sera divisé en trois parties avec des rotations toutes les 1h30. Nous avons un cours d'AMHE, un cours d'histoire avec la visite du château de Fougère, mais également du jeu de rôle."
+        ],
+        "lien": [
+          {
+            "nom": "site web Cyim",
+            "lien": "https://www.cyim.com/fr"
+          },
+          {
+            "nom": "FF AMHE",
+            "lien": "https://www.ffamhe.fr"
+          }
+        ]
+      },
+      {
+        "titre": "Flyer et film",
+        "text": [
+          "Pour informer les participants de l'événement, nous avons créé un flyer que nous disposerons sur l'entrée de l'entreprise. Mais nous avons également préparé un petit court-métrage du tournoi d'AMHE afin de motiver des gens à participer. Surtout qu'il y a deux places au Puys du fou à gagner."
+        ],
+        "lien": [
+          {
+            "nom": "Flyer",
+            "lien": "https://github.com/Matteo-K/evenements-de-team-building/blob/main/flyer_sae206_kervadec_toe_bardini_chartier--le_goff.pdf"
+          }
+        ]
+      }
+    ]
+  }
+]
