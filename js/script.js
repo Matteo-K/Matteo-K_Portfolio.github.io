@@ -70,17 +70,20 @@ try {
         var lien = document.querySelector("form a");
         // sélectionne le format à télécharger
         switch (entry[1]) {
-          case "PDF":
+          case "Standart":
             lien.setAttribute("href", "images/cv/CV_kervadec_matteo.pdf");
             lien.setAttribute("download", "CV_kervadec_matteo.pdf");
             break;
-          case "PNG":
-            lien.setAttribute("href", "images/cv/CV_kervadec_matteo.png");
-            lien.setAttribute("download", "CV_kervadec_matteo.png");
+          case "Noir & Blanc":
+            lien.setAttribute("href", "images/cv/CV_kervadec_matteo_b&w.pdf");
+            lien.setAttribute("download", "CV_kervadec_matteo_b&w.pdf");
             break;
-          case "JPG":
-            lien.setAttribute("href", "images/cv/CV_kervadec_matteo.jpg");
-            lien.setAttribute("download", "CV_kervadec_matteo.jpg");
+          case "Impression":
+            lien.setAttribute(
+              "href",
+              "images/cv/CV_kervadec_matteo_impress.pdf"
+            );
+            lien.setAttribute("download", "CV_kervadec_matteo_impress.pdf");
             break;
 
           default:
