@@ -608,6 +608,13 @@ article {
       border-radius: 20px;
       background-color: var(--clr-light-font--);
       box-shadow: var(--clr-dark-font--) 3px 3px;
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(5),
+      &:nth-child(7),
+      &:nth-child(9) {
+        z-index: 1;
+      }
     }
     h5 + p + ul {
       justify-content: space-evenly;

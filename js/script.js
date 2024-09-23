@@ -67,29 +67,9 @@ try {
       const data = new FormData(downloadCV);
       // Prend le format entrer dans le form
       for (const entry of data) {
-        var lien = document.querySelector("form a");
+        let lien = document.querySelector("form a");
         // sélectionne le format à télécharger
-        switch (entry[1]) {
-          case "Standart":
-            lien.setAttribute("href", "images/cv/CV_kervadec_matteo.pdf");
-            lien.setAttribute("download", "CV_kervadec_matteo.pdf");
-            break;
-          case "Noir & Blanc":
-            lien.setAttribute("href", "images/cv/CV_kervadec_matteo_b&w.pdf");
-            lien.setAttribute("download", "CV_kervadec_matteo_b&w.pdf");
-            break;
-          case "Impression":
-            lien.setAttribute(
-              "href",
-              "images/cv/CV_kervadec_matteo_impress.pdf"
-            );
-            lien.setAttribute("download", "CV_kervadec_matteo_impress.pdf");
-            break;
-
-          default:
-            alert("format inconnu");
-            break;
-        }
+        set_cv(entry[1]);
         lien.click();
       }
       e.preventDefault();
@@ -97,6 +77,42 @@ try {
     false
   );
 } catch (error) {}
+
+function set_cv(value) {
+  let lien = document.querySelector("form a");
+  let img = document.querySelector("#cv a img");
+  let a = document.querySelector("#cv a");
+  switch (value) {
+    case "Standart":
+      lien.setAttribute("href", "images/cv/CV_kervadec_matteo.pdf");
+      lien.setAttribute("download", "CV_kervadec_matteo.pdf");
+      img.setAttribute("src", "images/cv/CV_kervadec_matteo.png");
+      a.setAttribute("href", "images/cv/CV_kervadec_matteo.pdf");
+      break;
+    case "Noir & Blanc":
+      lien.setAttribute("href", "images/cv/CV_kervadec_matteo_b&w.pdf");
+      lien.setAttribute("download", "CV_kervadec_matteo_b&w.pdf");
+      img.setAttribute("src", "images/cv/CV_kervadec_matteo_b&w.png");
+      a.setAttribute("href", "images/cv/CV_kervadec_matteo_b&w.pdf");
+      break;
+    case "Impression":
+      lien.setAttribute("href", "images/cv/CV_kervadec_matteo_impress.pdf");
+      lien.setAttribute("download", "CV_kervadec_matteo_impress.pdf");
+      img.setAttribute("src", "images/cv/CV_kervadec_matteo.png");
+      a.setAttribute("href", "images/cv/CV_kervadec_matteo.pdf");
+      break;
+
+    default:
+      alert("format inconnu");
+      break;
+  }
+}
+
+document.querySelectorAll('[type="radio"]').forEach((element) => {
+  element.addEventListener("input", () => {
+    set_cv(element.id);
+  });
+});
 
 /* Apparition scroll */
 
