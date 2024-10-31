@@ -60,6 +60,75 @@
     ]
   },
   {
+    "title": "PACT",
+    "lien": "PACT",
+    "selectionner": true,
+    "depot": "https://github.com/Matteo-K/PACT",
+    "site": "https://the-void.ventsdouest.dev/",
+    "compétence": [1],
+    "image": {
+      "lien": "images/Illustration_project/PACT.png",
+      "alt": "",
+      "title": ""
+    },
+    "contributeur": ["Mattéo Kervadec", "Gabriel Froc", "Ewen Jain", "+4 pers"],
+    "date": "2024-2025",
+    "presentation": {
+      "image": {
+        "lien": "images/Illustration_project/RecherchePACT.png",
+        "alt": "",
+        "title": ""
+      },
+      "description": "L’enjeu majeur de l’association TripEnArvor pour 2025 est le développement et la mise en service de sa Plateforme d’Avis et Conseils Touristiques (PACT), devant contribuer au renforcement du lien entre les professionnels du tourisme (établissements privés, associations, secteur public) et la population (locale et touristique).",
+      "langage": ["html", "css", "php", "javascript", "sql"],
+      "objectifs": [
+        "Réalisation d'une application web de gestion d'offre comme TripAdVisor",
+        "Consultation d'offre responsive pour des clients sur smartphone",
+        "Gestion des avis des offres",
+        "Gestion de la facturation"
+      ],
+      "competence_developpe": [
+        "Receuil de besoin de clients",
+        "Méthodes Agiles",
+        "Travail d’équipe"
+      ]
+    },
+    "etape": [
+      {
+        "titre": "Conception/Analyse",
+        "text": [
+          "Receuil du besoin avec des user stories",
+          "Réalisation d'une maquette Figma pour représenter un apperçut du site web",
+          "Réalisation d'un diagramme UML pour représenter la base de données",
+          "Interprétation des données dans un dictionnaire des données"
+        ],
+        "lien": [
+          {
+            "nom": "Maquette Figma",
+            "lien": "https://www.figma.com/design/SkUgYp7oFL7aFsm8KItBJ7/PACT?node-id=0-1&t=D7TeF64B7ptvtdP6-1"
+          }
+        ]
+      },
+      {
+        "titre": "Première phase de développement",
+        "text": [
+          "Création de la base de données avec son peuplement",
+          "Réalisation de la création de compte professionnel et connexion des comptes",
+          "Développement de la création et modifiaction d'offre afin de rendre le site dynamique",
+          "Consultation de l'ensemble des offres avec une approche détaillés sur celle sélectionnée avec un système en ligne et hors-ligne"
+        ]
+      },
+      {
+        "titre": "Deuxième phase de développement",
+        "text": ["Prochainement"]
+      },
+      {
+        "titre": "Troisième phase de développement",
+        "text": ["Prochainement"]
+      }
+    ]
+  },
+  {
     "title": "bloques-notes",
     "lien": "bloques-notes",
     "selectionner": true,
@@ -596,7 +665,7 @@
   {
     "title": "Monopoly",
     "lien": "Monopoly",
-    "selectionner": true,
+    "selectionner": false,
     "depot": "https://github.com/Matteo-K/Monopoly",
     "compétence": [1],
     "image": {
