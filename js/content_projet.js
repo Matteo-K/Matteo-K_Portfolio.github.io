@@ -74,7 +74,7 @@ fetch("json/projets.json").then((response) => {
                             </a>
                             <a href="${data[index].depot}" target="blank_">
                                 <img src="images/reseau/github.png" alt="depot" title="depot">
-                                <span>Zone de dépot</span>
+                                <span>Zone de dépôt</span>
                             </a>
                     `;
         if (data[index].site !== undefined) {

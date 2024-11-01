@@ -19,13 +19,13 @@
         "alt": "apperçu du Blogfish",
         "title": "apperçu du Blogfish"
       },
-      "description": "Site web créé en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web a but humoristique autour du blobfish, un poisson des eau profondes qui vit dans des milieux à forte pression. Ce qui explique son apparence physique quand il est sorti de l'eau.",
+      "description": "Site web créé en 2021 durant mon année de 2<sup>nd</sup>. Le projet est un site web à but humoristique autour du blobfish, un poisson des eaux profondes qui vit dans des milieux à forte pression. Ce qui explique son apparence physique quand il est sorti de l'eau.",
       "langage": ["html", "css"],
       "objectifs": [
         "Réaliser un site web de 3 pages et un menu autour d'un sujet commun qui nous attire/passionne.",
-        "Évaluer notre niveau en Html."
+        "Évaluer notre niveau en html."
       ],
-      "competence_developpe": ["Autonomie : Apprendre à manipuler le Html.", ""]
+      "competence_developpe": ["Autonomie : Apprendre à manipuler le html."]
     },
     "etape": [
       {
@@ -150,7 +150,7 @@
       "description": "Programme qui permet d'encoder et décoder les fichiers",
       "langage": ["perl"],
       "objectifs": [
-        "Trouver une manière de sécuriser mais fichiers pour qu'il soit décoder uniquement avec mais mots de passe."
+        "Trouver une manière de sécuriser mes fichiers pour qu'ils soient décodés uniquement avec mes mots de passe."
       ],
       "competence_developpe": ["Sécurisation des données", "Méthode d'encodage"]
     },
@@ -348,7 +348,7 @@
         "alt": "apperçu des flashcard",
         "title": "apperçu des flashcard"
       },
-      "description": "Un programme qui pose un intitulé comme \"La date de la révolution française\" puis quand l'utilisateur demande, le programme lui donner la réponse ainsi l'utilisateur peut passer à la prochaine intituler.",
+      "description": "Un programme qui pose un intitulé comme \"La date de la révolution française\" puis quand l'utilisateur demande, le programme lui donner la réponse ainsi l'utilisateur peut passer à la prochaine intitulé.",
       "langage": ["python"],
       "objectifs": [
         "Réalisation d'un petit programme pour m'aider à réviser ma comptabilité.",
@@ -417,7 +417,7 @@
       "langage": ["php", "markdown", "html", "css", "docker"],
       "objectifs": [
         "Générer de la documentation",
-        "Apprendre a utiliser docker",
+        "Apprendre à utiliser docker",
         "Apprendre le php"
       ],
       "competence_developpe": [
@@ -729,7 +729,7 @@
         "alt": "Représentation d'un projet",
         "title": "Représentation d'un projet"
       },
-      "description": "Un site web qui retrace mes projets d'informatique réalisé. Certain projet sont innachevés. Mais verront certainement le jour dans plusieurs mois/années. Il sert notamment à promouvoir mes compétences.",
+      "description": "Un site web qui retrace mes projets d'informatique réalisés. Certains projets sont inachevés. Mais verront certainement le jour dans plusieurs mois/années. Il sert notamment à promouvoir mes compétences.",
       "langage": ["html", "css", "javascript", "json"],
       "objectifs": [
         "Réaliser un site web pour archiver mes projets",
@@ -876,7 +876,7 @@
         "alt": "apperçu de l'interface graphique",
         "title": "apperçu de l'interface graphique"
       },
-      "description": "Génération d'un système aéatoire pour renforcer la difficulté dans le jeu genshin impact",
+      "description": "Génération d'un système aléatoire pour renforcer la difficulté dans le jeu genshin impact",
       "langage": ["python"],
       "objectifs": [
         "Réaliser une génération aléatoire.",
@@ -948,9 +948,9 @@
       "langage": ["python"],
       "objectifs": [
         "Trouver des techniques pour résoudre le problème",
-        "Trouver les façons les plus rapides et moins coûteux en mémoires."
+        "Trouver les façons les plus rapides et moins coûteuses en mémoires."
       ],
-      "competence_developpe": ["Optimisation", "Reflexion"]
+      "competence_developpe": ["Optimisation", "Réflexion"]
     },
     "etape": [
       {
@@ -989,19 +989,19 @@
         "alt": "apperçu connexion",
         "title": "apperçu connexion"
       },
-      "description": "Installation d'un serveur appache avec un côté admin et utilisateur",
+      "description": "Installation d'un serveur apache avec un côté admin et un côté utilisateur",
       "langage": ["appache", "html", "css", "javascript"],
       "objectifs": [
         "Installation d'un serveur php et MySQL",
-        "Réalisés de jolie page web"
+        "Réaliser de jolie page web"
       ],
-      "competence_developpe": ["Maitrise du javascript", "Installer un serveur"]
+      "competence_developpe": ["Maîtrise du javascript", "Installer un serveur"]
     },
     "etape": [
       {
-        "titre": "Installation du serveur appache",
+        "titre": "Installation du serveur apache",
         "text": [
-          "Pour installer le serveur Appache, nous avons utilisé une machine virtuelle (VirtualBox). Lors du projet, nous avons très souvent eu des problèmes avec la machine virtuelle et donc nous avons recommencer plusieurs fois certaines parties de l'installation.",
+          "Pour installer le serveur Apache, nous avons utilisé une machine virtuelle (VirtualBox). Lors du projet, nous avons très souvent eu des problèmes avec la machine virtuelle et donc nous avons recommencer plusieurs fois certaines parties de l'installation.",
           "Le MySQL permettait au utilisateur de se connecter au site web via un formulaire de connexion."
         ],
         "lien": []
@@ -1010,7 +1010,7 @@
         "titre": "Réalisation des pages web",
         "text": [
           "Pour accéder au site web, il faut que l'utilisateur se connecte par un formulaire de connexion. Ou il faut qu'il crée un compte. Pour cela, il doit remplir un formulaire. L'ajout du Javascript est utilisé pour rendre le site plus dynamique/vivant. Nous avons également réalisé une page 404 personnalisée et un début de page public.",
-          "Pour réaliser ce site web, nous nous sommes basés sur le thème de la météo. Chaque page a un lien à la météo. Cela va de la page de connexion à la page 404."
+          "Pour réaliser ce site web, nous nous sommes basés sur le thème de la météo. Chaque page à un lien à la météo. Cela va de la page de connexion à la page 404."
         ],
         "lien": []
       }
@@ -1099,9 +1099,9 @@
         "alt": "Résolution Labyrinthe",
         "title": "Résolution Labyrinthe"
       },
-      "description": "Recherche de différent moyen pour optimiser la recherche d'une solution d'un labyrinthe",
+      "description": "Recherche de différents moyens pour optimiser la recherche d'une solution d'un labyrinthe",
       "langage": ["python"],
-      "objectifs": ["Tester différente approche pour résoudre le problème"],
+      "objectifs": ["Tester différentes approches pour résoudre le problème"],
       "competence_developpe": ["Optimisation", "L'analyse"]
     },
     "etape": [
@@ -1143,7 +1143,7 @@
       "description": "Réalisation d'un programme qui peut trouver la solution du sudoku.",
       "langage": ["c"],
       "objectifs": [
-        "Résoudre un suddoku.",
+        "Résoudre un sudoku.",
         "Résoudre le plus rapidement possible un sudoku."
       ],
       "competence_developpe": ["Optimisation", "Analyse d'un problème"]
