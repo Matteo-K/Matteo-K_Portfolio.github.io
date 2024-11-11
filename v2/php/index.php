@@ -6,6 +6,8 @@
   <title>Document</title>
 </head>
 <body>
-  Mais non
+  <?php
+  require_once "components/header.php";
+  ?>
 </body>
 </html>
