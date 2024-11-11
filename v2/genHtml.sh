@@ -7,7 +7,7 @@ dossierDefaut="php"
 if [ $# -eq 0 ]; then
     # Aucun argument fourni, générer tous les fichiers PHP dans le dossier par défaut
     echo "Aucun argument fourni. Génération de tous les fichiers PHP dans le dossier '$dossierDefaut'."
-    fichiers=( "$dossierDefaut"/*.php )
+    fichiers=( "$dossierDefaut"/*.php ) #ajout de "$dossierDefaut/project"/*.php
 else
     # Initialise les variables
     dossier="$dossierDefaut"
@@ -49,7 +49,7 @@ for fichier in "${fichiers[@]}"; do
         echo "Erreur : Le fichier '$fichier' n'existe pas."
         continue
     fi
-
+    echo $fichier
     # Exécute le fichier PHP et redirige la sortie vers un fichier HTML
     nomFichier=$(basename "$fichier" .php)
     php "$fichier" > "$nomFichier.html"
