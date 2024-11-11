@@ -1,0 +1,211 @@
+:root {
+  --bg-light : #ffffff;
+  --bg-dark : #333333;
+  --text-light : #fff;
+  --text-dark : #1a1a1a;
+
+  --primary : #4e5ecc;
+  --secondary : #5cb3e4;
+
+  --contrast : #d0a3c4;
+  --background : #ffffff;
+  --accent : #a3c7e5;
+  /*
+  theme dark
+  --contrast : #805a86;
+  --background : #333;
+  --accent : #b9d6f2;
+  --text-light :  #1a1a1a ;
+  --text-dark : #fff;
+  */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* #####  Header  ##### */
+
+header {
+  height: 100vh;
+  background-color: var(--background);
+  border-bottom: none;
+  border-right : solid 2px var(--primary);
+  width: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Logo du portfolio*/
+
+header figure {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: left;
+}
+
+header figure img {
+  width: 100px;
+  height: 100px;
+}
+
+header figure figcaption {
+  display: none;
+}
+
+
+/* fleche ouverture du menu*/
+header [type="checkbox"] {
+  display: none;
+}
+
+header [type="checkbox"] + label {
+  position: absolute;
+  top: 10vh;
+  right: -50px;
+  z-index: 5;
+}
+
+header [type="checkbox"] + label > img {
+  width: 65px;
+  height: 65px;
+  padding: 15px;
+  border: solid 2px var(--primary);
+  border-radius: 50%;
+  background-color: var(--background);
+  transition: transform 0.3s;
+}
+
+/* Liste nav */
+
+header ul {
+  margin: 120px 0;
+}
+
+header ul li, header ul li a{
+  display: flex;
+  flex: 2;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+header ul li {
+  width: 100px;
+  justify-content: center;
+}
+
+header ul li a {
+  padding: 5px 10px;
+  justify-content: center;
+}
+
+header ul li a span {
+  display: none;
+}
+
+header ul li a:hover span {
+  text-decoration: underline;
+}
+
+header ul li a:hover {
+  background-color: var(--bg-dark10);
+}
+
+header ul a + img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin-right: 10px;
+  display: none;
+}
+
+header ul a + img:hover {
+  background-color: var(--bg-dark10);
+}
+
+header ul img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Menuo Ouvert / Checkbox checked */
+
+header [type="checkbox"]:checked + label > img{
+  transform: rotate(-180deg);
+}
+
+header [type="checkbox"]:checked ~ul li,
+header [type="checkbox"]:checked ~ul li a  {
+  width: auto;
+  justify-content: left;
+}
+
+header [type="checkbox"]:checked + label + figure > figcaption,
+header [type="checkbox"]:checked ~ul li a span,
+header [type="checkbox"]:checked ~ul a + img  {
+  display: block;
+}
+
+@media screen and (max-width:600px) {
+  header {
+    height: fit-content;
+    width: 100%;
+    border-left: none;
+    border-bottom: solid 2px var(--primary);
+  }
+
+  /* Logo Portfolio */
+
+  header figure {
+    flex-direction: column;
+    margin-right: 70%;
+  }
+
+  header figure img {
+    margin-bottom: -25px;
+  }
+
+  header figure figcaption {
+    display: block;
+    text-wrap: nowrap;
+  }
+
+  header [type="checkbox"] + label {
+    top: auto;
+    bottom: -55px;
+    right: 15%;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-75%);
+  }
+
+  header [type="checkbox"] + label > img {
+    transform: rotate(90deg);
+  }
+  
+  header ul {
+    display: none;
+    margin: 60px 0;
+  }
+
+  /* Menuo Ouvert / Checkbox checked */
+
+  header [type="checkbox"]:checked + label > img{
+    transform: rotate(-90deg);
+  }
+
+  header [type="checkbox"]:checked ~ul {
+    display: block;
+  }
+}
